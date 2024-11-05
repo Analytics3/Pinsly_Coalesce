@@ -1,0 +1,26 @@
+fileVersion: 1
+id: "2"
+mappingDefinitions:
+  NETSUITE_PREPARED:
+    database: PINSLY_PREPARED_PROD
+    schema: NETSUITE_PREPARED
+  NETSUITE_RAW:
+    database: PINSLY_RAW
+    schema: PUBLIC
+  OPERATIONS_MODEL_PREPARED:
+    database: PINSLY_PREPARED_PROD
+    schema: OPERATIONS_MODEL_PREPARED
+  SAFETRACK_PREPARED:
+    database: PINSLY_PREPARED_PROD
+    schema: SAFETRACK_PREPARED
+  SAFETRACK_RAW:
+    database: PINSLY_RAW
+    schema: PUBLIC
+  WABTEC_PREPARED:
+    database: PINSLY_PREPARED_PROD
+    schema: WABTEC_PREPARED
+  WABTEC_RAW:
+    database: PINSLY_RAW
+    schema: PUBLIC
+name: Production
+type: Environment

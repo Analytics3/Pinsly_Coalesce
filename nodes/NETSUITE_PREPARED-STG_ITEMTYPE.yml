@@ -1,0 +1,137 @@
+fileVersion: 1
+id: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+name: STG_ITEMTYPE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfea82e1-ebbc-4456-8df2-5ab2f3b742ff
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: VARCHAR(88)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1c5b0441-8a2b-4765-8f41-f47b169a91d3
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d4a55f9-e14f-4a5b-9176-738e79eae829
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: INTERNALID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f742d87-3376-491e-97a3-f45bc89789ed
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1eb6e267-7ac7-4300-b20d-e09e76cf69cf
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: VARCHAR(480)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 02e4636d-f556-43e7-8358-f9b725e16193
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0368da4-a45a-4c55-80d2-fa2d19b32c39
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SEQUENCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0a4340f7-0d7f-4f32-bb0c-4aae5e9bc841
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc51d936-ce63-4d38-a42f-8360cfcdfde3
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d141135-e7f1-4677-9185-3115c3acd03a
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 184f0925-4c45-4215-8e79-873ea74271f7
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7870746e-0006-473c-9ab5-c98164e4bf83
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7de6b178-b9bf-4982-b839-f9ee7c30951f
+          stepCounter: d496aeb3-392a-4a55-947e-93b6a85e0ae6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1659023-b777-4fd4-bf28-7f896ccc4d3d
+                stepCounter: 80f3cb4c-5235-492a-a095-bb172fd5b688
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_RAW
+            nodeName: ITEMTYPE
+        join:
+          joinCondition: FROM {{ ref('NETSUITE_RAW', 'ITEMTYPE') }} "ITEMTYPE"
+        name: STG_ITEMTYPE
+        noLinkRefs: []
+  name: STG_ITEMTYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

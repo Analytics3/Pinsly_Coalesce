@@ -1,0 +1,153 @@
+fileVersion: 1
+id: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+name: CUSTOMERCATEGORY
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: NETSUITE_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56618ba1-40fa-425c-bdb4-9064c87f2099
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05b94d6c-803c-47fa-9be1-2546710f50e8
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: VARCHAR(2040)
+        defaultValue: ""
+        description: ""
+        name: EXTERNALID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 900f7be9-9229-42e0-ab28-5449be04bb55
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00bb85fa-1617-4b48-9c88-42a32dcd96d8
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: VARCHAR(248)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08ffc9ec-d4b0-4443-b975-e91ce0434db6
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9ab4b58-93a6-43d3-9845-f5d471a81133
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5750f09b-28d8-4696-95ab-97dd0f205c3d
+          stepCounter: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('NETSUITE_RAW', 'CUSTOMERCATEGORY') }}
+  name: CUSTOMERCATEGORY
+  schema: ""
+  sqlType: Source
+  table: CUSTOMERCATEGORY
+  type: sourceInput
+  version: 1
+type: Node

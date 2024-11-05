@@ -1,3 +1,10 @@
-defaultStorageMapping: null
+defaultStorageMapping: NETSUITE_RAW
 fileVersion: 1
-locations: []
+locations:
+  - NETSUITE_PREPARED
+  - NETSUITE_RAW
+  - OPERATIONS_MODEL_PREPARED
+  - SAFETRACK_PREPARED
+  - SAFETRACK_RAW
+  - WABTEC_PREPARED
+  - WABTEC_RAW
