@@ -3688,14 +3688,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          TRANSACTION: bf350f97-8c86-4984-baac-d434dba8a50b
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: TRANSACTION
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'TRANSACTION') }} "TRANSACTION"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'TRANSACTION') }} "TRANSACTION"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_TRANSACTION
         noLinkRefs: []
   name: STG_TRANSACTION

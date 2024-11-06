@@ -356,14 +356,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          TRANSACTIONACCOUNTINGLINE: 29a595fe-4287-41d8-98d0-6d84845932e1
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: TRANSACTIONACCOUNTINGLINE
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'TRANSACTIONACCOUNTINGLINE') }} "TRANSACTIONACCOUNTINGLINE"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'TRANSACTIONACCOUNTINGLINE') }} "TRANSACTIONACCOUNTINGLINE"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_TRANSACTIONACCOUNTINGLINE
         noLinkRefs: []
   name: STG_TRANSACTIONACCOUNTINGLINE

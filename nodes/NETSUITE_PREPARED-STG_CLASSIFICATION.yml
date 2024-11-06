@@ -202,14 +202,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          CLASSIFICATION: a92009c1-3c7e-48f9-adeb-23bea4c9651c
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: CLASSIFICATION
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'CLASSIFICATION') }} "CLASSIFICATION"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'CLASSIFICATION') }} "CLASSIFICATION"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_CLASSIFICATION
         noLinkRefs: []
   name: STG_CLASSIFICATION

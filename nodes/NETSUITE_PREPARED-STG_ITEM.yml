@@ -2022,14 +2022,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          ITEM: 383f40c0-bbf5-40be-b06d-0ea9b053aaa6
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: ITEM
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'ITEM') }} "ITEM"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'ITEM') }} "ITEM"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_ITEM
         noLinkRefs: []
   name: STG_ITEM

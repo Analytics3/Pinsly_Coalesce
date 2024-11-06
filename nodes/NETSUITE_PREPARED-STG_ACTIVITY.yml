@@ -300,14 +300,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          ACTIVITY: 40ac6533-353e-473a-a4d1-40b8c71f7fa8
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: ACTIVITY
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'ACTIVITY') }} "ACTIVITY"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'ACTIVITY') }} "ACTIVITY"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_ACTIVITY
         noLinkRefs: []
   name: STG_ACTIVITY

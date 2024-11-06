@@ -818,14 +818,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          SUBSIDIARY: 46db577f-144d-42b1-8aca-06537fa990d4
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: SUBSIDIARY
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'SUBSIDIARY') }} "SUBSIDIARY"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'SUBSIDIARY') }} "SUBSIDIARY"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_SUBSIDIARY
         noLinkRefs: []
   name: STG_SUBSIDIARY

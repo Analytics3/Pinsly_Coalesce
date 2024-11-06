@@ -118,14 +118,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          CUSTOMERCATEGORY: 4a0422fd-62cb-4832-8e5e-24aa5a32e430
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: CUSTOMERCATEGORY
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'CUSTOMERCATEGORY') }} "CUSTOMERCATEGORY"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'CUSTOMERCATEGORY') }} "CUSTOMERCATEGORY"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_CUSTOMERCATEGORY
         noLinkRefs: []
   name: STG_CUSTOMERCATEGORY

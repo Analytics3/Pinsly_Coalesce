@@ -1910,14 +1910,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          TRANSACTIONLINE: 7e91f24c-7ada-4dd5-b6ee-ceb6844da4bb
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: TRANSACTIONLINE
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'TRANSACTIONLINE') }} "TRANSACTIONLINE"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'TRANSACTIONLINE') }} "TRANSACTIONLINE"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_TRANSACTIONLINE
         noLinkRefs: []
   name: STG_TRANSACTIONLINE

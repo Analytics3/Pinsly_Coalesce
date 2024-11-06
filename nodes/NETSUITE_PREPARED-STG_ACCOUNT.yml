@@ -524,14 +524,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          ACCOUNT: 91db6ea3-e03f-4c27-a555-99d6df17d46e
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: ACCOUNT
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'ACCOUNT') }} "ACCOUNT"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'ACCOUNT') }} "ACCOUNT"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_ACCOUNT
         noLinkRefs: []
   name: STG_ACCOUNT

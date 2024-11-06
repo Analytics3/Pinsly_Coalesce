@@ -118,14 +118,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          ITEMTYPE: 80f3cb4c-5235-492a-a095-bb172fd5b688
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: NETSUITE_RAW
             nodeName: ITEMTYPE
         join:
-          joinCondition: FROM {{ ref('NETSUITE_RAW', 'ITEMTYPE') }} "ITEMTYPE"
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'ITEMTYPE') }} "ITEMTYPE"
+            WHERE "_FIVETRAN_DELETED" = FALSE
         name: STG_ITEMTYPE
         noLinkRefs: []
   name: STG_ITEMTYPE
