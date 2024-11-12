@@ -1429,11 +1429,53 @@ operation:
                 stepCounter: 3ba5b2b0-01c3-499f-b592-80fd9f13eb72
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a5082e6-5002-4cec-8b4f-1092ad312d22
+          stepCounter: 7c17f62e-4ad9-49a4-9ee2-0c980e126db6
+        config: {}
+        dataType: VARCHAR(1000)
+        defaultValue: ""
+        description: "Customer table is joined back on the customer table again using the parent id "
+        keyColumnType: None
+        name: CUSTOMER_PARENT_FULLNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: COALESCE("STG_CUSTOMER2"."FULLNAME", "STG_CUSTOMER"."FULLNAME")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29feac44-0f4c-40f8-9fec-caac1fcb5495
+          stepCounter: 7c17f62e-4ad9-49a4-9ee2-0c980e126db6
+        config: {}
+        dataType: VARCHAR(1000)
+        defaultValue: ""
+        description: "Customer table is joined back on the parent customer table using the parent's parent id "
+        keyColumnType: None
+        name: CUSTOMER_TOP_PARENT_FULLNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: COALESCE("STG_CUSTOMER3"."FULLNAME", "STG_CUSTOMER2"."FULLNAME", "STG_CUSTOMER"."FULLNAME")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
           STG_CUSTOMER: ca7ca5c4-769e-404e-be19-a1460f03fe51
+          STG_CUSTOMER2: ca7ca5c4-769e-404e-be19-a1460f03fe51
+          STG_CUSTOMER3: ca7ca5c4-769e-404e-be19-a1460f03fe51
           STG_ENTITY: 09f5cf2d-a85f-4a02-8eb2-949c9eb92640
           STG_TERM: 3ba5b2b0-01c3-499f-b592-80fd9f13eb72
         customSQL:
@@ -1452,6 +1494,10 @@ operation:
             ON "STG_ENTITY"."CUSTOMER" = "STG_CUSTOMER"."ID"
             LEFT JOIN {{ ref('NETSUITE_PREPARED', 'STG_TERM') }} "STG_TERM"
             ON "STG_CUSTOMER"."TERMS" = "STG_TERM"."ID"
+            LEFT JOIN {{ ref('NETSUITE_PREPARED', 'STG_CUSTOMER') }} "STG_CUSTOMER2"
+            ON "STG_CUSTOMER2"."ID" = "STG_CUSTOMER"."PARENT"
+            LEFT JOIN {{ ref('NETSUITE_PREPARED', 'STG_CUSTOMER') }} "STG_CUSTOMER3"
+            ON "STG_CUSTOMER3"."ID" = "STG_CUSTOMER2"."PARENT"
         name: STG_DIM_CUSTOMER
         noLinkRefs: []
   name: STG_DIM_CUSTOMER

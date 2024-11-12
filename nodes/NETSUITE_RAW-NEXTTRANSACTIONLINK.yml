@@ -1,0 +1,153 @@
+fileVersion: 1
+id: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+name: NEXTTRANSACTIONLINK
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: NETSUITE_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 412f4aad-6a09-47ff-a745-502ea24a0103
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: VARCHAR(256)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc54f134-2238-4f6a-97ce-903f2376b715
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: LINKTYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08704848-360e-4ee1-b2e4-6f189b6f76a5
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: NEXTDOC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1adac71f-913c-467f-af16-ec620a8f6405
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PREVIOUSDOC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeb6702b-afa3-4dd4-becd-33a88200ab5d
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c5691e5-7e90-4ea4-8639-22277c25fc7c
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb16c99a-12ca-4fdc-9d7d-0461ac1e6df8
+          stepCounter: 2b1ab725-067f-4ef2-9a24-56fb5aad4ca8
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('NETSUITE_RAW', 'NEXTTRANSACTIONLINK') }}
+  name: NEXTTRANSACTIONLINK
+  schema: ""
+  sqlType: Source
+  table: NEXTTRANSACTIONLINK
+  type: sourceInput
+  version: 1
+type: Node
