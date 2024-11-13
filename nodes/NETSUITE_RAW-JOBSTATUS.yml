@@ -1,0 +1,267 @@
+fileVersion: 1
+id: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+name: JOBSTATUS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: NETSUITE_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed73f5af-78e1-4f2d-ab50-1cd08ed4fc40
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2abaf7d3-1ccd-4c85-b146-ca958c961368
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: ALLOWCOMPLETELYBILLEDONPROJECT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38f2e4fa-52b3-43cf-aab8-e9e9e873adcf
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(7992)
+        defaultValue: ""
+        description: ""
+        name: DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c31df932-098f-4419-a741-ba03ec0ff84b
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(2040)
+        defaultValue: ""
+        description: ""
+        name: EXTERNALID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e04f62b5-9274-487b-9e45-ef3a3ad20413
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d4801b9-2bea-4f51-a53e-58fcaad4503a
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbaa3535-0828-4dbd-bb18-318215b87d89
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(1592)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ef1fdcf-6c4d-4798-b02f-be4241074f8d
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: PERCENTCOMPLETEAUTOMATICRECALCULATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6182d55-f5d0-4c69-b76d-0e6a0f4786f6
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: SCHEDULEACTUALCHARGERUNONMIDNIGHT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c20c2a7a-0adf-4f8e-a148-5b79557c765d
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: VARCHAR(8)
+        defaultValue: ""
+        description: ""
+        name: SCHEDULEFORECASTCHARGERUNONMIDNIGHT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a3cf12a4-a91b-4e41-8ebb-4ddf921fc822
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6abaa01a-baf4-46b3-8acd-894d92d2e19e
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97a9f78f-d555-4d12-9e9d-600a2ad294d1
+          stepCounter: 2bc36184-9896-4d5f-8bb9-f7029ba03582
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('NETSUITE_RAW', 'JOBSTATUS') }}
+  name: JOBSTATUS
+  schema: ""
+  sqlType: Source
+  table: JOBSTATUS
+  type: sourceInput
+  version: 1
+type: Node

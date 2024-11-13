@@ -1,0 +1,392 @@
+fileVersion: 1
+id: 40721649-298a-4db0-9be1-b79a1e84278a
+name: STG_PROJECTFINANCIALS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90d6dceb-ed0e-4907-9465-c193467c5b2b
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: _FIVETRAN_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 121ee158-5ab9-48f9-afb1-a37a56935b56
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f454f30-4dff-4368-a692-f6dbdd38baa3
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2ef74bba-1e41-46a4-a44b-34194766d917
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9932f38e-441e-43f0-beae-f327c7d92cf0
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(1536)
+        description: ""
+        name: ACTIVITYCODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a0b9028-adf6-44c6-b4f7-b7f34c9b85d3
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2375fb5-a0cc-4b9a-b05a-3ef97e652535
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ACTIVITYCODEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22908e2b-fb4b-4e5a-a7c2-421820596d2f
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee8af66b-693d-4c1a-ad21-ea863e49799c
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ACTUAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b62fb7b-fe38-4436-8a72-cad8f4d046b5
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c8e59bb-d294-458f-8ba0-ecb8a26a9e09
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 865cdc2a-cec0-42b2-be59-2c1539ffdf3c
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b410b8b-1b12-4a9f-857d-237790855aff
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: BASELINEBUDGETLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1a1d3ea-7563-4ab2-aeb8-fb26ecd6fe72
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecaf3c79-34a3-455e-9947-d05db2ffab20
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(1536)
+        description: ""
+        name: BUDGETTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 922f38e6-0483-4de4-b3d8-770e5910214c
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 217f336a-78f0-42b1-b518-4b6e4c426050
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f486455-7ed0-4f63-abca-f9154767d199
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d5a5d85-7895-4dbc-8d11-c0d6eb3c17bf
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ESTIMATEATCOMPLETIONBUDGETLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7f8438d-4481-4082-b667-7e19a6d6574f
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff5fef04-afd1-4eaf-a6e1-e1cd08846383
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EXPENSECATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c13b2e0-2b4f-4c73-8d3a-398353b2eb0e
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df0ac463-70b9-4b19-96ad-2daf78b735ce
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ITEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5882a22d-7c28-4b85-85bc-c85e6cc53ae8
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd2ee23d-432c-4b38-941f-c5893cf60eee
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PROJECT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dc07b824-67a9-4b75-afae-5301292fc730
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c5fea13-3d19-47ed-b99d-304818badbf2
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PROJECTTASK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6304f5f8-60df-4971-bc77-4d182c213ab7
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9673fd93-d19a-4325-9f0a-0c838586dbcc
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SOURCEENTITYKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 153c1bab-4d44-4e1d-ba7e-b08a196cd5c9
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9f7d5f1-3e1e-4994-9dd7-14ea35da2cf9
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(1536)
+        description: ""
+        name: SOURCEENTITYTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b79efca-b984-4241-b56d-35478071d4ac
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de05ee24-0e3a-434d-83fb-77f3bb166d8e
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SOURCEKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92305bcc-8321-4566-8364-5877ad19e21d
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 731ebe64-9e86-499c-a0f4-447d07d8b934
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(1536)
+        description: ""
+        name: SOURCETYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9950e317-5d91-4349-8d36-ff548a910017
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77530fc6-78b3-40fd-96da-a73a33ae0bc6
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e23052e9-924e-4355-bea4-fbe2d7abe33d
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d0742d1-72ca-41dc-ac79-716803689b07
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TRANSACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dc7c74fb-9570-4054-801c-4b84a9a19984
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdf05826-9abd-4f4f-87b1-68dd20e533f4
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TRANSACTIONLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5d24bc31-f0e1-4ecc-beba-8061b70f3099
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cef6bda0-97f6-4fe8-8d56-9214b53b5e80
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: VARCHAR(1536)
+        description: ""
+        name: TRANSACTIONTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5a7e08b-3779-4059-9bc7-b300247d169f
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7dd84ccc-c021-4f3c-ab21-816069a9b4b1
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 309ae94e-a7fe-4ce2-8e20-621417423b3d
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6a9260a-4c24-45a2-9e13-96a127ada2c2
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1d112ba-8340-4550-b0f5-bd0b0b7ae84d
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0d4080b-04e6-4402-ba6a-3bab9854a5af
+          stepCounter: 40721649-298a-4db0-9be1-b79a1e84278a
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ea9021f-f2c7-46a2-a08a-98e1cf6faabb
+                stepCounter: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          PROJECTFINANCIALS: 97a9640d-6dc5-492e-b20c-67d4cd1df02a
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_RAW
+            nodeName: PROJECTFINANCIALS
+        join:
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'PROJECTFINANCIALS') }} "PROJECTFINANCIALS"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_PROJECTFINANCIALS
+        noLinkRefs: []
+  name: STG_PROJECTFINANCIALS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
