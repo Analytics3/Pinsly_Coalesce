@@ -521,12 +521,54 @@ operation:
               - columnCounter: dab44d41-1d45-44c9-879c-1676e1f66625
                 stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3f46aec-fe43-4b8d-832b-5273382f0fc0
+          stepCounter: b5cfa2af-9453-4a8e-9026-8c2c38fbac45
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSACTION_CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'Invoice'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae507283-dc5a-49c3-b158-96a6955b21df
+          stepCounter: b5cfa2af-9453-4a8e-9026-8c2c38fbac45
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CREDIT_MEMO_INVOICE_DOCUMENT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"STG_TRANSACTION_CR\".\"TRANID\""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
           STG_TRANSACTION: 80ac8310-eaee-4fea-b3b2-368e513f27fc
           STG_TRANSACTIONLINE: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+          STG_TRANSACTIONLINE_CR: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+          STG_TRANSACTION_CR: 80ac8310-eaee-4fea-b3b2-368e513f27fc
         customSQL:
           customSQL: ""
         dependencies:
@@ -538,7 +580,13 @@ operation:
           joinCondition: |-
             FROM {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTION') }} "STG_TRANSACTION"
             INNER JOIN {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTIONLINE') }} "STG_TRANSACTIONLINE"
-            ON "STG_TRANSACTION"."ID" = "STG_TRANSACTIONLINE"."TRANSACTION"
+                ON "STG_TRANSACTION"."ID" = "STG_TRANSACTIONLINE"."TRANSACTION"
+            LEFT JOIN {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTIONLINE') }} "STG_TRANSACTIONLINE_CR"
+                ON "STG_TRANSACTIONLINE"."CREATEDFROM" = "STG_TRANSACTIONLINE_CR"."TRANSACTION"
+                AND "STG_TRANSACTION"."TYPE" = 'CustCred'
+                AND "STG_TRANSACTIONLINE_CR"."ACCOUNTINGLINETYPE" = 'ACCOUNTSRECEIVABLE'
+            LEFT JOIN {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTION') }} "STG_TRANSACTION_CR"
+                ON "STG_TRANSACTION_CR"."ID" = "STG_TRANSACTIONLINE_CR"."TRANSACTION"
             WHERE "STG_TRANSACTION"."TYPE" IN ('CustInvc', 'CustCred')
                 AND "STG_TRANSACTIONLINE"."ACCOUNTINGLINETYPE" = 'ACCOUNTSRECEIVABLE'
         name: STG_AR_INVOICE
