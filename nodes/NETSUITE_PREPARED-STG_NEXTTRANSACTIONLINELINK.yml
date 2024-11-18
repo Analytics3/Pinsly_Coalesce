@@ -1,0 +1,224 @@
+fileVersion: 1
+id: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+name: STG_NEXTTRANSACTIONLINELINK
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 389bf71b-1a0c-493a-802d-bb44ea0953cb
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: VARCHAR(256)
+        description: ""
+        name: _FIVETRAN_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fdf3ae0b-ca1c-4aeb-967f-709ea6e70871
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f8cd3f1-2fb7-4a7a-aa46-b77f899397a6
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: FOREIGNAMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b090dd2f-541e-4243-a577-a43588762345
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08c5745d-dcd5-4e24-93ca-8305d93aa634
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0d41862-2767-42ca-b2ff-542cd78fc749
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0c99850-afe4-47f8-956b-f24de4f58512
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: LINKTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a961e13a-b175-472e-b44c-d2554f3a515f
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b5024d6-a05d-48ef-9c9e-3a5cf43c407a
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NEXTDOC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dbd0adda-cec9-4dd6-92c5-8b425f263e99
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 003800a5-e672-4dae-b8e9-13f054922c62
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NEXTLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc88a394-12ea-4e51-942f-a3065982cb2e
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 026d8628-0f43-426f-bcc7-719a4cf25104
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: VARCHAR(96)
+        description: ""
+        name: NEXTTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7676a53-1b04-4283-adba-e6bc9695584b
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cb57860-b42c-41bf-8da6-a0d5c2428823
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PREVIOUSDOC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84079613-8227-49e7-b796-ecefabaa45bd
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8f509a9-ac23-44f5-baa9-eed435b02a88
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PREVIOUSLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae31df1a-d05c-42c4-8ac0-691073b7f5c5
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf3ca271-99fd-4edb-9cc8-585bbc4ee3c6
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: VARCHAR(96)
+        description: ""
+        name: PREVIOUSTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9f57de6f-841a-4e76-9ef1-9271aa537396
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb226193-af3b-4e2b-a38f-2afda54409fe
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee8f1e42-c46e-40ef-ae61-8f6e7ffa56c3
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d181644e-5ee9-4e1e-85a0-70d57c6d0d40
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 810180e7-2cc7-432c-8c06-bc475b3f97ae
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e66fef4c-39b2-489e-8219-816d4bd3c53b
+          stepCounter: 55a238ef-bf74-4f1b-aa70-6097dbfa6ca6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2012e0d-a2e4-4e6a-ab04-7a462a6910d6
+                stepCounter: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          NEXTTRANSACTIONLINELINK: 95fd0ad3-609a-40d7-a91e-20e6b53e2819
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_RAW
+            nodeName: NEXTTRANSACTIONLINELINK
+        join:
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'NEXTTRANSACTIONLINELINK') }} "NEXTTRANSACTIONLINELINK"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_NEXTTRANSACTIONLINELINK
+        noLinkRefs: []
+  name: STG_NEXTTRANSACTIONLINELINK
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -84,8 +84,8 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 30e821eb-79e6-4596-8f88-ef88d84fa7f4
-                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+              - columnCounter: ee6825a4-1a91-4b79-b401-4ef8ad04a6f8
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
             transform: ""
       - appliedColumnTests: {}
         columnReference:
@@ -409,6 +409,26 @@ operation:
               - columnCounter: dab44d41-1d45-44c9-879c-1676e1f66625
                 stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 034b7810-3374-428f-ad79-fb4275718184
+          stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: LINE_SEQUENCE_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45b33a3a-82bc-4350-8bf8-d4b7d8510696
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -426,7 +446,7 @@ operation:
           joinCondition: |-
             FROM {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTION') }} "STG_TRANSACTION"
             INNER JOIN {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTIONLINE') }} "STG_TRANSACTIONLINE"
-            ON "STG_TRANSACTION"."ID" = "STG_TRANSACTIONLINE"."TRANSACTION"
+                ON "STG_TRANSACTION"."ID" = "STG_TRANSACTIONLINE"."TRANSACTION"
             WHERE "STG_TRANSACTION"."TYPE" IN ('CustPymt', 'DepAppl', 'Journal')
                 AND "STG_TRANSACTIONLINE"."ACCOUNTINGLINETYPE" = 'ACCOUNTSRECEIVABLE'
         name: STG_AR_PAYMENT
