@@ -302,6 +302,26 @@ operation:
               - columnCounter: 6f93c205-19da-4e48-b3e8-2229a334fd85
                 stepCounter: 1a80df02-f722-4247-9763-b5e07292c34c
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a540961c-2488-4e3a-8656-a4047d31cfd9
+          stepCounter: a49c5dc6-37ff-4713-bd28-9f0913a5c905
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cfd289f2-4535-47e8-9536-4fd9d7c1982d
+                stepCounter: 1a80df02-f722-4247-9763-b5e07292c34c
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
