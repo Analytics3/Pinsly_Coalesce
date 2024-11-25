@@ -1,0 +1,190 @@
+fileVersion: 1
+id: 63aba3e9-21bd-4f0d-83a9-43851b220607
+name: STG_AR_OPEN_BALANCES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d9d9d1f-683a-4a54-8454-aba7ce5fa022
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TRANSACTION_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 999a68e5-533d-477c-9ad9-dbac6a43cd47
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fee6545-c212-4d46-b94a-37cd4880a9e5
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ENTITY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30e821eb-79e6-4596-8f88-ef88d84fa7f4
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90f077ac-7b31-4ff6-9a8e-9f21ba0bdb48
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: VARCHAR(32000)
+        description: ""
+        name: TRANSACTION_MEMO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b459c1d-8d59-4e7f-84e7-40a664cf2ba9
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9c24959-d80e-4e58-8ad4-e46ac114f2fc
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: TRANDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 922f8a2c-0837-40c6-bafd-45a25a17feb2
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7812e3e-4611-4f87-bac7-688f71830347
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: VARCHAR(360)
+        description: ""
+        name: DOCUMENT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a6f36eb-4700-4158-a095-dfa27b54c3e1
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46ceb80f-250c-47c7-af3d-5aaa50eae9a1
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96ab1be0-7226-4097-92a9-e5fc10a1ad29
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5810953c-73d8-4731-a65b-6d991c0c7e86
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: VARCHAR(240)
+        description: ""
+        name: ACCOUNTINGLINETYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 85f21560-3907-4132-a508-4bb7c67705f2
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 888b1aa2-22cc-47a5-90c3-4f28f83c8b53
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EXPENSEACCOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a3cef65-9786-45c6-8f88-af07a78212bf
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f442931f-a0b6-47de-a312-52da144c0746
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: FOREIGNPAYMENTAMOUNTUNUSED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afb0f2dd-e1ec-4a4e-b624-434878ad6d93
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c666e65c-e9d1-41fc-b097-af37fb15fca6
+          stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dab44d41-1d45-44c9-879c-1676e1f66625
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_TRANSACTION: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+          STG_TRANSACTIONLINE: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_PREPARED
+            nodeName: STG_TRANSACTION
+          - locationName: NETSUITE_PREPARED
+            nodeName: STG_TRANSACTIONLINE
+        join:
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTION') }} "STG_TRANSACTION"
+            INNER JOIN {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTIONLINE') }} "STG_TRANSACTIONLINE"
+            ON "STG_TRANSACTION"."ID" = "STG_TRANSACTIONLINE"."TRANSACTION"
+            WHERE "STG_TRANSACTION"."TYPE" IN ('CustCred', 'CustPymt', 'Journal')
+            AND "STG_TRANSACTIONLINE"."ACCOUNTINGLINETYPE" = 'ACCOUNTSRECEIVABLE'
+            AND "STG_TRANSACTIONLINE"."FOREIGNPAYMENTAMOUNTUNUSED" > 0
+            GROUP BY ALL
+        name: STG_AR_OPEN_BALANCES
+        noLinkRefs: []
+  name: STG_AR_OPEN_BALANCES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

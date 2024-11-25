@@ -1,0 +1,85 @@
+fileVersion: 1
+id: d1ec0b7a-f35e-48cb-ae88-44f88514bbd7
+name: STG_TRANSACTIONNOTE_TRANSACTION
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 895b754b-fc57-4584-83d3-54953cfa6609
+          stepCounter: d1ec0b7a-f35e-48cb-ae88-44f88514bbd7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: TRANSACTION_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3dbe15b0-16d5-4f3e-a4cf-bb499bbb1652
+                stepCounter: 5d175bb5-418a-40b4-81a5-21a1816e4695
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b63b9528-0976-4c49-9e58-e122225b835e
+          stepCounter: d1ec0b7a-f35e-48cb-ae88-44f88514bbd7
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CONCATENATE_NOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              LISTAGG(
+                  CONCAT(
+                      TO_DATE("STG_TRANSACTIONNOTE"."LASTMODIFIEDDATE"), 
+                      ': ', 
+                      "STG_TRANSACTIONNOTE"."NOTE"
+                  ), 
+                  ' | '
+              ) 
+              WITHIN GROUP (ORDER BY "STG_TRANSACTIONNOTE"."NOTEDATE")
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_TRANSACTIONNOTE: 5d175bb5-418a-40b4-81a5-21a1816e4695
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_PREPARED
+            nodeName: STG_TRANSACTIONNOTE
+        join:
+          joinCondition: |
+            FROM {{ ref('NETSUITE_PREPARED', 'STG_TRANSACTIONNOTE') }} "STG_TRANSACTIONNOTE"
+            GROUP BY "TRANSACTION"
+        name: STG_TRANSACTIONNOTE_TRANSACTION
+        noLinkRefs: []
+  name: STG_TRANSACTIONNOTE_TRANSACTION
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

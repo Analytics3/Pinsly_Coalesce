@@ -1469,6 +1469,26 @@ operation:
                 stepCounter: "0"
             transform: COALESCE("STG_CUSTOMER3"."FULLNAME", "STG_CUSTOMER2"."FULLNAME", "STG_CUSTOMER"."FULLNAME")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad9abf3f-4df4-4230-a935-575235b35bbe
+          stepCounter: 7c17f62e-4ad9-49a4-9ee2-0c980e126db6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMER_NETSUITE_LINK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT('https://5627172.app.netsuite.com/app/common/entity/custjob.nl?id=', "STG_ENTITY"."ID")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
