@@ -165,6 +165,7 @@ operation:
         config: {}
         dataType: DATE
         description: ""
+        isBusinessKey: true
         name: DATE
         nullable: true
         sourceColumnReferences:
