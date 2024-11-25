@@ -529,6 +529,86 @@ operation:
                 stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c10c7e2a-96ca-448d-a244-02cd6debcdc2
+          stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TL_UNIQUE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 589f1ce4-28ba-4b21-bab2-7aeca9963c3f
+                stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4936134a-a40f-4102-9ba6-4dbec0035117
+          stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REAL_ESTATE_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b15df75-7db7-4457-88c6-47cd54ee9d35
+                stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13f6927d-b454-4ddf-9b32-0ab02c34e5f1
+          stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: INVOICE_ENTITY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30e821eb-79e6-4596-8f88-ef88d84fa7f4
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: COALESCE("STG_TRANSACTION"."ENTITY", "STG_AR_PAYMENT"."ENTITY_ID")
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c55cadf-4216-4123-86ac-6364224f4277
+          stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DUEDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4ded837-63a9-43f9-8295-058328a0d27d
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

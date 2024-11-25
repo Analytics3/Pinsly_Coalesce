@@ -597,6 +597,114 @@ operation:
                 stepCounter: "0"
             transform: SUM("STG_AR_INVOICE_PAYMENT_UNION"."NETAMOUNT") OVER (PARTITION BY "STG_AR_INVOICE_PAYMENT_UNION"."INVOICE_DOCUMENT_NUMBER")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 595f75d2-56de-4bf3-a928-ca2ed392c482
+          stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TL_UNIQUE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7b4a358-ab9b-4bf3-a569-3b5791b4f431
+                stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3087ddf4-aecb-44a8-9cfd-3cfcc49caaa7
+          stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REAL_ESTATE_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22a6674c-6b87-4bdf-bb5a-f2b3d253111e
+                stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbcfb3f9-f1e4-405d-970f-686ecdb41727
+          stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: APPLIED_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2503ab91-cfe4-42a4-a6f9-adfe315db005
+                stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3164ad1c-ef1c-4d2f-913d-eea432e696e1
+          stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: INVOICE_ENTITY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53e4f75e-55ff-4444-8ff6-7c3cd0f9a0a3
+                stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+            transform: ""
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56ccfcf5-66ac-47e6-a0ac-d60bc9349e31
+          stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+        config: {}
+        dataType: FLOAT
+        description: ""
+        name: UNAPPLIED_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0980f5d-282b-4d61-8761-91c0b34350bf
+                stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f521b070-ad4d-4701-8b3b-e086669f834e
+          stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: NETSUITE_TRANSACTION_LINK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT('https://5627172.app.netsuite.com/app/accounting/transactions/',LOWER("STG_AR_INVOICE_PAYMENT_UNION"."TYPE"),'.nl?id=',"STG_AR_INVOICE_PAYMENT_UNION"."TRANSACTION_ID")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

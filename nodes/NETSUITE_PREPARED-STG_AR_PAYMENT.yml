@@ -429,6 +429,46 @@ operation:
                 stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 589f1ce4-28ba-4b21-bab2-7aeca9963c3f
+          stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TL_UNIQUE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b02c2ac6-20e2-4455-92f7-d26852eae811
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b15df75-7db7-4457-88c6-47cd54ee9d35
+          stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REAL_ESTATE_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7e1ae042-3bf3-4a6a-b26c-55e54983f47e
+                stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
