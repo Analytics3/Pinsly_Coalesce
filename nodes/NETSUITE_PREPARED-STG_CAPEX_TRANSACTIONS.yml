@@ -95,7 +95,11 @@ operation:
           - columnReferences:
               - columnCounter: 294fc38e-c2ca-4bdc-a87c-c9b3d0e84f4a
                 stepCounter: 7beb3a58-9300-4608-813c-a7cd2e25fe1c
-            transform: ""
+            transform: |-
+              CASE
+                  WHEN "STG_ITEM"."ITEMTYPE" is null then 'Other'
+                  ELSE "STG_ITEM"."ITEMTYPE"
+              END
         systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
