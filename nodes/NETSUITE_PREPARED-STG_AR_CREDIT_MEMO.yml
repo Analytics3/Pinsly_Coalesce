@@ -685,6 +685,26 @@ operation:
                 stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3dac66b-7665-49a7-8972-4e94d91fe53f
+          stepCounter: 0716e82f-56a9-4b06-a911-1cc6388613f5
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TL_LINESEQUENCENUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45b33a3a-82bc-4350-8bf8-d4b7d8510696
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

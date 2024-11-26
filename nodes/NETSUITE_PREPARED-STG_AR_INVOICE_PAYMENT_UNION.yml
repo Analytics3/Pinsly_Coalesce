@@ -1125,6 +1125,38 @@ operation:
           - columnReferences: []
             transform: "\"STG_AR_OPEN_BALANCES\".\"ENTITY_ID\""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b895c35-a282-4c38-b2ca-0c490c12a747
+          stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TL_LINESEQUENCENUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dbf7fb03-f98c-4966-8b94-63c40a30a11b
+                stepCounter: b5cfa2af-9453-4a8e-9026-8c2c38fbac45
+            transform: ""
+          - columnReferences:
+              - columnCounter: 88f5afcd-db60-4864-a950-df765fd32e0d
+                stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+            transform: ""
+          - columnReferences:
+              - columnCounter: b3dac66b-7665-49a7-8972-4e94d91fe53f
+                stepCounter: 0716e82f-56a9-4b06-a911-1cc6388613f5
+            transform: ""
+          - columnReferences:
+              - columnCounter: 82cf21a5-e892-4bac-9bbe-7ec96eb484eb
+                stepCounter: 63aba3e9-21bd-4f0d-83a9-43851b220607
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
