@@ -599,6 +599,7 @@ operation:
         config: {}
         dataType: NUMBER
         description: ""
+        isBusinessKey: true
         name: TL_UNIQUE_KEY
         nullable: true
         sourceColumnReferences:
