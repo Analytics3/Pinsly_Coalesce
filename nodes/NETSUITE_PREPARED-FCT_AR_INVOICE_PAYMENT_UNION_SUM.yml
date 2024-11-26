@@ -4,7 +4,7 @@ name: FCT_AR_INVOICE_PAYMENT_UNION_SUM
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: TRUNCATE {{ ref('NETSUITE_PREPARED', 'FCT_AR_INVOICE_PAYMENT_UNION_SUM') }}
     testsEnabled: true
   database: ""
   deployEnabled: true
