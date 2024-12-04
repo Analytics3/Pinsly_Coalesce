@@ -4,7 +4,7 @@ name: FCT_AR_INVOICE_PAYMENT_UNION_SUM
 operation:
   config:
     postSQL: ""
-    preSQL: TRUNCATE {{ ref('NETSUITE_PREPARED', 'FCT_AR_INVOICE_PAYMENT_UNION_SUM') }}
+    preSQL: ""
     testsEnabled: true
   database: ""
   deployEnabled: true
@@ -403,6 +403,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: ACCOUNT_ID
         nullable: true
         sourceColumnReferences:
@@ -473,6 +474,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: ITEM_ID
         nullable: true
         sourceColumnReferences:
@@ -501,6 +503,7 @@ operation:
         config: {}
         dataType: FLOAT
         description: ""
+        isBusinessKey: true
         name: NETAMOUNT
         nullable: true
         sourceColumnReferences:
@@ -515,6 +518,7 @@ operation:
         config: {}
         dataType: NUMBER(38,0)
         description: ""
+        isBusinessKey: true
         name: SUBSIDIARY_ID
         nullable: true
         sourceColumnReferences:
