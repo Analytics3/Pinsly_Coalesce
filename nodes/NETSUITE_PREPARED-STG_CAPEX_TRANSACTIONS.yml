@@ -637,6 +637,26 @@ operation:
                 stepCounter: "0"
             transform: CONCAT('https://5627172.app.netsuite.com/app/accounting/transactions/',LOWER("STG_TRANSACTION"."TYPE"),'.nl?id=',"STG_TRANSACTION"."ID")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f90e78c2-abb6-4606-a529-56f002dc9958
+          stepCounter: 4f9b7bcf-3b93-469b-a7b7-b2d5a8aa9587
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSLINE_SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dab44d41-1d45-44c9-879c-1676e1f66625
+                stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

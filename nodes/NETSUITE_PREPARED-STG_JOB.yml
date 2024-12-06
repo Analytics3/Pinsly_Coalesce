@@ -1431,6 +1431,26 @@ operation:
               - columnCounter: 2a3b46a5-39e0-4b88-81d3-9b781d0e9f61
                 stepCounter: 2ea18cd6-15c1-48cb-9870-7a0627657292
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a26dc2e3-3977-43b9-bd22-d0ed412bde85
+          stepCounter: 69728e88-069c-4f87-be3d-ac62f15ddb57
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PROJECT_YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: REGEXP_SUBSTR("JOB"."COMPANYNAME", '2\\d{3}')
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
