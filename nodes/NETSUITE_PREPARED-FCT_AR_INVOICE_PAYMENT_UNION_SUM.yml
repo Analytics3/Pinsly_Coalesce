@@ -736,6 +736,26 @@ operation:
                 stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0435fdbc-56c1-4f87-99f8-99187edadf30
+          stepCounter: 8d4bbbed-c8b6-46f2-aef2-4a36e70ac998
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: AGREEMENT_NO
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 85024ced-371a-4c68-bcbb-459b1c4a195c
+                stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
