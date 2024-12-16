@@ -3685,6 +3685,26 @@ operation:
               - columnCounter: f44a5f0b-c064-4000-bed5-2d6d86d2aff3
                 stepCounter: bf350f97-8c86-4984-baac-d434dba8a50b
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf55cc18-8ab4-4f1c-a847-33670769ea21
+          stepCounter: 80ac8310-eaee-4fea-b3b2-368e513f27fc
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSACTION_COLLECTION_NOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d619a9f-ec19-47f1-9007-9e1971346ecf
+                stepCounter: bf350f97-8c86-4984-baac-d434dba8a50b
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

@@ -756,6 +756,26 @@ operation:
                 stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31700d4e-eee4-4d7e-a194-4c7ff984b231
+          stepCounter: 8d4bbbed-c8b6-46f2-aef2-4a36e70ac998
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSACTION_COLLECTION_NOTES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7ff7f20c-744d-4579-a329-12d70687bd4d
+                stepCounter: dac4270e-43e7-424e-9367-a8a86cae37d3
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
