@@ -4779,6 +4779,46 @@ operation:
                 stepCounter: "0"
             transform: "\"NX_SUPERTRIP_PARENT\".\"GROSS_WEIGHT\"/2000"
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1bad8a0-2442-4f91-97e0-1dbb84c450be
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRIP_END_DATE_CONVERTED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_END_DATE", 'YYYYMMDD')
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b496e231-645b-45f2-9d0e-66220863ccac
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRIP_BEGIN_DATE_CONVERTED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_DATE", 'YYYYMMDD')
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
