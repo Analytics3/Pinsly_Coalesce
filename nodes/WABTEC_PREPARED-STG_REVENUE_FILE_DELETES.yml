@@ -1,0 +1,137 @@
+fileVersion: 1
+id: 78e3380a-2770-422c-82a4-129dfecf9c64
+name: STG_REVENUE_FILE_DELETES
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WABTEC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71f331e1-ddee-4afb-8d59-d6a27d64f3f1
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EQUIP_NBR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1576ea57-1a2f-4877-91a8-7cb6a5809979
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9b29bf1-855a-4a83-831c-c4592c2c7204
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DELETE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c38d901-ec59-433d-8d85-06cd08defa2d
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de273aec-1988-46ef-bc99-bcc746424f84
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DELETE_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df7a8a2a-d277-44a9-90bb-d8d00424aae3
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c2d9271-3a17-435e-bf8b-e58175e848a3
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIP_INIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7e7647f-9834-49e9-ac12-b442c766bc7c
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b99466ca-f67e-478c-840d-7e835b5fe68c
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eeade5bb-f360-4a4d-98b8-c8635b852a0a
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a56bb19-69e5-44a6-be4a-3b1789a9c824
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SEQUENCE_NBR_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6bbdc11f-3ac5-404f-a1ff-c72ed389c259
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30197ae4-f52e-4899-a5fe-ee19a328a39f
+          stepCounter: 78e3380a-2770-422c-82a4-129dfecf9c64
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TMS_CONTROL_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9a52cf6-8019-4fc8-9c4c-7273fa6c7431
+                stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WABTEC_RAW
+            nodeName: REVENUE_FILE_DELETES
+        join:
+          joinCondition: FROM {{ ref('WABTEC_RAW', 'REVENUE_FILE_DELETES') }} "REVENUE_FILE_DELETES"
+        name: STG_REVENUE_FILE_DELETES
+        noLinkRefs: []
+  name: STG_REVENUE_FILE_DELETES
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

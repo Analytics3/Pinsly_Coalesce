@@ -1,0 +1,628 @@
+fileVersion: 1
+id: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+name: NX_TRACK_MASTER
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: WABTEC_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e064bdb5-ab6f-476a-950c-5e57fb4a0947
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: RN_ID_KEY
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd56fddd-4c1b-4195-9030-ab86a06783ab
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DATE_MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9deecd03-bd4d-416d-b44a-35d39b8c8490
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_ACTUAL_FEET_OCCUNIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e73d86ff-1e71-47e8-a1f8-9985e93c8bf9
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_ALTERNATE_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f4f2a61-83e3-4ef0-92ba-1377ae3020a4
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_BMS_IND
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b93735f7-cc98-4251-9b7b-dc0568f60698
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_CAR_COUNT_CAPACITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab24477b-7a68-43b9-8f9e-5710e9ef16b4
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_COMPLETION_HOURS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d69c05a-beaf-4b92-9d05-bb9ceaa19a27
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_ID_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 602ad30d-feac-4519-aeb5-9db2e28b9463
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_NOTIFY_HOURS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9089c925-ad56-46af-8598-dda5d08bae12
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_OASIS_IND
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bb457cef-7da8-42be-8e03-0c02056347ad
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_SCALE_TRACK_IND
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c0f4050-c59f-4ce8-b1c3-0cd181dfa581
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_TRACK_LENGTH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ce88cc7-898f-4c67-9697-ea09476bacb9
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_1_CHAR_IND_3
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d9bce11-38f8-4324-adf9-9d4becf0f7fa
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_1_CHAR_IND_4
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ebe099f-0830-4c62-9239-2daae5a0f807
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_1_CHAR_IND_5
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45c91544-b866-4456-bb6a-880e5c0e8a4c
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_1_CHAR_IND_6
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 046de2eb-72bb-4a9f-9cb5-973a0e32ee62
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_1_CHAR_IND_7
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 087b5409-bf34-409a-a3ee-84c14a511b36
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_1_CHAR_IND_8
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c937d2d7-c41b-4c74-8a3e-560576d05823
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_2_BYTE__1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7e75741-e5dd-4f1b-879a-2a046cee131e
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_2_BYTE__2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81cb4e77-026c-41f5-a214-eda48e143afa
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_FIELD_30
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: afe14e08-f4aa-45ab-90ac-9d2ece6e501f
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_NUMBER_5____1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc5b8de4-bbf4-4797-95a7-dc1e97ace185
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_NUMBER_5____2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62d097a1-273c-4c06-9688-27108bab60d4
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_NUMBER_5____3
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c75dcb84-77ab-4035-9031-02e90c8520bc
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LN_UNUSED_NUMBER_5____4
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 150b74be-5823-4090-a81e-87a31fc3d5c8
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LOCATION_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6185785a-0e23-4d24-82cd-4d3c9fba8d89
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LOCATION_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d96648f0-feff-48e9-8fab-04ac39c7d643
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STATION_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c99f1f9c-a63b-48f9-87a1-315d9c4cd50f
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TCC_TRACK_CONDITION_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71958f0e-89d3-4dba-a51e-70a3e08fb97f
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: TIME_MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b15816ea-5edf-46aa-ae3c-7e1e3de4243c
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: USER_ID_MODIFIED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d289e68-9e00-4993-8b60-48bbc3659fe2
+          stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ZN_ID_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_TRACK_MASTER') }}
+  name: NX_TRACK_MASTER
+  schema: ""
+  sqlType: Source
+  table: NX_TRACK_MASTER
+  type: sourceInput
+  version: 1
+type: Node

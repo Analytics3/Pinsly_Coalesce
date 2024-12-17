@@ -1,0 +1,837 @@
+fileVersion: 1
+id: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+name: STG_NX_CUSTOMER_WABTEC
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: customer master, deleted unimportant or unused fields
+  isMultisource: false
+  locationName: WABTEC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9471175-b7ed-43cf-92e5-db637dd11906
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DEMURRAGE_PARENT_ADDR_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7265253-3035-4c08-9165-9e4dc7ce1f19
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."DEMURRAGE_PARENT_ADDR_TYP",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7591f05b-6cac-4abd-a268-f405360febc5
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DEMURRAGE_PARENT_PD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 155814c2-0c27-496d-aaee-afc916389161
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."DEMURRAGE_PARENT_PD_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: af578240-82a7-4bf7-8b10-8021359c079f
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FSAC_CODE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7e7765e9-ab43-4128-a34c-80c20000bb01
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."FSAC_CODE_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0bb64b19-3b69-4ac4-8d6f-84c4c3e0b8f4
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FSAC_ROAD_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36944d0b-af49-4a19-a191-db7ac75f920c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."FSAC_ROAD_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0071112b-13c1-4220-98dd-8c09311bc0ff
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 15b73982-d636-4462-ab36-b1972e8cd9bf
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."FILENAME",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f180c5f6-7fba-46ad-a1ac-7da3af56699e
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MISC_BILLING_PARENT_ADDR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8832736b-746f-4650-9e16-2c67596c8d9c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."MISC_BILLING_PARENT_ADDR",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a20569ec-0211-48db-b84c-1f607817d6af
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MISC_BILLING_PARENT_PD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e1b558b6-feb3-4ebd-a00a-01dc41cb6f1e
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."MISC_BILLING_PARENT_PD_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0af793c-366d-4121-bbad-f37deaeafb75
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_410_EDI_PARTNER_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76b4ba4f-208d-4177-b41f-9628f365b900
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_410_EDI_PARTNER_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fc39ef6-9f22-471b-bf1b-77204818dad8
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_410_VERSION_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad2015cd-3ec3-4326-88a5-74c6e3a6f3f2
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 148e7d9f-726c-42e7-95c1-2c89ef441f90
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ABREV_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5432fb0e-28d6-4f43-b898-c33b514861c8
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ABREV_NAME",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec34902b-a20b-4711-bbc7-bb5e1daa3e2c
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ADDR_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4328acf-ad6a-4864-af79-72a931bb4d58
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ADDR_1",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05a04143-2660-4220-be98-2d70a0114067
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ADDR_2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2816dbd-8eb6-461b-9e1c-164c3590045a
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ADDR_2",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6954cc5f-d87b-429b-9556-c04e2919dd84
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ADDR_TYP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1aaee0af-68c4-4ad1-b91a-de6c405ba112
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ADDR_TYP_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22949f6d-c8ac-4501-a15b-5a8c017fa3bb
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ALTERNATE_PATRON_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c5622e3-0b87-48e3-bc66-0d72f00636d7
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ALTERNATE_PATRON_CD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad9a09b8-849d-43df-bd7f-91fc1609f3e7
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ATTN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9631e0c9-ef01-4795-8a4f-3bae3baed955
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ATTN",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64f259a9-378a-4ac8-baad-3822b6ad233c
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_CIF_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a6ce898-bef5-4a09-8781-75117ffcbba2
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_CIF_NBR",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe9002b2-95b9-4ad9-92de-c4f48f0193d7
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c461f2a8-0177-4aa8-bf30-4ac44aae97e5
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_CITY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3efaf72a-d99e-4ea5-9a30-7a0cf803004c
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_COUNTRY_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0bbcb46-d0b3-4f2c-8650-c1c0f88fdaeb
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_COUNTRY_CD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8e39e4a-85e6-446a-92dd-2ff03c865d4c
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_CREDIT_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93be530a-10bd-4b8e-a1ca-c8029e97e529
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_CREDIT_STATUS",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa7a9af0-03c4-49ee-9a4a-30673982cba5
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_LN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dfd63553-9717-44aa-9a72-e874890ccf27
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_DEFAULT_TRACK_LN_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63a42e55-194d-46c7-95a2-a216307ccbea
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_RN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d692a92-b608-4f22-b6bf-bb6f787a4d52
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_DEFAULT_TRACK_RN_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffbf735b-43a3-4c56-b53a-c8babc9a3409
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_SN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 72bcacd2-6c0d-4e13-b928-946a4b71a1b2
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_DEFAULT_TRACK_SN_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e070ff9a-852c-4c40-9799-07173034e2e9
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_ZN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad9547cb-4932-46ed-a91b-12741238cce0
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_DEFAULT_TRACK_ZN_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2deecd16-6095-432a-b154-53f1d2f7b15e
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_EDI_OUTBOUND_RECEIVER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 37d142c6-01e2-4167-94c5-6e62805f8521
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_EDI_OUTBOUND_RECEIVER",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42add7e1-b367-41a9-ae40-ffea47668603
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_EXCLUDE_FROM_DEMURRAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6af9b1bb-36f5-49ef-ac51-716b69799374
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_EXCLUDE_FROM_DEMURRAGE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b123846-a1a6-4f01-bf2a-f8fcc1390401
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_FB_DETAIL_RATES_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8121f44-3bfc-418c-ad25-0b51815773f5
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_FB_DETAIL_RATES_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0e25f6d-698b-49da-8434-30b4fd151c48
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_FAX_AREA_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aceebabb-f9de-4f84-bc5e-bfa80d9adafd
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59ced35c-351c-4b0a-bd3e-c83329eaccda
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_FAX_PREFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 661190f9-c144-4669-9685-7beaf7bf6149
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c506bba1-2d05-4363-bb22-5124e4a56d68
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_FAX_SUFFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a0d8c84-7382-4e57-953e-4da6917f65a1
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d703028-dad1-40ff-b6c2-aca7ca77f474
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ebe6480b-b2d4-4a39-af0f-357ccfc0c26c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b83decf3-e92e-45fb-be69-02836614d970
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_INCLUDE_PRIVATE_CARS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e4eb390-496d-4afa-b09c-1f29dad94b83
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_INCLUDE_PRIVATE_CARS",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 998df772-ca5a-4070-8e33-f1895ecf70f6
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_LOADING_DEMURRAGE_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e62e22c-a0fc-40a0-b088-50eb98b90b86
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_LOADING_DEMURRAGE_CD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0711a3e6-54e2-4548-8eb7-b0679add83fd
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee8f7d99-2e89-4c3f-be2a-8553c40e124c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_NAME",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac8e0297-8995-4e3a-9c79-01233a2fbf98
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NOTIFICATIONS_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5eec78b3-9425-4eb3-8ac7-8e084d2299a3
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_NOTIFICATIONS_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02e9f903-c180-4b25-b4f7-fcc09bccb5ba
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NOTIFY_AT_INTERCHANGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5728a667-b534-49d6-be52-79a39dcab7d2
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_NOTIFY_AT_INTERCHANGE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 097525a2-8e00-4ff7-bb68-dd3e3ca534c8
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NOTIFY_ON_LOAD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9904657f-013c-4516-adba-19556d74507f
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_NOTIFY_ON_LOAD_EVENT",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 135bd120-13ae-4bb0-a7a0-6ef65363feca
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_PATRON_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cc89f0fe-416c-4a36-8553-1eff27ed5a56
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_PATRON_TYP",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22a5ee66-e1f7-4f6f-ad54-5e7f913cc3e0
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_AREA_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 39d19de4-6cd4-4eb7-a5f0-f3cec28b89bb
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6547d385-599d-44d6-80d9-dcec2728006f
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35aa3ce7-e288-4d09-bdf3-fff9f9978e81
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3fe39f93-ae61-42b3-b616-08d5bd558002
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_PREFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68054d26-7470-4f78-816b-f54cfe887e6b
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3814c4d7-ded5-456a-8e67-75dd98007945
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_SUFFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2cfe6a5-f891-4d79-9346-585f385d0153
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5e41212-75a7-4f39-ad5c-3c7a2f9afb3d
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_POSTAL_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35f5e5da-e28e-4e6c-bff1-f8026355a125
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_POSTAL_CD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4cb60310-e71b-4b74-aee7-911ce8e99fae
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_PRODUCT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 23ae798b-4c30-48a0-a98c-843367e0b65c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_PRODUCT_CODE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a2a6efa-ae45-4b4d-a918-832b05d73de2
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_SERVING_RN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 218a0209-5a2b-4d42-80b2-60017f208402
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_SERVING_RN_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 811b9489-3d88-4867-bafd-87a21cff1564
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_SERVING_SN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fed3f9c-1444-468d-bcb3-ab2e05d20d1c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_SERVING_SN_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c044e26-1c7c-48ee-aa3c-09e628fef649
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_UNLOADING_DEMURRAGE_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7bc75ab6-f0fa-45b2-8c25-73e3f1807d4b
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_UNLOADING_DEMURRAGE_CD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de8d131f-900f-44d6-96a9-77bf60c4dfe1
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_UNUSED_IND_1_BYTE__5
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76e7c18a-e358-442b-ba9e-b877a760991c
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_UNUSED_IND_1_BYTE__5",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e67ab708-5135-4345-8c9d-e2081564fae6
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_UNUSED_IND_2_BYTE__1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0510ec5-9c8c-450f-aeea-3d7d66b9edf4
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PD_UNUSED_IND_2_BYTE__1",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 566e5037-c258-44b7-a6f6-4e872cd0e856
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PARENT_PD_ADDR_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f2fbce2-7c4d-452c-b8f4-c98220dcc0fa
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PARENT_PD_ADDR_TYP",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30fcd98d-1050-4c6e-ac74-6e4ca7059bb4
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PARENT_PD_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35d5ffd2-9430-47db-9fa9-ae8ed7f81cdf
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."PARENT_PD_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a290009d-44e5-42f4-b339-01c1f5d9dd2f
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: REGION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eb61d7e7-7dd3-446b-a6be-e28f720a74d3
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."REGION_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1dccb60e-a002-41d6-a7bf-326d4903b56a
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STR_DATE_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e5cb6de2-1350-4cba-b082-f83e6961d8d1
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbfbc559-b9aa-424b-ac41-ca0098ef3c5b
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STR_TIME_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad9392a0-1050-4b22-8788-ab7187008c8a
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d09cfbf2-8461-4ed8-b2a9-c8b89b3431ec
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STR_USER_ID_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 996c6415-024c-4c03-925f-02d9aed89582
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."STR_USER_ID_MODIFIED",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b4ae5c80-902f-48f2-90be-dfc3b821d29a
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ST_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d69199c3-6518-4d64-aa02-18b6ab30587d
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."ST_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90631c7d-ec45-4622-a9d9-b48035d0e278
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c54a1b9c-6f12-4956-b07a-b9d00bdaf5b3
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."STATION_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c1cf299-cf7b-44eb-8f4f-577a55785ed5
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ZN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 788904b9-5413-47d6-8d13-e509743ecf0a
+                stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
+            transform: NULLIF("NX_CUSTOMER_WABTEC"."ZN_ID_KEY",' ')
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WABTEC_RAW
+            nodeName: NX_CUSTOMER_WABTEC
+        join:
+          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_CUSTOMER_WABTEC') }} "NX_CUSTOMER_WABTEC"
+        name: STG_NX_CUSTOMER_WABTEC
+        noLinkRefs: []
+  name: STG_NX_CUSTOMER_WABTEC
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

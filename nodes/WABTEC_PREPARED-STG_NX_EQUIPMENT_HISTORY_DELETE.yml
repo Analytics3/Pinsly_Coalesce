@@ -1,0 +1,193 @@
+fileVersion: 1
+id: 87224c92-d42a-45ba-a366-b9260a77367f
+name: STG_NX_EQUIPMENT_HISTORY_DELETE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WABTEC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1855119a-222b-42aa-94d7-b1093d75cae6
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EQH_EVENT_DATE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79e7f3d2-ec08-439c-8106-3bbc28460c2d
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 93ba180f-9d5e-4d3c-a5df-6f3d7c2a15c4
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EQH_EVENT_TIME_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1689547a-640a-4f86-bfe4-a5bd5c0fc0a6
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69710d63-536e-4af3-b300-51cf908d28bd
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQH_MOVE_TYP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2910add9-3380-483c-9ffc-3c42ef456fec
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a9525ce-554b-4da1-b329-e3ec74342200
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIPMENT_INITIAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79827601-1e0c-45c5-afc1-216b46d1667e
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 800f4bb6-71f8-4fb1-a59f-1e7f206e4115
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIPMENT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05de76db-12ed-41a4-bcfd-9270691135dd
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4aa173d-1f88-4404-99ca-80295a104cc6
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 183d6601-5a48-4a44-b788-395972be4733
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7eac109-2c6e-4eaf-851b-a41a4fa15ad8
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STR_DATE_ENTERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf1808d6-0fa5-46e6-bb60-4a8ba900957c
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13b111fe-2ddc-4651-aa2a-c7ac27eb56d3
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STR_TIME_ENTERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a194e602-202f-420d-8013-ff3c67e86ad4
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4666b704-c59f-41a2-8d89-7300127abaf7
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WABILL_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c15687e-d305-41e3-80ed-63e749ca8bd7
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e8d4f76-5f73-47d2-8f72-d77c41fb181d
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WAYBILL_CONTROL_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2dc855bb-da74-4018-91cd-aef5c07f6d57
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba12d1ad-f8e1-4fa2-a413-9fe08f23df2c
+          stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WAYBILL_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 44855338-db1b-4582-af0e-b9b19052e192
+                stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WABTEC_RAW
+            nodeName: NX_EQUIPMENT_HISTORY_DELETE
+        join:
+          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_EQUIPMENT_HISTORY_DELETE') }} "NX_EQUIPMENT_HISTORY_DELETE"
+        name: STG_NX_EQUIPMENT_HISTORY_DELETE
+        noLinkRefs: []
+  name: STG_NX_EQUIPMENT_HISTORY_DELETE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
