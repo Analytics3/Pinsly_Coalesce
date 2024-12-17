@@ -4779,33 +4779,6 @@ operation:
                 stepCounter: "0"
             transform: "\"NX_SUPERTRIP_PARENT\".\"GROSS_WEIGHT\"/2000"
         systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 9a259483-209d-4099-99c3-7f046fa0fbec
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: ""
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: KGTM
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: |-
-              CASE 
-                      WHEN "NX_SUPERTRIP_PARENT"."CAR_HIRE_MILES___LOADED" <> 0 THEN (car_hire_miles___loaded * g_tons) / 1000
-                      ELSE 0 
-                  END +
-                  CASE 
-                      WHEN car_hire_miles___empty <> 0 THEN (car_hire_miles___empty * tare_tons) / 1000
-                      ELSE 0
-        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

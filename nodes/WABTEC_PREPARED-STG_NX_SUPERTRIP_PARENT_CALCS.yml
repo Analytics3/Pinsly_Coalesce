@@ -4749,20 +4749,34 @@ operation:
               - columnCounter: 060164cb-d9db-4b94-a9ee-25a8dcc31bb3
                 stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
             transform: ""
-      - appliedColumnTests: {}
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
         columnReference:
-          columnCounter: cc29f34f-aded-4c74-8222-228bdcdf5e79
+          columnCounter: ada5302e-503f-4904-b266-123b6aa752b0
           stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
         config: {}
-        dataType: ""
+        dataType: FLOAT
+        defaultValue: ""
         description: ""
+        keyColumnType: None
         name: KGTM
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 9a259483-209d-4099-99c3-7f046fa0fbec
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE 
+                      WHEN "STG_NX_SUPERTRIP_PARENT"."CAR_HIRE_MILES___LOADED" <> 0 THEN ("STG_NX_SUPERTRIP_PARENT"."CAR_HIRE_MILES___LOADED" * "STG_NX_SUPERTRIP_PARENT"."G_TONS") / 1000
+                      ELSE 0 
+                  END +
+                  CASE 
+                      WHEN "STG_NX_SUPERTRIP_PARENT"."CAR_HIRE_MILES___EMPTY"  <> 0 THEN ("STG_NX_SUPERTRIP_PARENT"."CAR_HIRE_MILES___EMPTY" * "STG_NX_SUPERTRIP_PARENT"."TARE_TONS") / 1000
+                      ELSE 0
+               END
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
