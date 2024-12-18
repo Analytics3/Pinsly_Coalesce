@@ -54,7 +54,9 @@ operation:
         columnReference:
           columnCounter: d4e80692-eeb6-469c-869b-9c2087c4fb15
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: A_S_CODE
@@ -68,7 +70,9 @@ operation:
         columnReference:
           columnCounter: 0f191600-25c8-4dbe-a132-e0c5756ef3c4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: AAR_CAR_TYPE
@@ -82,7 +86,9 @@ operation:
         columnReference:
           columnCounter: e31f51b9-1faf-4abd-81e8-4ca38292e715
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ACCOUNT_REP_CONSIGNEE
@@ -96,7 +102,9 @@ operation:
         columnReference:
           columnCounter: 83070853-3aeb-4322-94e9-63d20a69675b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ACCOUNT_REP_SHIPPER
@@ -110,7 +118,9 @@ operation:
         columnReference:
           columnCounter: 1a05a2e4-2526-4afb-b51f-a3bfb0615b51
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ACCOUNT_REP_THE_CUST
@@ -124,7 +134,9 @@ operation:
         columnReference:
           columnCounter: 1a769e5c-0b74-40eb-95d0-23a3727f9738
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: BAD_ORDER_HOURS
@@ -138,7 +150,9 @@ operation:
         columnReference:
           columnCounter: 0213b8d5-73bb-4d09-bb80-a5cefc5e0ae6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: BAD_ORDER_INDICATOR
@@ -152,7 +166,9 @@ operation:
         columnReference:
           columnCounter: 48cdb996-fdc2-4df7-8658-19640d80638c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: BILL_OF_LADING
@@ -166,7 +182,9 @@ operation:
         columnReference:
           columnCounter: aea1f795-e79c-4ba0-b645-cc666ef89847
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: BLOCK_TO_ADDRESS
@@ -180,7 +198,9 @@ operation:
         columnReference:
           columnCounter: c783f46f-7203-4883-9efb-4764dad034f5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: BLOCK_TO_ID
@@ -194,7 +214,9 @@ operation:
         columnReference:
           columnCounter: 9961900f-9be6-4e21-97b2-9df31f4a8ee5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CHARM_MILEAGE_RATE
@@ -208,7 +230,9 @@ operation:
         columnReference:
           columnCounter: 7a9d563d-0b69-4b45-a0d0-3594f517e6a2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CHARM_PER_DIEM_RATE
@@ -222,7 +246,9 @@ operation:
         columnReference:
           columnCounter: 60575d71-f6e3-4822-85a3-8727ef1fba5e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CHARM_RATE_INDICATOR
@@ -236,7 +262,9 @@ operation:
         columnReference:
           columnCounter: 7d7c77c9-a9f1-48a6-b867-44c184fa0b45
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CAR_HIRE_HOURS
@@ -250,7 +278,9 @@ operation:
         columnReference:
           columnCounter: aebb122c-0dd1-4ba8-a10c-7b388a4a874d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CAR_HIRE_HOURS_AMOUNT
@@ -264,7 +294,9 @@ operation:
         columnReference:
           columnCounter: 5bb278b3-e2c6-4122-8bea-bdb893c17b9f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CAR_HIRE_IMPORT_INDICATOR
@@ -278,7 +310,9 @@ operation:
         columnReference:
           columnCounter: a993303e-e2a4-4303-8136-7bf5c8bafe16
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CAR_HIRE_INDICATOR
@@ -292,7 +326,9 @@ operation:
         columnReference:
           columnCounter: c4b66075-0f7b-44ae-87e6-70051c6d7b41
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CAR_HIRE_MILES___EMPTY
@@ -306,7 +342,9 @@ operation:
         columnReference:
           columnCounter: c95ffee6-374e-4221-94a5-957a87967492
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CAR_HIRE_MILES___LOADED
@@ -320,7 +358,9 @@ operation:
         columnReference:
           columnCounter: 567f08f8-249b-49e6-a902-27f1dded4ecd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CAR_HIRE_MILES_AMOUNT___EMPTY
@@ -334,7 +374,9 @@ operation:
         columnReference:
           columnCounter: 7b5cee75-b6f6-41f6-a47a-38016c42cb91
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CAR_HIRE_MILES_AMOUNT___LOADED
@@ -348,7 +390,9 @@ operation:
         columnReference:
           columnCounter: 35739b70-7594-44c2-9581-4ccd3ab98755
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CAR_HIRE_OWNER
@@ -362,7 +406,9 @@ operation:
         columnReference:
           columnCounter: e5185649-9664-4fa4-a504-be842e08574f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CAR_HIRE_RECLAIM_CODE
@@ -376,7 +422,9 @@ operation:
         columnReference:
           columnCounter: 82a8b91b-2543-40b8-b038-011098444859
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CAR_HIRE_RECLAIM_HOURS
@@ -390,7 +438,9 @@ operation:
         columnReference:
           columnCounter: e54ecc96-ca37-4028-be34-7ab616ac3a69
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CAR_HIRE_RECLAIM_HOURS_AMOUNT
@@ -404,7 +454,9 @@ operation:
         columnReference:
           columnCounter: 674bc22a-e2df-47ba-971f-a8c6f66d783b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CAR_HIRE_RECLAIM_MILES
@@ -418,7 +470,9 @@ operation:
         columnReference:
           columnCounter: ff41e297-52f9-4201-8e60-0f2f1582b5f8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CAR_HIRE_RECLAIM_MILES_AMOUNT
@@ -432,7 +486,9 @@ operation:
         columnReference:
           columnCounter: 3d7602c5-b05b-4423-80dd-9247edd57d6b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CAR_HIRE_SOURCE
@@ -446,7 +502,9 @@ operation:
         columnReference:
           columnCounter: 04ef3a5b-de18-4077-84fb-831d63cb7b95
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CAR_OWNER
@@ -460,7 +518,9 @@ operation:
         columnReference:
           columnCounter: dc57d05d-5eee-41c1-be6b-6b10f647d9f7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: COMMODITY_DESCRIPTION
@@ -474,7 +534,9 @@ operation:
         columnReference:
           columnCounter: 30a247c5-a623-48c0-aab3-903ce7c58871
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: COMPLETE_TIME
@@ -488,7 +550,9 @@ operation:
         columnReference:
           columnCounter: 4ff08edd-7144-4a18-95a7-3d42232fc756
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONSIGNEE_ADDRESS
@@ -502,7 +566,9 @@ operation:
         columnReference:
           columnCounter: 8678c969-552f-44f1-a680-877838ca8d59
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONSIGNEE_ID
@@ -516,7 +582,9 @@ operation:
         columnReference:
           columnCounter: eff6b6b4-32f6-4c6a-9d11-143b6cd2a529
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONSIGNEE_NAME
@@ -530,7 +598,9 @@ operation:
         columnReference:
           columnCounter: 1bc8b69e-12c0-4d19-8cf9-50994b7c2d02
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONSIGNEE_PARENT_ADDRESS
@@ -544,7 +614,9 @@ operation:
         columnReference:
           columnCounter: ab6b4da0-c079-4085-b00b-84520be2e65f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONSIGNEE_PARENT_ID
@@ -558,7 +630,9 @@ operation:
         columnReference:
           columnCounter: 5dde8ccb-12ab-4b98-8c57-0ad87313c1ef
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CONST_PLACE_DATE
@@ -572,7 +646,9 @@ operation:
         columnReference:
           columnCounter: fb82ce96-1659-489d-ac6e-b3ca6a066e7f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: CONST_PLACE_TIME
@@ -586,7 +662,9 @@ operation:
         columnReference:
           columnCounter: 1aa7a5d1-a12e-44fb-a633-c968f87c2519
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONSTRUCTIVE_PLACE_SEGMENT
@@ -600,7 +678,9 @@ operation:
         columnReference:
           columnCounter: a92c068c-d27e-4c67-b331-1c8a471665e1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONTROLLING_ROAD
@@ -614,7 +694,9 @@ operation:
         columnReference:
           columnCounter: 0f227420-030d-4159-986d-71673ee5fc84
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: CONVERSION_PERCENT
@@ -628,7 +710,9 @@ operation:
         columnReference:
           columnCounter: df870317-d372-4e4f-b409-1970c5f07d19
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONVEYING_CONTROL_NUMBER
@@ -642,7 +726,9 @@ operation:
         columnReference:
           columnCounter: fde80614-c185-4ea1-bbcf-bef8422d5caa
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONVEYING_EQUIPMENT_NUMBER
@@ -656,7 +742,9 @@ operation:
         columnReference:
           columnCounter: b56b459d-753a-4626-a200-9ad25fada9c3
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: CONVEYING_EQUIPMENTMENT_INITIAL
@@ -670,7 +758,9 @@ operation:
         columnReference:
           columnCounter: d62f618c-7aa6-437d-8475-3b8b956b6847
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DATE_MODIFIED
@@ -684,7 +774,9 @@ operation:
         columnReference:
           columnCounter: a56fdf1e-f745-4521-a9c7-70fb16cdca4d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DELIVERY_SWITCH_INDICATOR
@@ -698,7 +790,9 @@ operation:
         columnReference:
           columnCounter: 0ce41414-e439-42f7-9e5b-81df1d7ca802
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: DEMURRAGE_BILL_AMOUNT
@@ -712,7 +806,9 @@ operation:
         columnReference:
           columnCounter: ff8e903b-c3c5-47c6-8bca-a041e759e121
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: DEMURRAGE_CANCELABLE_DEBITS
@@ -726,7 +822,9 @@ operation:
         columnReference:
           columnCounter: d5dbdb25-b0eb-4ddb-a60a-79e72a1772e6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DEMURRAGE_CODE
@@ -740,7 +838,9 @@ operation:
         columnReference:
           columnCounter: 561a5a9a-219b-47b9-beb5-d554f45ed96b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DEMURRAGE_CURRENCY_CODE
@@ -754,7 +854,9 @@ operation:
         columnReference:
           columnCounter: d7140e52-ae06-4197-8343-2ce6491e9b7c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: DEMURRAGE_EARNED_CREDITS
@@ -768,7 +870,9 @@ operation:
         columnReference:
           columnCounter: 027a72a0-4a18-4143-a137-3ee7d76e2c3f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: DEMURRAGE_NON_CANCELABLE_DEBITS
@@ -782,7 +886,9 @@ operation:
         columnReference:
           columnCounter: 0dfd83ae-4972-4e63-880c-69c3f3006f7d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DEMURRAGE_PARTY_ADDRESSESS_TYPE
@@ -796,7 +902,9 @@ operation:
         columnReference:
           columnCounter: a21cf9b6-62c1-4215-b54d-3bd3e6ad15a5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DEMURRAGE_PARTY_ID
@@ -810,7 +918,9 @@ operation:
         columnReference:
           columnCounter: 54206ba3-3fcb-4aba-a135-79dfbd77010d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DEMURRAGE_SOURCE
@@ -824,7 +934,9 @@ operation:
         columnReference:
           columnCounter: 7e2d38f2-f294-4f82-84cd-023ca6d322bc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DEMURRAGE_TYPE
@@ -838,7 +950,9 @@ operation:
         columnReference:
           columnCounter: 957d443c-e7f8-41b6-ae10-c92ecb5014bf
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DESTINATION_FSAC
@@ -852,7 +966,9 @@ operation:
         columnReference:
           columnCounter: 32b6bdbd-b7c4-4d92-8cd1-0f5701829c39
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DESTINATION_ROAD
@@ -866,7 +982,9 @@ operation:
         columnReference:
           columnCounter: 7d267055-1d38-4ade-b4b1-4da50994da78
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DESTINATION_STATE
@@ -880,7 +998,9 @@ operation:
         columnReference:
           columnCounter: b8e61705-d113-45a1-a3ed-5e23f9fc21da
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: DESTINATION_STATION
@@ -894,7 +1014,9 @@ operation:
         columnReference:
           columnCounter: 857b12d2-f7ba-4294-9514-be148c5ef489
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: EMPTY_MILES
@@ -908,7 +1030,9 @@ operation:
         columnReference:
           columnCounter: dca16257-4e95-4ee5-a351-ba97149ce3cc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EMPTY_MILES_CODE
@@ -922,7 +1046,9 @@ operation:
         columnReference:
           columnCounter: 848aa4b3-4598-4d20-b389-1479831a40fc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: EMPTY_RAILROAD_TIME
@@ -936,7 +1062,9 @@ operation:
         columnReference:
           columnCounter: 105c06d4-680f-4ab5-982d-951f38c741bd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EMPTY_TRAIN_CONTROL_NUMBER
@@ -950,7 +1078,9 @@ operation:
         columnReference:
           columnCounter: 62e4ee88-5bc9-4b8d-8f54-9785e8ebfabe
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EMPTY_TRAIN_ID
@@ -964,7 +1094,9 @@ operation:
         columnReference:
           columnCounter: cda997a3-b3fa-4886-89b0-e329d906aa10
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ENTRY_DATE_NUM
@@ -978,7 +1110,9 @@ operation:
         columnReference:
           columnCounter: afa851b4-2d1d-4dbc-8210-23da612e5938
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ENTRY_TIME_NUM
@@ -992,7 +1126,9 @@ operation:
         columnReference:
           columnCounter: e9c5e0c8-6597-4634-bb12-ac25569877c2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ENTRY_USER_ID
@@ -1006,7 +1142,9 @@ operation:
         columnReference:
           columnCounter: b72f9c96-b439-42f3-b34d-3372b56ef6dd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: EQUIPMENT_LENGTH
@@ -1020,7 +1158,9 @@ operation:
         columnReference:
           columnCounter: 9c99d06e-ec19-4d94-b71c-dca4bde28572
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EQUIPMENTMENT_DESCRIPTION_CODE
@@ -1034,7 +1174,9 @@ operation:
         columnReference:
           columnCounter: a4b999a0-0061-443a-8aa2-95ff214fd273
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EQUIPMENTMENT_INDICATOR
@@ -1048,7 +1190,9 @@ operation:
         columnReference:
           columnCounter: 7a434d6d-3aa0-45ef-a1e7-65807e75ccf9
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EQUIPMENTMENT_INITIAL
@@ -1062,7 +1206,9 @@ operation:
         columnReference:
           columnCounter: 037debdd-cf83-44fc-84d3-d2a6e57c4a0a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: EQUIPMENTMENT_NUMBER
@@ -1076,7 +1222,9 @@ operation:
         columnReference:
           columnCounter: 170ad492-69d7-4468-98ad-88b11b515746
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FILENAME
@@ -1090,7 +1238,9 @@ operation:
         columnReference:
           columnCounter: 5c42c575-558c-4762-82fb-b840cbad23dd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FLEET_NAME
@@ -1104,7 +1254,9 @@ operation:
         columnReference:
           columnCounter: d16ff5f1-20b1-45b9-a50c-6bf67f596b09
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: FREIGHT
@@ -1118,7 +1270,9 @@ operation:
         columnReference:
           columnCounter: 0511ed3e-6bdd-46e5-9a70-c897e76361a1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FREIGHT_BILL_ADDRESS
@@ -1132,7 +1286,9 @@ operation:
         columnReference:
           columnCounter: 6b810f1e-2ca5-4d8a-81c2-982aaebd87fc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FREIGHT_BILL_ID
@@ -1146,7 +1302,9 @@ operation:
         columnReference:
           columnCounter: fbc47ff4-1791-4696-8eea-97508716657a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FREIGHT_BILL_NAME
@@ -1160,7 +1318,9 @@ operation:
         columnReference:
           columnCounter: 804a23ac-d349-4e68-8160-0a317908ba81
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FREIGHT_BILL_PARENT_ADDRESS
@@ -1174,7 +1334,9 @@ operation:
         columnReference:
           columnCounter: 5890af11-579c-4387-b73a-b6843cf6ab75
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FREIGHT_BILL_PARENT_ID
@@ -1188,7 +1350,9 @@ operation:
         columnReference:
           columnCounter: d2bbb26f-7d89-46df-9ad0-582b235a8c29
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: FROM_ROAD
@@ -1202,7 +1366,9 @@ operation:
         columnReference:
           columnCounter: 725c11fe-5fde-4b33-807e-417faef9f64d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: GROSS_WEIGHT
@@ -1216,7 +1382,9 @@ operation:
         columnReference:
           columnCounter: 82a5dfa3-ef13-48b2-908f-af940e76b2a5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: HAULAGE_ROAD
@@ -1230,7 +1398,9 @@ operation:
         columnReference:
           columnCounter: 52863493-0064-4c95-9251-9b9c726f9732
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: HITCH_COUNT
@@ -1244,7 +1414,9 @@ operation:
         columnReference:
           columnCounter: 76d76e6b-2600-431b-9e31-dcec23350696
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: HOURLY_LEASE_RATE
@@ -1258,7 +1430,9 @@ operation:
         columnReference:
           columnCounter: 7bea1861-9258-4cda-8321-f068c1a34ec4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: HOURS_AT_CUSTOMER
@@ -1272,7 +1446,9 @@ operation:
         columnReference:
           columnCounter: e2fb5ca1-79f2-41cd-828c-75f3a3f6f8c2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: HUMP_COUNT
@@ -1286,7 +1462,9 @@ operation:
         columnReference:
           columnCounter: 94ecad0e-54ff-4273-88a3-d0bb1ba28b4a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ICHH
@@ -1300,7 +1478,9 @@ operation:
         columnReference:
           columnCounter: 08dc2dbe-36de-4223-aaa3-5e811de57840
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ISS_CURRENCY_CODE
@@ -1314,7 +1494,9 @@ operation:
         columnReference:
           columnCounter: 283957ef-9007-4e6c-8450-dd260c9c5b37
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: IN_CARE_OF_ADDRESS
@@ -1328,7 +1510,9 @@ operation:
         columnReference:
           columnCounter: 3ee8db96-e8c9-41a8-87b9-df1a8cc2662d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: IN_CARE_OF_ID
@@ -1342,7 +1526,9 @@ operation:
         columnReference:
           columnCounter: b3356964-5456-4b59-b98d-76650ac7dcd3
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: IN_CARE_OF_PARENT_ADD
@@ -1356,7 +1542,9 @@ operation:
         columnReference:
           columnCounter: f178d798-b276-4ec5-b223-bd0a8db5917e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: IN_CARE_OF_PARENT_ID
@@ -1370,7 +1558,9 @@ operation:
         columnReference:
           columnCounter: ec9986f6-7f3e-472b-83a5-c6bca2a5c426
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: IN_CARE_OF_NAME
@@ -1384,7 +1574,9 @@ operation:
         columnReference:
           columnCounter: 14aeb82e-d1f0-40d9-a3ca-f5651f480cb6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: INBOUND_TRANSIT_HOURS
@@ -1398,7 +1590,9 @@ operation:
         columnReference:
           columnCounter: 6b4ef64c-0e27-4639-8a2a-f0f86e9033ea
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: INTERCHANGE_DATE
@@ -1412,7 +1606,9 @@ operation:
         columnReference:
           columnCounter: 7c91af6e-165f-48b9-8952-d808d9339d11
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: INTO_BAD_ORDER_DATE
@@ -1426,7 +1622,9 @@ operation:
         columnReference:
           columnCounter: 628a1974-067c-42b0-a3ac-99e264ebff34
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: INTO_BAD_ORDER_TIME
@@ -1440,7 +1638,9 @@ operation:
         columnReference:
           columnCounter: a7333bd6-2ca3-4726-b9b0-d05b1855181c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: INTO_STORAGE_DATE
@@ -1454,7 +1654,9 @@ operation:
         columnReference:
           columnCounter: 85b1859e-a8d4-4941-821d-95d09dd27c87
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: INTO_STORAGE_TIME
@@ -1468,7 +1670,9 @@ operation:
         columnReference:
           columnCounter: 99a7f625-750d-4bd9-8bbf-e9832aa820f0
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ITEM_NUMBER
@@ -1482,7 +1686,9 @@ operation:
         columnReference:
           columnCounter: 45cb904a-6223-42d4-930b-7399a4dd9993
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: JOB_SOURCE
@@ -1496,7 +1702,9 @@ operation:
         columnReference:
           columnCounter: 37356458-a17c-461f-99da-3112da39f8af
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: LEASE_COST_PER_TRIP
@@ -1510,7 +1718,9 @@ operation:
         columnReference:
           columnCounter: aa4ca2b9-ff2b-4ab4-bbcb-04f61ab10f02
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LEASE_TYPE
@@ -1524,7 +1734,9 @@ operation:
         columnReference:
           columnCounter: 05e603cb-4f46-4993-91d1-3c11e502411e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LESSOR_ADDRESS_TYPE
@@ -1538,7 +1750,9 @@ operation:
         columnReference:
           columnCounter: baa9e769-d751-407b-bd9b-c53eb8564284
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LESSOR_PD_ID
@@ -1552,7 +1766,9 @@ operation:
         columnReference:
           columnCounter: 7efb05b7-1d94-4a62-9931-d0f1600b8477
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: LOADED_MILES
@@ -1566,7 +1782,9 @@ operation:
         columnReference:
           columnCounter: c512bda2-b335-47b4-92c9-1c6a46235382
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LOADED_MILES_CODE
@@ -1580,7 +1798,9 @@ operation:
         columnReference:
           columnCounter: ecbedeff-6c34-485e-886c-4286c24ddc19
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LOADED_TRAIN_CONTROL_NUMBER
@@ -1594,7 +1814,9 @@ operation:
         columnReference:
           columnCounter: 46ba0044-6a14-45ce-9d1e-05dd4de74d81
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LOADED_TRAIN_ID
@@ -1608,7 +1830,9 @@ operation:
         columnReference:
           columnCounter: d47f728e-871c-4383-bfc8-fc4190012a30
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: LOADED_WAYBILL_MILES
@@ -1622,7 +1846,9 @@ operation:
         columnReference:
           columnCounter: 3655ae5a-c31a-4424-af3d-43e5f0adf333
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: LOCK_SUPERTRIP_RECORD
@@ -1636,7 +1862,9 @@ operation:
         columnReference:
           columnCounter: ac5b465a-3651-4fef-90ea-e2218f92671a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: MCREW_TRANSACTION_FLAG
@@ -1650,7 +1878,9 @@ operation:
         columnReference:
           columnCounter: f7f5fbeb-600c-4f32-bad4-692857ea4fa8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: METHOD_OF_PAYMENT
@@ -1664,7 +1894,9 @@ operation:
         columnReference:
           columnCounter: dda485e5-5626-4f24-8f92-e093b837e27e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: MONTHLY_LEASE_RATE
@@ -1678,7 +1910,9 @@ operation:
         columnReference:
           columnCounter: 766b2151-0325-461f-96dd-3835a9cf0f4e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: MULTI_CAR_INDICATOR
@@ -1692,7 +1926,9 @@ operation:
         columnReference:
           columnCounter: 22cb9d12-1800-4668-9971-f2f986f94d34
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: NET_FREIGHT_REVENUE_CURRENCY
@@ -1706,7 +1942,9 @@ operation:
         columnReference:
           columnCounter: f4d1acf6-dc86-41aa-9ea4-1822b782684c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: NET_WEIGHT
@@ -1720,7 +1958,9 @@ operation:
         columnReference:
           columnCounter: 2024bf4f-08a8-4881-825e-d729166b31b3
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: NOTIFY_PARTY_ADDRESS
@@ -1734,7 +1974,9 @@ operation:
         columnReference:
           columnCounter: 88f5460c-d459-40f9-8cd0-4a5f628f9b79
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: NOTIFY_PARTY_ID
@@ -1748,7 +1990,9 @@ operation:
         columnReference:
           columnCounter: 0fb79a09-b909-4151-9645-a586c704e7c2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: NOTIFY_PARTY_NAME
@@ -1762,7 +2006,9 @@ operation:
         columnReference:
           columnCounter: cc3d0f92-7ab4-40f1-a8a2-8972f608d94f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: NOTIFY_PARTY_PARENT_ADD
@@ -1776,7 +2022,9 @@ operation:
         columnReference:
           columnCounter: fe9ad1cb-74fc-4cb2-b101-69a9a590a7e7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: NOTIFY_PARTY_PARENT_ID
@@ -1790,7 +2038,9 @@ operation:
         columnReference:
           columnCounter: 84f17264-5b68-417b-87b5-58dfdf5972cc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: NUMBER_OF_CARS
@@ -1804,7 +2054,9 @@ operation:
         columnReference:
           columnCounter: f6f1c444-94fe-4133-90c4-64ff0da4140b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: OFFLINE_EARNINGS
@@ -1818,7 +2070,9 @@ operation:
         columnReference:
           columnCounter: d3c22437-ea41-4147-a530-6a02aebfbdf5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: OFFLINE_RATE
@@ -1832,7 +2086,9 @@ operation:
         columnReference:
           columnCounter: c9dc364c-ee0b-4b4e-a94d-e52f21072e69
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: OFFLINE_TRIP_COMPLETE_INDICATOR
@@ -1846,7 +2102,9 @@ operation:
         columnReference:
           columnCounter: 79f3d3d2-ccb2-4cec-8400-3b5671ee5b08
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: OFFLINE_TRIP_END_DATE
@@ -1860,7 +2118,9 @@ operation:
         columnReference:
           columnCounter: 51ab5b82-78fa-4369-a8e0-e94a4b895e7b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: OFFLINE_TRIP_END_TIME
@@ -1874,7 +2134,9 @@ operation:
         columnReference:
           columnCounter: 38511fc1-e2eb-4663-ae28-33b6055b6c4c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ONLINE_SEGMENT_1
@@ -1888,7 +2150,9 @@ operation:
         columnReference:
           columnCounter: c3702544-d452-4abc-93dd-624e8fcc8836
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ONLINE_SEGMENT_2
@@ -1902,7 +2166,9 @@ operation:
         columnReference:
           columnCounter: 6357114a-e4ba-4acd-8901-77a70cff7de6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ONLINE_SEGMENT_3
@@ -1916,7 +2182,9 @@ operation:
         columnReference:
           columnCounter: e678e862-2526-4361-963b-9302d78ef10b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: ONLINE_TRANSIT_HOURS
@@ -1930,7 +2198,9 @@ operation:
         columnReference:
           columnCounter: 2dc382e5-8512-421c-8289-149bd8a309d1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ORIGIN_FSAC
@@ -1944,7 +2214,9 @@ operation:
         columnReference:
           columnCounter: ea5f7ef4-0089-4ae8-8358-f6879ea96cee
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ORIGIN_ROAD
@@ -1958,7 +2230,9 @@ operation:
         columnReference:
           columnCounter: ade65d55-7dc3-4354-bb6e-857d39b05af8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ORIGIN_STATE
@@ -1972,7 +2246,9 @@ operation:
         columnReference:
           columnCounter: bea4dc88-51a6-4341-a2cb-5d6b5b416ec6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ORIGIN_STATION
@@ -1986,7 +2262,9 @@ operation:
         columnReference:
           columnCounter: ea047fd7-406a-45da-a9b3-50cbba0ed768
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ORIGIN_SWITCH_INDICATOR
@@ -2000,7 +2278,9 @@ operation:
         columnReference:
           columnCounter: 4f3e7732-18e5-40c6-a20f-99a23d56d369
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: OTHER_CURRENCY_CODE
@@ -2014,7 +2294,9 @@ operation:
         columnReference:
           columnCounter: 49243b39-98de-4dfd-85ae-27ebd1f78eff
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: OUR_PROPORTION
@@ -2028,7 +2310,9 @@ operation:
         columnReference:
           columnCounter: 5a85f5ef-faff-4163-a534-59994c5a9e19
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: OUR_PROPORTION_SOURCE
@@ -2042,7 +2326,9 @@ operation:
         columnReference:
           columnCounter: 8d2254fa-7aa4-4121-912a-1599f34d7e16
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: OUT_OF_BAD_ORDER_DATE
@@ -2056,7 +2342,9 @@ operation:
         columnReference:
           columnCounter: 65cafb58-03c6-492f-807a-643a0e5fe051
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: OUT_OF_BAD_ORDER_TIME
@@ -2070,7 +2358,9 @@ operation:
         columnReference:
           columnCounter: 2b67a795-7975-4934-88f9-19ad7e3496b8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: OUT_OF_STORAGE_DATE
@@ -2084,7 +2374,9 @@ operation:
         columnReference:
           columnCounter: 0c0b8ca3-72f1-4e30-bbb3-c3cd92f5fc21
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: OUT_OF_STORAGE_TIME
@@ -2098,7 +2390,9 @@ operation:
         columnReference:
           columnCounter: 73f67f7f-4c1f-4031-aa28-797d97cdb2c8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PFPS
@@ -2112,7 +2406,9 @@ operation:
         columnReference:
           columnCounter: 01bbd429-3ae7-4c57-b9ed-d21b2875ab71
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: PAYABLE_CHARGES
@@ -2126,7 +2422,9 @@ operation:
         columnReference:
           columnCounter: e7052219-154b-4c4c-92ae-e6345dea5e45
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PAYABLE_CHARGES_CURRENCY
@@ -2140,7 +2438,9 @@ operation:
         columnReference:
           columnCounter: 2ec8cefe-8257-4b66-b3bb-34bea1443a1a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: PICKUP_TIME
@@ -2154,7 +2454,9 @@ operation:
         columnReference:
           columnCounter: 39d5cd4d-5de2-4f0d-9ebf-676ee556174f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PLACEMENT_DATE
@@ -2168,7 +2470,9 @@ operation:
         columnReference:
           columnCounter: ac2cba83-fab1-4de2-9cca-8ff4e1231a33
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PLACEMENT_L_E_STATUS
@@ -2182,7 +2486,9 @@ operation:
         columnReference:
           columnCounter: 85658532-4ca4-43bb-bc68-a74d4478da4e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PLACEMENT_LOCATION
@@ -2196,7 +2502,9 @@ operation:
         columnReference:
           columnCounter: 49ac77fd-985e-41d3-8c49-86fe1abcc6a5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PLACEMENT_MOVE_TYPE
@@ -2210,7 +2518,9 @@ operation:
         columnReference:
           columnCounter: ed418f97-e787-429e-b7af-a5cbc4eead68
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PLACEMENT_STATION
@@ -2224,7 +2534,9 @@ operation:
         columnReference:
           columnCounter: 08dc508b-fd30-4d00-9a5b-024ad002df33
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: PLACEMENT_TIME
@@ -2238,7 +2550,9 @@ operation:
         columnReference:
           columnCounter: e6554220-0d24-4638-b2cc-02a533a11a2f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: POOL_NUMBER
@@ -2252,7 +2566,9 @@ operation:
         columnReference:
           columnCounter: 0056499b-e78e-4fef-acc8-a858f99246a1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PREVIOUS_TRIP_UNIQUE_TRIP_NUMBER_KEY
@@ -2266,7 +2582,9 @@ operation:
         columnReference:
           columnCounter: 864d9c96-0c6d-4926-aace-d8c4a06e5310
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PRICE_AUTH_AGENCY_CODE
@@ -2280,7 +2598,9 @@ operation:
         columnReference:
           columnCounter: 7d8b9b92-30f3-4840-b548-f864ebe659db
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PRICE_AUTHORITY
@@ -2294,7 +2614,9 @@ operation:
         columnReference:
           columnCounter: cfb3603b-a76c-4447-81d1-e770b62cd196
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PRICE_AUTHORITY_INDICATOR
@@ -2308,7 +2630,9 @@ operation:
         columnReference:
           columnCounter: d9f6ffe4-d612-44f5-b171-8799106b892a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PRICE_AUTHORITY_NUMBER
@@ -2322,7 +2646,9 @@ operation:
         columnReference:
           columnCounter: 3a9af41f-b63c-4ce4-888a-8b6d0faa10b5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PRIORITY_CODE
@@ -2336,7 +2662,9 @@ operation:
         columnReference:
           columnCounter: 046000fa-bcdb-472b-b5f5-62e8b456cace
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: PRODUCT_GROUP_CODE
@@ -2350,7 +2678,9 @@ operation:
         columnReference:
           columnCounter: 1b8abd57-54b1-48b2-b704-4a75b63ea97a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: RMS_ENS_AMOUNT
@@ -2364,7 +2694,9 @@ operation:
         columnReference:
           columnCounter: 15f9fd17-7b54-4736-8e93-823f7c3b9f92
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RMS_ENS_AMOUNT_CURRENCY
@@ -2378,7 +2710,9 @@ operation:
         columnReference:
           columnCounter: fa134a43-12ae-49eb-884f-1a821ea97852
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: RMS_ENS_PAYABLES_AMOUNT
@@ -2392,7 +2726,9 @@ operation:
         columnReference:
           columnCounter: 8eb61e76-e8e1-42a0-a117-83b99c594005
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RMS_ENS_PAYBL_AMOUNT_CURRENCY
@@ -2406,7 +2742,9 @@ operation:
         columnReference:
           columnCounter: 280a11bc-a1b7-4bc1-af4f-f9be3fdd6bb8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RMS_ENS_ROAD
@@ -2420,7 +2758,9 @@ operation:
         columnReference:
           columnCounter: a1e04d18-5970-479b-9487-0d8abe08af32
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: RMS_OTHER_CHARGES
@@ -2434,7 +2774,9 @@ operation:
         columnReference:
           columnCounter: 17f06d82-5ba6-4768-9a1a-edcbf3fce4dc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RMS_OTHER_CHARGES_CURRENCY
@@ -2448,7 +2790,9 @@ operation:
         columnReference:
           columnCounter: 5eb21255-fb67-4e33-8103-b82f69e5262b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: RMS_PAYABLES_AMOUNT
@@ -2462,7 +2806,9 @@ operation:
         columnReference:
           columnCounter: b33c5a63-16a7-4b42-9f74-d39fc131fc00
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RMS_PAYABLES_AMOUNT_CURRENCY
@@ -2476,7 +2822,9 @@ operation:
         columnReference:
           columnCounter: 0e34d22b-7fe2-4db4-924e-26fa90af9d68
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: RR_HOURS
@@ -2490,7 +2838,9 @@ operation:
         columnReference:
           columnCounter: ae45ceac-57bc-4913-89bb-875ed606c365
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: RR_OUTBOUND_TIME
@@ -2504,7 +2854,9 @@ operation:
         columnReference:
           columnCounter: 1f7a6bb8-c30b-45b2-af43-74706175a507
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RWC_ID
@@ -2518,7 +2870,9 @@ operation:
         columnReference:
           columnCounter: 71cacfce-3195-4135-ad82-615f7f6f7065
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: RELEASE_CONSTRUCTIVE_PLACE_DATE
@@ -2532,7 +2886,9 @@ operation:
         columnReference:
           columnCounter: f1afd685-da0b-4171-b63b-93782ed9fcd7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RELEASE_CONSTRUCTIVE_PLACE_SEGMENT
@@ -2546,7 +2902,9 @@ operation:
         columnReference:
           columnCounter: a1f426cb-6646-4e26-bd53-a585e6e1810e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: RELEASE_CONSTRUCTIVE_PLACE_TIME
@@ -2560,7 +2918,9 @@ operation:
         columnReference:
           columnCounter: 6a83c90f-ba1a-4039-aa2a-01d8f8378f33
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RELEASE_DATE
@@ -2574,7 +2934,9 @@ operation:
         columnReference:
           columnCounter: a49a7dd9-333f-4ff8-a6fa-00727113cff0
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RELEASE_L_E_STATUS
@@ -2588,7 +2950,9 @@ operation:
         columnReference:
           columnCounter: 180abb4f-e5b5-4404-b33c-f7b31504940f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RELEASE_LOCATION
@@ -2602,7 +2966,9 @@ operation:
         columnReference:
           columnCounter: 34418068-605e-43b4-830f-cf4a1f73305c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RELEASE_MOVE_TYPE
@@ -2616,7 +2982,9 @@ operation:
         columnReference:
           columnCounter: b1cd0850-f081-4eda-a71d-09d4881d6864
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: RELEASE_STATION
@@ -2630,7 +2998,9 @@ operation:
         columnReference:
           columnCounter: 02671a7a-4745-46c2-96ea-e5b743d1d246
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: RELEASE_TIME
@@ -2644,7 +3014,9 @@ operation:
         columnReference:
           columnCounter: e855e091-5233-4943-a030-82ca4f1b13f7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: REVENUE_DATE
@@ -2658,7 +3030,9 @@ operation:
         columnReference:
           columnCounter: 6bd87e96-283a-4291-9e6e-cf483bc0812e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: REVENUE_TYPE
@@ -2672,7 +3046,9 @@ operation:
         columnReference:
           columnCounter: 06c2728e-41c1-4cf4-bf17-9d6ec454d671
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_01
@@ -2686,7 +3062,9 @@ operation:
         columnReference:
           columnCounter: 924a867a-7a57-4600-bb59-49eb7010e2c6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_02
@@ -2700,7 +3078,9 @@ operation:
         columnReference:
           columnCounter: 60d8a07a-caa9-47bb-937c-b81b2ddd50d1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_03
@@ -2714,7 +3094,9 @@ operation:
         columnReference:
           columnCounter: 34cb6a7e-fb21-4764-999f-3700621dda24
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_04
@@ -2728,7 +3110,9 @@ operation:
         columnReference:
           columnCounter: a293c233-6c5d-4ba5-9013-627ac57d667f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_05
@@ -2742,7 +3126,9 @@ operation:
         columnReference:
           columnCounter: 5e3c7b43-7b8c-4d67-a17a-9e7506ee7b82
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_06
@@ -2756,7 +3142,9 @@ operation:
         columnReference:
           columnCounter: 0b90a016-9bda-42de-b8d6-dd4533c799e1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_07
@@ -2770,7 +3158,9 @@ operation:
         columnReference:
           columnCounter: f09538a7-b8ee-430f-a2ca-67ddbb76fec6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_08
@@ -2784,7 +3174,9 @@ operation:
         columnReference:
           columnCounter: 3abc1611-690d-4b0d-adae-0b9336cb78a1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_09
@@ -2798,7 +3190,9 @@ operation:
         columnReference:
           columnCounter: 0609c29a-bf29-41cf-9660-a54641a5cb5d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_10
@@ -2812,7 +3206,9 @@ operation:
         columnReference:
           columnCounter: 9837b042-f5d0-4385-ac39-b33243438192
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_11
@@ -2826,7 +3222,9 @@ operation:
         columnReference:
           columnCounter: f5c5706f-ad14-42d5-b17e-3582b9058a00
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: ROUTE_ROAD_12
@@ -2840,7 +3238,9 @@ operation:
         columnReference:
           columnCounter: 81198352-adf5-4849-bca0-60d14a9f42f5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STCC_CODE
@@ -2854,7 +3254,9 @@ operation:
         columnReference:
           columnCounter: d51d9e1d-6c38-4298-965d-47d092c76dfa
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: SCALED_WEIGHT
@@ -2868,7 +3270,9 @@ operation:
         columnReference:
           columnCounter: 8b15479f-aa48-4630-b623-27c41d9e0112
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SCRUBBER_MODE_INDICATOR
@@ -2882,7 +3286,9 @@ operation:
         columnReference:
           columnCounter: e8f4a140-b87a-4a41-a9cf-d8bb79dcfc7d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SEGMENT_1_MILEPOST
@@ -2896,7 +3302,9 @@ operation:
         columnReference:
           columnCounter: 8e6d9762-b122-4fb2-a64e-785618d5d861
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SEGMENT_2_MILEPOST
@@ -2910,7 +3318,9 @@ operation:
         columnReference:
           columnCounter: c93b4df8-7856-4f7a-871c-38d05a0f43a4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SEGMENT_3_MILEPOST
@@ -2924,7 +3334,9 @@ operation:
         columnReference:
           columnCounter: 6825dea3-f8d4-4873-a697-3844b35ac936
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SEGMENT_4_MILEPOST
@@ -2938,7 +3350,9 @@ operation:
         columnReference:
           columnCounter: d6258022-3bfd-4e7e-9ba3-6c7f0435d3c0
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SHIPPER_ADDRESS
@@ -2952,7 +3366,9 @@ operation:
         columnReference:
           columnCounter: 8ee69080-6c07-4ebe-9afd-906be2df316e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SHIPPER_ID
@@ -2966,7 +3382,9 @@ operation:
         columnReference:
           columnCounter: c58901cc-03f5-46f9-aa80-d3794d0cfd5b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SHIPPER_NAME
@@ -2980,7 +3398,9 @@ operation:
         columnReference:
           columnCounter: 1cf6602c-bdec-4257-8172-6672cde6d4a5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SHIPPER_PARENT_ADDRESS
@@ -2994,7 +3414,9 @@ operation:
         columnReference:
           columnCounter: 1116bee6-8896-40aa-af95-239864305d58
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SHIPPER_PARENT_ID
@@ -3008,7 +3430,9 @@ operation:
         columnReference:
           columnCounter: 2c3387ab-366f-4589-9c62-c18fbbce1cda
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_01
@@ -3022,7 +3446,9 @@ operation:
         columnReference:
           columnCounter: 44b431a5-04ac-4ef2-9f3c-4bf243a4f66d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_02
@@ -3036,7 +3462,9 @@ operation:
         columnReference:
           columnCounter: 09b24af8-e44a-4555-a1c4-d88e13293517
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_03
@@ -3050,7 +3478,9 @@ operation:
         columnReference:
           columnCounter: fefd345c-d359-496b-855b-fd5e952df31a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_04
@@ -3064,7 +3494,9 @@ operation:
         columnReference:
           columnCounter: a05cd944-c467-427d-ad93-250801149afe
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_05
@@ -3078,7 +3510,9 @@ operation:
         columnReference:
           columnCounter: 2122d6a5-3dea-42ee-8ac7-8d5b07d6511b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_06
@@ -3092,7 +3526,9 @@ operation:
         columnReference:
           columnCounter: ff2160ac-664b-4f26-9354-ef7284b7fadc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_07
@@ -3106,7 +3542,9 @@ operation:
         columnReference:
           columnCounter: 4083c094-2639-47f1-b091-447e70fd4792
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_08
@@ -3120,7 +3558,9 @@ operation:
         columnReference:
           columnCounter: 5371548d-4bdf-4d98-abf6-fae564052ba5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_09
@@ -3134,7 +3574,9 @@ operation:
         columnReference:
           columnCounter: 0cc4e388-7bae-4ef6-a79b-b556acb11308
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_10
@@ -3148,7 +3590,9 @@ operation:
         columnReference:
           columnCounter: 854bf107-51f9-4b98-a6b0-4edb9b9f2720
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_11
@@ -3162,7 +3606,9 @@ operation:
         columnReference:
           columnCounter: 8129961a-e625-41d9-9032-3ebf833f092b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STATION_260_ABREVIATION_12
@@ -3176,7 +3622,9 @@ operation:
         columnReference:
           columnCounter: ba263d15-7d5d-4381-b357-4c7928b6ec62
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: STORAGE_AMOUNT
@@ -3190,7 +3638,9 @@ operation:
         columnReference:
           columnCounter: d921f2ca-1bc4-41b9-9a09-ca290f25a6af
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STORAGE_AMOUNT_CURRENCY
@@ -3204,7 +3654,9 @@ operation:
         columnReference:
           columnCounter: fac14c35-dfa2-484e-96e5-fbb9baef6c99
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STORAGE_CODE
@@ -3218,7 +3670,9 @@ operation:
         columnReference:
           columnCounter: 9fbabf60-a1cd-4277-b081-bce903e3dfac
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: STORAGE_HOURS
@@ -3232,7 +3686,9 @@ operation:
         columnReference:
           columnCounter: f67ab2ca-9365-4a3c-a66d-bb047a015940
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STORAGE_INDICATOR
@@ -3246,7 +3702,9 @@ operation:
         columnReference:
           columnCounter: 68735a09-4c5a-487f-8b93-1e3fdc59e5ce
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STORAGE_PARTY_ADDRESSESS_TYPE
@@ -3260,7 +3718,9 @@ operation:
         columnReference:
           columnCounter: 10bf58a5-fb5c-41ff-bdb5-ed4bb7397522
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: STORAGE_PARTY_ID
@@ -3274,7 +3734,9 @@ operation:
         columnReference:
           columnCounter: 69ef9c99-4bf6-41df-918d-a1d3d94331ed
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: SUPPLEMENT_UP_AMOUNT
@@ -3288,7 +3750,9 @@ operation:
         columnReference:
           columnCounter: d486690e-ef7c-470b-bcd0-c9fbea50680c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SUPPLEMENT_UP_AMOUNT_CURRENCY
@@ -3302,7 +3766,9 @@ operation:
         columnReference:
           columnCounter: d7837ad9-082b-4179-addc-deadc877f778
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: SWITCH_CURRENCY_CODE
@@ -3316,7 +3782,9 @@ operation:
         columnReference:
           columnCounter: e68a67cf-a724-44bd-a243-d5bd7526aabc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: T_CODE_EMPTY
@@ -3330,7 +3798,9 @@ operation:
         columnReference:
           columnCounter: f0b142df-fcbd-421b-b0ea-536d377b88a8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: T_CODE_LOADED
@@ -3344,7 +3814,9 @@ operation:
         columnReference:
           columnCounter: ea3a4633-5f4c-44e9-93d2-a8b923c074ba
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TIH_FLAG
@@ -3358,7 +3830,9 @@ operation:
         columnReference:
           columnCounter: 983a767b-b68e-41f1-acf8-337e7e37ffa2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TMS_ENS_ROAD
@@ -3372,7 +3846,9 @@ operation:
         columnReference:
           columnCounter: e0cb063e-0ada-48e0-942f-ebab70239327
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TMS_ENS_TOTAL
@@ -3386,7 +3862,9 @@ operation:
         columnReference:
           columnCounter: ba1614dd-1603-4f1b-ae48-00d42128af4a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TMS_ENS_TOTAL_CURRENCY
@@ -3400,7 +3878,9 @@ operation:
         columnReference:
           columnCounter: daf4f9ce-c18f-4848-a1bf-c0b472e5aa94
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TMS_OTHER_ENS
@@ -3414,7 +3894,9 @@ operation:
         columnReference:
           columnCounter: f60cca56-e12c-45dd-bfb9-87de8a5305df
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TMS_SWITCH_ENS
@@ -3428,7 +3910,9 @@ operation:
         columnReference:
           columnCounter: ded794d9-b458-49df-a4c6-827ccee3199a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TOFC_PLAN
@@ -3442,7 +3926,9 @@ operation:
         columnReference:
           columnCounter: 70cf1ba5-30ff-45d2-bd4c-7dbc65c65766
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_CUSTOMER_ADDRESS
@@ -3456,7 +3942,9 @@ operation:
         columnReference:
           columnCounter: f32a9006-cf9e-41cd-a600-63452d10d38d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_CUSTOMER_ID
@@ -3470,7 +3958,9 @@ operation:
         columnReference:
           columnCounter: e8d988e4-6989-4a5c-9d6e-db35c9133dbc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_CUSTOMER_NAME
@@ -3484,7 +3974,9 @@ operation:
         columnReference:
           columnCounter: d3017b4e-14df-4c34-89f9-c188ce90d0b7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_CUSTOMER_PARENT_ADDRESS
@@ -3498,7 +3990,9 @@ operation:
         columnReference:
           columnCounter: 23420199-e5ff-4e74-8f86-e1d1f17f907e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_CUSTOMER_PARENT_ID
@@ -3512,7 +4006,9 @@ operation:
         columnReference:
           columnCounter: fbbcecb1-4cb1-4ddb-b97f-ee4635eca026
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_CUSTOMER_TRAFFIC_GROUP
@@ -3526,7 +4022,9 @@ operation:
         columnReference:
           columnCounter: 9c1f8717-6d39-4eee-8ac4-30dce52a28de
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_INTERCHANGE_STATION
@@ -3540,7 +4038,9 @@ operation:
         columnReference:
           columnCounter: 4af1165e-bf57-44be-aa0c-35ac2e746bbf
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_ROAD
@@ -3554,7 +4054,9 @@ operation:
         columnReference:
           columnCounter: f268ba43-d1f8-4523-864c-baa1623b6ceb
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_STATION
@@ -3568,7 +4070,9 @@ operation:
         columnReference:
           columnCounter: 4e5ded72-01d6-45ca-8c5b-36c2b240d40b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: THE_STATION_TRAFFIC_GROUP
@@ -3582,7 +4086,9 @@ operation:
         columnReference:
           columnCounter: a1d04246-559f-4621-ba9b-e22bd7f7b36c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TIME_MODIFIED
@@ -3596,7 +4102,9 @@ operation:
         columnReference:
           columnCounter: 68603f76-e3ea-46db-a4a2-c93033db1e26
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TIME_IN_RR_CONTROL_HOURS
@@ -3610,7 +4118,9 @@ operation:
         columnReference:
           columnCounter: 3b562652-9599-49c5-b4a1-610a1326af13
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TIMES_WEIGHED_EMPTY
@@ -3624,7 +4134,9 @@ operation:
         columnReference:
           columnCounter: 9172cded-56ec-43b5-b316-01246dc2e7e6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TIMES_WEIGHED_LOADED
@@ -3638,7 +4150,9 @@ operation:
         columnReference:
           columnCounter: 4021f14d-305a-491c-ab03-61a64b502874
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TO_ROAD
@@ -3652,7 +4166,9 @@ operation:
         columnReference:
           columnCounter: 582b3f35-59b8-4174-8d0a-8acf4225dab2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TOTAL_ENS_AMOUNT
@@ -3666,7 +4182,9 @@ operation:
         columnReference:
           columnCounter: 8aec65e0-6420-4799-81d6-9623b19119fc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TOTAL_ENS_AMOUNT_CURRENCY
@@ -3680,7 +4198,9 @@ operation:
         columnReference:
           columnCounter: 82238478-4ee2-4771-8fa5-043f1bccd386
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TOTAL_FREIGHT_REV_CURRENCY
@@ -3694,7 +4214,9 @@ operation:
         columnReference:
           columnCounter: d066cbfb-c737-46d1-9489-29e2efb38627
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TOTAL_FREIGHT_REVENUE
@@ -3708,7 +4230,9 @@ operation:
         columnReference:
           columnCounter: 183cd01d-8d70-4678-9bf3-de26b13b59d9
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TOTAL_NET_FREIGHT_REVENUE
@@ -3722,7 +4246,9 @@ operation:
         columnReference:
           columnCounter: e8df8210-b293-4a16-b003-ed8e15421e21
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TOTAL_NET_REVENUE
@@ -3736,7 +4262,9 @@ operation:
         columnReference:
           columnCounter: 9fe177ed-37bd-45ba-a775-eba0b3471225
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TOTAL_NET_REVENUE_CURRENCY
@@ -3750,7 +4278,9 @@ operation:
         columnReference:
           columnCounter: 12ff6688-408c-4233-8b7e-7f09d02f30a2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TOTAL_OTHER_CHARGES
@@ -3764,7 +4294,9 @@ operation:
         columnReference:
           columnCounter: a6d92407-2ab8-456e-a2f1-707c96d84b06
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TOTAL_SWITCH_CHARGES
@@ -3778,7 +4310,9 @@ operation:
         columnReference:
           columnCounter: eeb0c751-f092-441f-8ede-b007d0a3b15e
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TOTAL_TIME_OFFLINE
@@ -3792,7 +4326,9 @@ operation:
         columnReference:
           columnCounter: 784a2c07-cb64-4cf3-8179-a31a551ee69c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TOTAL_TIME_ONLINE
@@ -3806,7 +4342,9 @@ operation:
         columnReference:
           columnCounter: ffbe0335-addd-4877-8790-dc7d762a8fd4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TOTAL_WEIGHT_ON_RAIL
@@ -3820,7 +4358,9 @@ operation:
         columnReference:
           columnCounter: c70e48b0-0fea-4e44-ae28-c67b81e01540
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRAFFIC_DATE
@@ -3834,7 +4374,9 @@ operation:
         columnReference:
           columnCounter: ab8e99e8-25b3-4adb-8492-bc9337582134
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRAFFIC_GROUP_INDICATOR___BEGIN
@@ -3848,7 +4390,9 @@ operation:
         columnReference:
           columnCounter: 82935a67-c1e7-4f86-ac0a-afba3944be25
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRAFFIC_GROUP_INDICATOR___END
@@ -3862,7 +4406,9 @@ operation:
         columnReference:
           columnCounter: a81b0ed8-5f17-4c95-a015-97453ae7ba3d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRAFFIC_GROUP_INDICATOR___PLACEMENT
@@ -3876,7 +4422,9 @@ operation:
         columnReference:
           columnCounter: 10f2726a-3413-452c-ad99-22108c4a310b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRAFFIC_GROUP_INDICATOR___RELEASE
@@ -3890,7 +4438,9 @@ operation:
         columnReference:
           columnCounter: 7030504a-d0cd-40c5-a151-14ba897406bf
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRAFFIC_TYPE
@@ -3904,7 +4454,9 @@ operation:
         columnReference:
           columnCounter: a339565f-2bda-4782-a4a0-a3e59923508a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRANSPORTATION_METHOD_CODE
@@ -3918,7 +4470,9 @@ operation:
         columnReference:
           columnCounter: 2a11891b-6d88-41f1-9376-35782e9805b0
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_BEGIN_DATE
@@ -3932,7 +4486,9 @@ operation:
         columnReference:
           columnCounter: bcd873d1-745e-4a91-80b8-fd3130d287b4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_BEGIN_L_E_STATUS
@@ -3946,7 +4502,9 @@ operation:
         columnReference:
           columnCounter: c1af4904-c324-4b1d-b795-6120b667ad35
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_BEGIN_LOCATION
@@ -3960,7 +4518,9 @@ operation:
         columnReference:
           columnCounter: bc7e0fd9-92fa-4ed4-87fa-6059eea999e5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_BEGIN_MOVE_TYPE
@@ -3974,7 +4534,9 @@ operation:
         columnReference:
           columnCounter: db10d9eb-46f4-4552-823b-b2f3f54848d2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_BEGIN_STATION
@@ -3988,7 +4550,9 @@ operation:
         columnReference:
           columnCounter: a0c26aa3-7316-498a-a5b6-ad817472d6de
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_BEGIN_TIME
@@ -4002,7 +4566,9 @@ operation:
         columnReference:
           columnCounter: 97826404-8947-473b-b2ed-11133389d690
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_COMPLETE_INDICATOR
@@ -4016,7 +4582,9 @@ operation:
         columnReference:
           columnCounter: b354bf2d-3a02-4200-993b-a87053c0f521
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_END_DATE
@@ -4030,7 +4598,9 @@ operation:
         columnReference:
           columnCounter: 5ecc4239-1e26-408c-9497-cced87d3e56b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_END_L_E_STATUS
@@ -4044,7 +4614,9 @@ operation:
         columnReference:
           columnCounter: 55a7bdf0-7bd9-4777-adef-64cc463062b1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_END_LOCATION
@@ -4058,7 +4630,9 @@ operation:
         columnReference:
           columnCounter: 3e860e16-32b1-4c7d-9084-54c31acb6aab
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_END_MOVE_TYPE
@@ -4072,7 +4646,9 @@ operation:
         columnReference:
           columnCounter: cb37b333-5b87-478e-aec0-83b3f594c477
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_END_STATION
@@ -4086,7 +4662,9 @@ operation:
         columnReference:
           columnCounter: 48d49ffe-b5a0-4f09-8cd6-bd0debe14af4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_END_TIME
@@ -4100,7 +4678,9 @@ operation:
         columnReference:
           columnCounter: 80a3d206-0ab6-4137-b86a-ccf20b19e167
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_1_DELAY_DATE_EMPTY
@@ -4114,7 +4694,9 @@ operation:
         columnReference:
           columnCounter: 3c997d9e-f3de-4c96-bf02-01e27ea1bc18
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_1_DELAY_DATE_LOAD
@@ -4128,7 +4710,9 @@ operation:
         columnReference:
           columnCounter: b00b7448-104c-4ce8-800d-a4b68d083ea1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_1_DELAY_EVENT_EMPTY
@@ -4142,7 +4726,9 @@ operation:
         columnReference:
           columnCounter: 015c7324-bff6-4bc4-a6e2-9fcc7b46fda9
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_1_DELAY_EVENT_LOAD
@@ -4156,7 +4742,9 @@ operation:
         columnReference:
           columnCounter: 8850a4eb-b2e5-4a4b-951e-baff44fad12d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_1_DELAY_STATION_EMPTY
@@ -4170,7 +4758,9 @@ operation:
         columnReference:
           columnCounter: e280e161-ac2b-441a-abf4-a66d9d510b3a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_1_DELAY_STATION_LOAD
@@ -4184,7 +4774,9 @@ operation:
         columnReference:
           columnCounter: bc46c342-8ee9-4c02-b73c-867eb1f27838
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_1_DELAY_TIME_EMPTY
@@ -4198,7 +4790,9 @@ operation:
         columnReference:
           columnCounter: 19f2a801-3fc9-4eca-b9b2-11abe77ef47d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_1_DELAY_TIME_LOAD
@@ -4212,7 +4806,9 @@ operation:
         columnReference:
           columnCounter: edab3993-af6f-4e9f-9209-5e80ce6edc1d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_BEGIN_DATE_EMPTY
@@ -4226,7 +4822,9 @@ operation:
         columnReference:
           columnCounter: 223cf4b2-8c7a-4225-bb69-ff33a6aaabfe
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_BEGIN_DATE_LOAD
@@ -4240,7 +4838,9 @@ operation:
         columnReference:
           columnCounter: 9e6c5804-3bc8-4198-a02c-9e87e560076d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_BEGIN_EVENT_EMPTY
@@ -4254,7 +4854,9 @@ operation:
         columnReference:
           columnCounter: afcf320b-7530-48b8-b474-e8904973209c
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_BEGIN_EVT_LOAD
@@ -4268,7 +4870,9 @@ operation:
         columnReference:
           columnCounter: d2906863-7255-4887-bdb1-e922e363cf41
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_BEGIN_STATION_EMPTY
@@ -4282,7 +4886,9 @@ operation:
         columnReference:
           columnCounter: 15d1aeb3-bba6-4ab2-9da7-9d206ae6885b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_BEGIN_STN_LOAD
@@ -4296,7 +4902,9 @@ operation:
         columnReference:
           columnCounter: 5ad08427-14d9-41f5-8bba-84822d2408df
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_BEGIN_TIME_EMPTY
@@ -4310,7 +4918,9 @@ operation:
         columnReference:
           columnCounter: d285d47b-febb-491e-b89d-6d1d0eb1c5b8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_BEGIN_TIME_LOAD
@@ -4324,7 +4934,9 @@ operation:
         columnReference:
           columnCounter: 39f3c0f3-1d69-4adf-82bd-8ae1697dc0ed
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_END_DATE_EMPTY
@@ -4338,7 +4950,9 @@ operation:
         columnReference:
           columnCounter: df3cad2d-9a5b-4624-bf95-c4914950399d
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_END_DATE_LOAD
@@ -4352,7 +4966,9 @@ operation:
         columnReference:
           columnCounter: 524e3fbd-3acf-4e08-a122-cdbcc7c27335
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_END_EVENT_EMPTY
@@ -4366,7 +4982,9 @@ operation:
         columnReference:
           columnCounter: 7bc7ca27-7b49-4cc1-8875-1377334d5fdc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_END_EVENT_LOAD
@@ -4380,7 +4998,9 @@ operation:
         columnReference:
           columnCounter: fe56e941-4741-4866-a672-bb7338e7153b
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_END_STATION_EMPTY
@@ -4394,7 +5014,9 @@ operation:
         columnReference:
           columnCounter: c2874b1c-1559-4f9b-8ff8-89b3f98301b1
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: TRIP_PLAN_END_STATION_LOAD
@@ -4408,7 +5030,9 @@ operation:
         columnReference:
           columnCounter: 8d53b65e-2347-4037-9cc6-1efffabde64f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_END_TIME_EMPTY
@@ -4422,7 +5046,9 @@ operation:
         columnReference:
           columnCounter: 6a1020fc-286b-4936-89f2-0be941d3a8fd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_END_TIME_LOAD
@@ -4436,7 +5062,9 @@ operation:
         columnReference:
           columnCounter: e931ca70-f38e-4fd5-9ce2-b334d7402203
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_HOURS_DELAY_EMPTY
@@ -4450,7 +5078,9 @@ operation:
         columnReference:
           columnCounter: cf0eb9ce-0af2-4874-9c0a-9ac597a13382
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: TRIP_PLAN_HOURS_DELAY_LOAD
@@ -4464,7 +5094,9 @@ operation:
         columnReference:
           columnCounter: 4a4d09f4-f50a-497e-9bf4-87cc4eb0f314
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNIQUE_EMPTY_WAYBILL_CONTROL_NUMBER
@@ -4478,7 +5110,9 @@ operation:
         columnReference:
           columnCounter: 5b8e5f3d-c569-44f4-a9bc-7f7d776adeb7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNIQUE_LOADED_WAYBILL_CONTROL_NUMBER
@@ -4492,7 +5126,9 @@ operation:
         columnReference:
           columnCounter: 1be35900-6e4d-4a28-85c0-14891d9ffbe9
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNIQUE_TRIP_NUMBER_KEY
@@ -4506,7 +5142,9 @@ operation:
         columnReference:
           columnCounter: d4f19973-d6a8-475d-a736-55caeef0bb74
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_15_BYTE_1
@@ -4520,7 +5158,9 @@ operation:
         columnReference:
           columnCounter: a5733f26-4524-4724-b894-a46b387e825a
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_CODE__01
@@ -4534,7 +5174,9 @@ operation:
         columnReference:
           columnCounter: dec183ef-de71-48b8-93aa-07bfbfc972d6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_CODE__02
@@ -4548,7 +5190,9 @@ operation:
         columnReference:
           columnCounter: 27108f94-675b-472b-a455-ba7d6b26bce4
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_DTE__1
@@ -4562,7 +5206,9 @@ operation:
         columnReference:
           columnCounter: b7a5fed8-0cf8-43d4-b1da-cb3aed975e50
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_DTE__2
@@ -4576,7 +5222,9 @@ operation:
         columnReference:
           columnCounter: 341bb3b0-2fa3-4992-b498-98d8b69d921f
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_NUMBER__01
@@ -4590,7 +5238,9 @@ operation:
         columnReference:
           columnCounter: 53c6cadc-4c4a-4ec0-ab14-c8cbd76240a7
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_NUMBER__02
@@ -4604,7 +5254,9 @@ operation:
         columnReference:
           columnCounter: ba556f59-9eed-4cbe-ba43-9713c0ce9acd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_NUMBER__04
@@ -4618,7 +5270,9 @@ operation:
         columnReference:
           columnCounter: 48490516-a3bb-45d7-8c9b-87f9e2f758a8
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_STS__02
@@ -4632,7 +5286,9 @@ operation:
         columnReference:
           columnCounter: 1aec22da-9153-4ccf-820e-f400009d7096
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_STATUS__1
@@ -4646,7 +5302,9 @@ operation:
         columnReference:
           columnCounter: 81d3afdb-0a49-495b-88e6-64a1e2a33ecc
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_TXT__01
@@ -4660,7 +5318,9 @@ operation:
         columnReference:
           columnCounter: 11c16d02-c47e-4245-82b4-3bd5c79944e5
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: UNUSED_TXT__02
@@ -4674,7 +5334,9 @@ operation:
         columnReference:
           columnCounter: 7ebb3c84-1b79-44b0-88f3-426dc0b94ff2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: USER_ID_MODIFIED
@@ -4688,7 +5350,9 @@ operation:
         columnReference:
           columnCounter: beb390a9-0c8d-467b-8490-034235eb91e2
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR(16777216)
         description: ""
         name: WAYBILL_DATE
@@ -4702,7 +5366,9 @@ operation:
         columnReference:
           columnCounter: e69c5e36-ec65-45a8-8c48-fc24b2212ade
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: NUMBER(38,0)
         description: ""
         name: WAYBILL_NUMBER
@@ -4716,7 +5382,9 @@ operation:
         columnReference:
           columnCounter: 8e2557c5-3149-4647-9536-8f3cd97d0d86
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: VARCHAR
         description: ""
         name: RAIL_FILE
@@ -4730,7 +5398,9 @@ operation:
         columnReference:
           columnCounter: 103cc0f8-96ec-4693-8b4a-87a5db560082
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: DATE
         description: ""
         name: TRAFFIC_DATE_CONVERTED
@@ -4744,7 +5414,9 @@ operation:
         columnReference:
           columnCounter: f15dac50-329c-4a57-b39e-1df539f6e980
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: DATE
         description: ""
         name: REVENUE_DATE_CONVERTED
@@ -4758,7 +5430,9 @@ operation:
         columnReference:
           columnCounter: f6445cc2-5b49-434f-bfa0-32301429b211
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: TARE_TONS
@@ -4772,7 +5446,9 @@ operation:
         columnReference:
           columnCounter: 75975724-fa95-45a1-96ae-1f2a3ddc5fdd
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: FLOAT
         description: ""
         name: G_TONS
@@ -4786,7 +5462,9 @@ operation:
         columnReference:
           columnCounter: 3966accb-4901-417d-8f79-014479496614
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: DATE
         description: ""
         name: TRIP_END_DATE_CONVERTED
@@ -4800,7 +5478,9 @@ operation:
         columnReference:
           columnCounter: bcb58693-4dac-468d-9fa4-8b5f29ceebd6
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config: {}
+        config:
+          isDistinctCount: true
+          isNullCount: true
         dataType: DATE
         description: ""
         name: TRIP_BEGIN_DATE_CONVERTED
