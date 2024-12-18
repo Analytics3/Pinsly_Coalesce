@@ -1,0 +1,984 @@
+fileVersion: 1
+id: 903c213a-1694-4d11-bfe6-1661c6a51778
+name: PROF_NX_CUSTOMER_WABTEC
+operation:
+  config:
+    sampleMode: Full Table
+    sampleOption: Fixed Row
+    samplePercent: "10"
+    sampleRows: "1000"
+  database: ""
+  deployEnabled: false
+  description: ""
+  isMultisource: false
+  locationName: WABTEC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2c0c2a0-f3ae-4539-b78f-4f15a74fc05a
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: PROFILE_METRIC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "NULL"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5dbf717b-50b9-49d3-be4a-c6ffc3452990
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91426e01-cb3f-474e-a056-740009b22d14
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DEMURRAGE_PARENT_ADDR_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e9471175-b7ed-43cf-92e5-db637dd11906
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f67198c0-cbac-4948-8350-73c131b13ffc
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DEMURRAGE_PARENT_PD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7591f05b-6cac-4abd-a268-f405360febc5
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10ac9e01-160c-4059-aee3-5955c6ba7de9
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FSAC_CODE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af578240-82a7-4bf7-8b10-8021359c079f
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7e41332-593e-40b7-be29-51ef8d226105
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FSAC_ROAD_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0bb64b19-3b69-4ac4-8d6f-84c4c3e0b8f4
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df34f92d-bbc8-4a73-acf7-cb7f99a19876
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0071112b-13c1-4220-98dd-8c09311bc0ff
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82b89f9e-6df9-4470-b7df-30989bd61d54
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MISC_BILLING_PARENT_ADDR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f180c5f6-7fba-46ad-a1ac-7da3af56699e
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4782451f-4409-40d9-8202-5dde58668e22
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MISC_BILLING_PARENT_PD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a20569ec-0211-48db-b84c-1f607817d6af
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e35c678-74af-4f1f-a8d9-c5bc06138a05
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_410_EDI_PARTNER_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0af793c-366d-4121-bbad-f37deaeafb75
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05bb9cc8-be0d-42fb-8e53-6c6c362320a7
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_410_VERSION_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fc39ef6-9f22-471b-bf1b-77204818dad8
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 415b6076-9647-4047-b061-a12e84b26fd9
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ABREV_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 148e7d9f-726c-42e7-95c1-2c89ef441f90
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5137e7f7-1b00-4a9c-9262-7b5826d6aac8
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ADDR_1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec34902b-a20b-4711-bbc7-bb5e1daa3e2c
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ccfe4bc-af14-4a88-a5c8-a9371d6536fc
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ADDR_2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 05a04143-2660-4220-be98-2d70a0114067
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92424f18-1bfa-4575-9070-30cd55b67ef9
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ADDR_TYP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6954cc5f-d87b-429b-9556-c04e2919dd84
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f285aa62-a0a2-43b5-9d96-4b6cf59f404f
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ALTERNATE_PATRON_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22949f6d-c8ac-4501-a15b-5a8c017fa3bb
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da69b0bf-77b7-43a9-b67c-c68aabe6ca44
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ATTN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad9a09b8-849d-43df-bd7f-91fc1609f3e7
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 012fd74b-05ff-4fbb-a9aa-35e1b332435a
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_CIF_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64f259a9-378a-4ac8-baad-3822b6ad233c
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 560ff78b-bb67-431e-9933-5ee52c2203c3
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_CITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fe9002b2-95b9-4ad9-92de-c4f48f0193d7
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2b15997-9d14-4f23-9492-fb3aff21fb7d
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_COUNTRY_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3efaf72a-d99e-4ea5-9a30-7a0cf803004c
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d27102fe-ea4f-4eda-9b4e-add1d6450b07
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_CREDIT_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8e39e4a-85e6-446a-92dd-2ff03c865d4c
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1f79608-03b1-48e4-8fdf-a3f050af4745
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_LN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fa7a9af0-03c4-49ee-9a4a-30673982cba5
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29fc99cb-e379-47b4-8daf-104e16d9dea8
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_RN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 63a42e55-194d-46c7-95a2-a216307ccbea
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d9938bf-78f5-41c9-b0d3-385de613d63f
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_SN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ffbf735b-43a3-4c56-b53a-c8babc9a3409
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0e6e4ab-5023-47f5-96e6-41f5c373c080
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_DEFAULT_TRACK_ZN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e070ff9a-852c-4c40-9799-07173034e2e9
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fd22205-bc06-4386-960a-bfea579cf367
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_EDI_OUTBOUND_RECEIVER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2deecd16-6095-432a-b154-53f1d2f7b15e
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4b669a6-8514-4772-9588-5b9742523e67
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_EXCLUDE_FROM_DEMURRAGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42add7e1-b367-41a9-ae40-ffea47668603
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e770faa-cbfb-4356-8ff8-7b7dfbcb4199
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_FB_DETAIL_RATES_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b123846-a1a6-4f01-bf2a-f8fcc1390401
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34b12308-ff85-45a2-97ee-fa7ab84e2454
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_FAX_AREA_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f0e25f6d-698b-49da-8434-30b4fd151c48
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25cded44-6a1c-4136-8b35-b46fd140c85e
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_FAX_PREFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59ced35c-351c-4b0a-bd3e-c83329eaccda
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19b2f582-aee8-40d5-91f9-5e837432d435
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_FAX_SUFFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c506bba1-2d05-4363-bb22-5124e4a56d68
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e579f154-cfa7-4314-9bf7-6d8c8dccd9e6
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d703028-dad1-40ff-b6c2-aca7ca77f474
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cf2fb46-e7b7-47cb-8883-25fc64acefcc
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_INCLUDE_PRIVATE_CARS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b83decf3-e92e-45fb-be69-02836614d970
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 728ff0d8-0d32-4dba-82f9-680fa3f16c70
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_LOADING_DEMURRAGE_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 998df772-ca5a-4070-8e33-f1895ecf70f6
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c8b9dea-46b2-49cd-b06e-e0aa199f0266
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0711a3e6-54e2-4548-8eb7-b0679add83fd
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da0c2aa9-a37f-4007-9881-961224cc0b46
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NOTIFICATIONS_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac8e0297-8995-4e3a-9c79-01233a2fbf98
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9d13a66-9abb-41b8-8d98-0b57f4f6a8ee
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NOTIFY_AT_INTERCHANGE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 02e9f903-c180-4b25-b4f7-fcc09bccb5ba
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 051ef299-734e-4bfe-af7d-259883b3839b
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_NOTIFY_ON_LOAD_EVENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 097525a2-8e00-4ff7-bb68-dd3e3ca534c8
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14683a17-1af7-4622-9485-aef1dd477a5f
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_PATRON_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 135bd120-13ae-4bb0-a7a0-6ef65363feca
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12382e44-ea8c-4a64-b1bd-2f00a90a4e14
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_AREA_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 22a5ee66-e1f7-4f6f-ad54-5e7f913cc3e0
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9de3abf-a452-4d09-a3d2-c7f0706ec2c2
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6547d385-599d-44d6-80d9-dcec2728006f
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a2d1f0b-0f0b-44b5-b478-15f39799f58c
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_PREFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3fe39f93-ae61-42b3-b616-08d5bd558002
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0916c294-6a4d-4d2f-aac2-5e10d2dc6b9d
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PD_PHONE_SUFFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3814c4d7-ded5-456a-8e67-75dd98007945
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b93dd921-8694-4c1d-94e5-45e1517ab362
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_POSTAL_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5e41212-75a7-4f39-ad5c-3c7a2f9afb3d
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12533551-948c-48a5-817f-37ab9059d575
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_PRODUCT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4cb60310-e71b-4b74-aee7-911ce8e99fae
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: faa27547-6966-48b7-b6fc-6502b04a9114
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_SERVING_RN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a2a6efa-ae45-4b4d-a918-832b05d73de2
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3b713eb-aa0c-459c-a84f-e5f63afe991a
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_SERVING_SN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 811b9489-3d88-4867-bafd-87a21cff1564
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6802f28e-dbab-44c9-abe5-967b31e423d4
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_UNLOADING_DEMURRAGE_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c044e26-1c7c-48ee-aa3c-09e628fef649
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 15c2326a-a79c-4c8d-b76a-679d566795cb
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_UNUSED_IND_1_BYTE__5
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de8d131f-900f-44d6-96a9-77bf60c4dfe1
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 353d5439-7f76-4cf3-93ce-c980df2dbf5c
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PD_UNUSED_IND_2_BYTE__1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e67ab708-5135-4345-8c9d-e2081564fae6
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e172321-6d4f-4b3c-8d85-cd7bc974649c
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PARENT_PD_ADDR_TYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 566e5037-c258-44b7-a6f6-4e872cd0e856
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bcd56dbb-f38f-4cc7-8ac5-3dafb1a969f5
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PARENT_PD_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 30fcd98d-1050-4c6e-ac74-6e4ca7059bb4
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e798ac6-74c0-4381-a25a-5aa2d07d73bd
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: REGION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a290009d-44e5-42f4-b339-01c1f5d9dd2f
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9bfb97b-1a19-4d58-a476-4bbee1d730d9
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: DATE
+        description: ""
+        name: STR_DATE_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1dccb60e-a002-41d6-a7bf-326d4903b56a
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: TRY_TO_DATE(CASE COALESCE("STG_NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED", 0)WHEN 0 THEN NULL ELSE CAST(LEFT("STG_NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000, 4) || '-' || SUBSTR("STG_NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000, 5,2)|| '-' || RIGHT("STG_NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000,2) AS DATE) END)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec66485c-b872-4303-a48f-af13f8c2dca3
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STR_TIME_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cbfbc559-b9aa-424b-ac41-ca0098ef3c5b
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7876b304-b784-4c31-a3bc-a9615a8528b8
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STR_USER_ID_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d09cfbf2-8461-4ed8-b2a9-c8b89b3431ec
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1eca2df-d5fc-4222-8a54-db0373b81b90
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ST_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4ae5c80-902f-48f2-90be-dfc3b821d29a
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3e427c8-33ea-433b-94b2-b5f136e331bd
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90631c7d-ec45-4622-a9d9-b48035d0e278
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0423c3cb-c49d-45ae-a1e0-06f15e967fbd
+          stepCounter: 903c213a-1694-4d11-bfe6-1661c6a51778
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ZN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c1cf299-cf7b-44eb-8f4f-577a55785ed5
+                stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WABTEC_PREPARED
+            nodeName: STG_NX_CUSTOMER_WABTEC
+        join:
+          joinCondition: FROM {{ ref('WABTEC_PREPARED', 'STG_NX_CUSTOMER_WABTEC') }} "STG_NX_CUSTOMER_WABTEC"
+        name: PROF_NX_CUSTOMER_WABTEC
+        noLinkRefs: []
+  name: PROF_NX_CUSTOMER_WABTEC
+  overrideSQL: false
+  schema: ""
+  sqlType: "1"
+  type: sql
+  version: 1
+type: Node

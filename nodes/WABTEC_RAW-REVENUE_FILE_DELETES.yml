@@ -1,0 +1,153 @@
+fileVersion: 1
+id: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+name: REVENUE_FILE_DELETES
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: WABTEC_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1576ea57-1a2f-4877-91a8-7cb6a5809979
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: EQUIP_NBR
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c38d901-ec59-433d-8d85-06cd08defa2d
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DELETE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: df7a8a2a-d277-44a9-90bb-d8d00424aae3
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DELETE_TIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7e7647f-9834-49e9-ac12-b442c766bc7c
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EQUIP_INIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeade5bb-f360-4a4d-98b8-c8635b852a0a
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: FILENAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bbdc11f-3ac5-404f-a1ff-c72ed389c259
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SEQUENCE_NBR_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9a52cf6-8019-4fc8-9c4c-7273fa6c7431
+          stepCounter: 40f257d9-5fa4-4674-8340-ef4e626d3f63
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TMS_CONTROL_NBR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('WABTEC_RAW', 'REVENUE_FILE_DELETES') }}
+  name: REVENUE_FILE_DELETES
+  schema: ""
+  sqlType: Source
+  table: REVENUE_FILE_DELETES
+  type: sourceInput
+  version: 1
+type: Node

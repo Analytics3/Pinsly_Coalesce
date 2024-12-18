@@ -1,0 +1,229 @@
+fileVersion: 1
+id: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+name: NX_EQUIPMENT_HISTORY_DELETE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: WABTEC_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79e7f3d2-ec08-439c-8106-3bbc28460c2d
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: EQH_EVENT_DATE_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1689547a-640a-4f86-bfe4-a5bd5c0fc0a6
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: EQH_EVENT_TIME_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2910add9-3380-483c-9ffc-3c42ef456fec
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EQH_MOVE_TYP_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79827601-1e0c-45c5-afc1-216b46d1667e
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EQUIPMENT_INITIAL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05de76db-12ed-41a4-bcfd-9270691135dd
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EQUIPMENT_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 183d6601-5a48-4a44-b788-395972be4733
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: FILENAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf1808d6-0fa5-46e6-bb60-4a8ba900957c
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STR_DATE_ENTERED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a194e602-202f-420d-8013-ff3c67e86ad4
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STR_TIME_ENTERED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c15687e-d305-41e3-80ed-63e749ca8bd7
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: WABILL_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2dc855bb-da74-4018-91cd-aef5c07f6d57
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: WAYBILL_CONTROL_NBR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44855338-db1b-4582-af0e-b9b19052e192
+          stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: WAYBILL_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_EQUIPMENT_HISTORY_DELETE') }}
+  name: NX_EQUIPMENT_HISTORY_DELETE
+  schema: ""
+  sqlType: Source
+  table: NX_EQUIPMENT_HISTORY_DELETE
+  type: sourceInput
+  version: 1
+type: Node

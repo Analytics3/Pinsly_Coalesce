@@ -1,6 +1,6 @@
 fileVersion: 1
 id: "1"
-name: New Subgraph
+name: NetSuite Subgraph
 steps:
   - 00f0e701-1423-4848-acfd-daa280db9c8b
   - 0716e82f-56a9-4b06-a911-1cc6388613f5

@@ -1,0 +1,235 @@
+fileVersion: 1
+id: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+name: STG_NX_REVENUE_PRICE_AUTHORIZATION_FILE
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WABTEC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bcf7a4e6-af27-4766-bbe7-19e21da288c6
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CONTRACT_SUFFIX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0cd63a81-8bd7-4576-8f4b-fe929e2a002d
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73b026ef-dd7a-440c-9810-2a37f880fb4b
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DATA_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa7fe1d6-446b-48e2-8986-afe0610eb569
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f1c1b15-920d-43d6-ae23-5ac7defba365
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: DETAIL_NBR_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5e1d65e2-3b4c-49c9-ba84-5f3a37766668
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: adc6145a-16a3-4b9d-866c-fd86d9eeb561
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIP_INIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 27f3bc57-e860-44b6-af5e-0b01de303b57
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2c1ee23-d09b-47ef-aa4e-84c7e727c915
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIP_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 63954cab-bb6f-4694-ba5e-de64234c6206
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11ba30a7-8c06-490a-a00a-b494af2895c8
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58236f0d-3393-473f-8cba-4e2a2c3e2c8d
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62f73e6c-fb64-4534-9d4d-5ffa410c07d9
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ISSUING_CARRIER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae8ade4e-1ab3-4ea3-9f97-bf075da68d38
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e05f6e59-c2db-43c3-b5d2-04a71fbec46a
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRICE_AUTHORITY_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f2b66e4-d255-4a58-a8ff-1a6d0d026dcc
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: edb19852-4f46-4742-9d85-1fbc181630b3
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PRICE_AUTHORITY_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3245a58f-86fb-4b3e-831c-78aec8405f21
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02bbb389-e966-41a7-8412-83b728861736
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SCAC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a4b539d-ab4c-44cc-a47d-a1262cac3777
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d64f0d6-8d71-4329-ba63-0410072111ef
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SEQUENCE_NBR_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61ed96f3-aced-4ab1-b918-87bb801abc7d
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8611d7e-8847-4dae-93ca-c6dcc253048d
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TARRIFF_ITEM_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 61b144df-5fdf-46da-b0b0-68f8aa64ffb2
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dcfec62b-9648-4f77-92a6-cd40df2aa480
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: DATE
+        description: ""
+        name: WAYBILL_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4db0349c-b3fb-4ee4-92b6-8aaf2695ddaa
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: TRY_TO_DATE("NX_REVENUE_PRICE_AUTHORIZATION_FILE"."WAYBILL_DATE",'YYYYMMDD')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0003b8a-908f-45fb-b5a4-2bb4999a382f
+          stepCounter: 4f5936d8-51ba-4376-bfc9-1ec348557a8d
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: WAYBILL_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f07cd64d-6e90-4948-ad30-f2f28767a706
+                stepCounter: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WABTEC_RAW
+            nodeName: NX_REVENUE_PRICE_AUTHORIZATION_FILE
+        join:
+          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_PRICE_AUTHORIZATION_FILE') }} "NX_REVENUE_PRICE_AUTHORIZATION_FILE"
+        name: STG_NX_REVENUE_PRICE_AUTHORIZATION_FILE
+        noLinkRefs: []
+  name: STG_NX_REVENUE_PRICE_AUTHORIZATION_FILE
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
