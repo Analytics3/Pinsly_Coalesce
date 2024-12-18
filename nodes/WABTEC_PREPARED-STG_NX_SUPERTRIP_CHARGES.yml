@@ -358,7 +358,7 @@ operation:
           columnCounter: 8948cbd4-5f37-4ed6-98cb-aec69a98d2f6
           stepCounter: e29e9ba4-ef8b-4c27-8d45-82f206679a09
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: VARCHAR
         description: ""
         name: STR_DATE_MODIFIED_NUM
         nullable: true
@@ -372,7 +372,7 @@ operation:
           columnCounter: 8916daed-cc82-4de7-b8a4-c321c08bd041
           stepCounter: e29e9ba4-ef8b-4c27-8d45-82f206679a09
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: VARCHAR
         description: ""
         name: STR_ENTRY_DATE_NUM
         nullable: true

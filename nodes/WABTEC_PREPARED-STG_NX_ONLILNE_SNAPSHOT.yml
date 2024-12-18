@@ -64,7 +64,7 @@ operation:
           columnCounter: c75a5080-c53d-4438-843c-6ae40df9a968
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: ALTERNATE__1_LAST_MOVE_DATE
         nullable: true
@@ -72,7 +72,7 @@ operation:
           - columnReferences:
               - columnCounter: 4ec09e12-7a38-407a-bc8b-86ec89ba0df0
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."ALTERNATE__1_LAST_MOVE_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."ALTERNATE__1_LAST_MOVE_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 785013de-267b-4830-afb4-8f60923a1724
@@ -134,7 +134,7 @@ operation:
           columnCounter: edd57240-36bd-428a-8f11-83aa8cb23bf9
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: ALTERNATE__2_LAST_MOVE_DATE
         nullable: true
@@ -142,7 +142,7 @@ operation:
           - columnReferences:
               - columnCounter: 3f60661d-33d2-4bbb-90a4-0326bdceada0
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."ALTERNATE__2_LAST_MOVE_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."ALTERNATE__2_LAST_MOVE_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b29bd3f1-1bce-4d42-a9ae-47baa1bd9566
@@ -498,7 +498,7 @@ operation:
           columnCounter: 0c8b7e33-38d4-4f71-aa69-bd6e72be74d6
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: CONSTR_PLACEMENT_DATE
         nullable: true
@@ -506,7 +506,7 @@ operation:
           - columnReferences:
               - columnCounter: 1aa5201f-489f-4a3b-a11d-66c705f2f36b
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(to_varchar("NX_ONLILNE_SNAPSHOT"."CONSTR_PLACEMENT_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bccaf48b-dcb3-44ed-b481-30d802eadf5b
@@ -638,7 +638,7 @@ operation:
           columnCounter: 67354a21-399b-4ce1-9325-91105b9e18c4
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: CYCLE_START_DATE
         nullable: true
@@ -646,7 +646,7 @@ operation:
           - columnReferences:
               - columnCounter: 25a5c94b-ac03-46b0-9088-dc6ccafbfc84
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."CYCLE_START_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."CYCLE_START_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b59b4ebb-0974-4789-a242-0c4c12aa195f
@@ -960,7 +960,7 @@ operation:
           columnCounter: 334200c8-a444-49d1-8f9e-5828f8275afe
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: INTO_BAD_ORDER_DATE
         nullable: true
@@ -968,7 +968,7 @@ operation:
           - columnReferences:
               - columnCounter: 4c428789-4a6c-418c-8855-9000a5f941c2
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(to_varchar("NX_ONLILNE_SNAPSHOT"."INTO_BAD_ORDER_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3a6a0585-1b8f-43f3-a798-d300bda93968
@@ -988,7 +988,7 @@ operation:
           columnCounter: 17b8f4aa-feb4-450f-ad52-22c785e6ada0
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: INTO_STORAGE_DATE
         nullable: true
@@ -996,7 +996,7 @@ operation:
           - columnReferences:
               - columnCounter: 76bd7030-6600-481f-8233-61a2e93e4fe1
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."INTO_STORAGE_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."INTO_STORAGE_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ab0ba701-0401-4d2c-bfa2-69af49c99584
@@ -1198,7 +1198,7 @@ operation:
           columnCounter: d92696b3-db2c-4ff7-bb0f-d62175592122
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: LAST_MOVE_DATE
         nullable: true
@@ -1206,7 +1206,7 @@ operation:
           - columnReferences:
               - columnCounter: d317a96d-ce82-4faa-be34-d06cc84f3ee5
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."LAST_MOVE_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."LAST_MOVE_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b17d4c59-b87c-494f-957e-8164350dfaea
@@ -1338,7 +1338,7 @@ operation:
           columnCounter: 4ddd0575-f26c-41b0-b1cc-9324b0b46e49
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: MODIFY_DATE
         nullable: true
@@ -1346,7 +1346,7 @@ operation:
           - columnReferences:
               - columnCounter: 0b5f3a7d-8dbb-4296-8eed-5bcc4e7e5531
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."MODIFY_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."MODIFY_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6f5c9d59-e1c9-4d62-965f-d24db50a02d0
@@ -1478,7 +1478,7 @@ operation:
           columnCounter: 94556023-1df3-4517-b91d-a03b5bee55b4
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: ORDERED_DATE
         nullable: true
@@ -1486,7 +1486,7 @@ operation:
           - columnReferences:
               - columnCounter: f6fbb3f6-bfdf-43f7-aa71-76884db7e59b
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(TO_VARCHAR("NX_ONLILNE_SNAPSHOT"."ORDERED_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b5750115-f5d3-4bf9-8a4d-91bc9a3cab7d
@@ -1548,7 +1548,7 @@ operation:
           columnCounter: a9b6304a-d787-4d54-b846-b81f2d158c2d
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: OUT_OF_BAD_ORDER_DATE
         nullable: true
@@ -1556,7 +1556,7 @@ operation:
           - columnReferences:
               - columnCounter: 15fa8162-62d2-462b-99d1-7a0a1183a45c
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(to_varchar("NX_ONLILNE_SNAPSHOT"."OUT_OF_BAD_ORDER_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1387a165-dee5-4f7a-b657-eab90eb98bcb
@@ -1576,7 +1576,7 @@ operation:
           columnCounter: eedb0146-9a79-4567-8a91-69c61f252507
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: OUT_OF_STORAGE_DATE
         nullable: true
@@ -1584,7 +1584,7 @@ operation:
           - columnReferences:
               - columnCounter: ee8a5863-cae6-4ae4-b11c-b8402c398647
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(TO_VARCHAR("NX_ONLILNE_SNAPSHOT"."OUT_OF_STORAGE_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9abf3c95-da3a-4347-80e2-65a1a3e26a41
@@ -1674,7 +1674,7 @@ operation:
           columnCounter: c6584e90-ee22-41ee-9d75-5f4135035ade
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: PLACEMENT_DATE
         nullable: true
@@ -1682,7 +1682,7 @@ operation:
           - columnReferences:
               - columnCounter: 28ffcf84-7442-4f60-8c7a-03eb1ad3c165
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(TO_VARCHAR("NX_ONLILNE_SNAPSHOT"."PLACEMENT_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: cb34a668-3c3a-42bd-a204-0a72fc1e6191
@@ -1772,7 +1772,7 @@ operation:
           columnCounter: cce060a5-e6c3-44ef-8a85-a1cc29c1ec09
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: RCPL_DATE
         nullable: true
@@ -1780,7 +1780,7 @@ operation:
           - columnReferences:
               - columnCounter: 49e32942-7a8b-48cb-bcaf-cddf165fd511
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(TO_VARCHAR("NX_ONLILNE_SNAPSHOT"."RCPL_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 93bda5f2-a0dc-4183-aa31-5925870f9c49
@@ -1800,7 +1800,7 @@ operation:
           columnCounter: 72fd3f7e-6d15-4001-b163-0f85794589dd
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: RECEIVED_DATE
         nullable: true
@@ -1808,7 +1808,7 @@ operation:
           - columnReferences:
               - columnCounter: b0eec43d-9e52-4ee2-95ba-c804ed4ccaa1
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."RECEIVED_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."RECEIVED_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4db0dd90-3561-40a2-851d-661c9bc12437
@@ -1870,7 +1870,7 @@ operation:
           columnCounter: 6e8eba6e-76ef-44e7-b414-ae9702608349
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: RELEASE_DATE
         nullable: true
@@ -1878,7 +1878,7 @@ operation:
           - columnReferences:
               - columnCounter: 7ef3c6c4-63e2-494e-9aa8-2839c6333db4
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
+            transform: try_to_date(TO_VARCHAR("NX_ONLILNE_SNAPSHOT"."RELEASE_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3527f32c-a04a-45e9-92b8-b01c356d8510
@@ -2861,20 +2861,6 @@ operation:
             transform: ifnull("NX_ONLILNE_SNAPSHOT"."UNUSED_CUSTOMER_ID",' ')
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1411dbb4-6f11-4428-add5-8f6615d20825
-          stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: UNUSED_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: de934207-3e09-49e0-9cee-3ea04a2ccdae
-                stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 31f30b1d-f180-499a-a374-a5c673994ded
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
@@ -2906,7 +2892,7 @@ operation:
           columnCounter: e570a750-87f5-4e93-9092-d0a7305f4a32
           stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: WAYBILL_DATE
         nullable: true
@@ -2914,7 +2900,7 @@ operation:
           - columnReferences:
               - columnCounter: c33b8fd9-87bd-4c32-868e-d9f308c39be8
                 stepCounter: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
-            transform: ifnull("NX_ONLILNE_SNAPSHOT"."WAYBILL_DATE",' ')
+            transform: try_to_date("NX_ONLILNE_SNAPSHOT"."WAYBILL_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 47be6415-655c-4507-a81a-3bd6a2d98f30

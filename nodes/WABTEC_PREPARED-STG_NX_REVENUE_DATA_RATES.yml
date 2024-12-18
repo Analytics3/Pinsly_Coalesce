@@ -162,7 +162,7 @@ operation:
           columnCounter: dfce7d80-bd56-458e-a943-c5146b67b442
           stepCounter: d931c2af-3f1e-42a7-a54b-a230e30caa6b
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: WAYBILL_DATE
         nullable: true
@@ -170,7 +170,7 @@ operation:
           - columnReferences:
               - columnCounter: 27dfc5c9-0ac0-4bf1-aef5-24953cbedd4e
                 stepCounter: bbcae7bd-4995-40ff-99ac-870e9dd088d9
-            transform: ""
+            transform: TRY_TO_DATE("NX_REVENUE_DATA_RATES"."WAYBILL_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bcf182c3-a645-4dbb-9c33-0d8413ba132d

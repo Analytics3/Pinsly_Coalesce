@@ -246,7 +246,7 @@ operation:
           columnCounter: 1e78ce74-d23f-4e11-9a3b-0e7b191c6925
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: ENTRY_DATE
         nullable: true
@@ -254,7 +254,7 @@ operation:
           - columnReferences:
               - columnCounter: 5065ced3-94e7-46c8-9c06-7f119fbe2714
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: TRY_TO_DATE("NX_REVENUE_FILE_DETAIL"."ENTRY_DATE", 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f7747a3a-b902-45fe-9c5c-885166dcd10f
@@ -960,7 +960,7 @@ operation:
           columnCounter: 4d5e976b-4e0a-42fb-a637-dd2f9d9db1d3
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: WAYBILL_DATE
         nullable: true
@@ -968,7 +968,7 @@ operation:
           - columnReferences:
               - columnCounter: 69de12be-9d8c-4af3-909f-323ebc41e5ad
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: TRY_TO_DATE("NX_REVENUE_FILE_DETAIL"."WAYBILL_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4b53e18c-31e9-4544-9171-119e82d74f77

@@ -106,7 +106,7 @@ operation:
           columnCounter: e7eac109-2c6e-4eaf-851b-a41a4fa15ad8
           stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: STR_DATE_ENTERED
         nullable: true
@@ -114,7 +114,7 @@ operation:
           - columnReferences:
               - columnCounter: cf1808d6-0fa5-46e6-bb60-4a8ba900957c
                 stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
-            transform: ""
+            transform: TRY_TO_DATE(CASE COALESCE("NX_EQUIPMENT_HISTORY_DELETE"."STR_DATE_ENTERED", 0)WHEN 0 THEN NULL ELSE CAST(LEFT("NX_EQUIPMENT_HISTORY_DELETE"."STR_DATE_ENTERED"+19000000, 4) || '-' || SUBSTR("NX_EQUIPMENT_HISTORY_DELETE"."STR_DATE_ENTERED"+19000000, 5,2)|| '-' || RIGHT("NX_EQUIPMENT_HISTORY_DELETE"."STR_DATE_ENTERED"+19000000,2) AS DATE) END)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 13b111fe-2ddc-4651-aa2a-c7ac27eb56d3
@@ -134,7 +134,7 @@ operation:
           columnCounter: 4666b704-c59f-41a2-8d89-7300127abaf7
           stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: WABILL_DATE
         nullable: true
@@ -142,7 +142,7 @@ operation:
           - columnReferences:
               - columnCounter: 5c15687e-d305-41e3-80ed-63e749ca8bd7
                 stepCounter: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
-            transform: ""
+            transform: TRY_TO_DATE("NX_EQUIPMENT_HISTORY_DELETE"."WABILL_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8e8d4f76-5f73-47d2-8f72-d77c41fb181d

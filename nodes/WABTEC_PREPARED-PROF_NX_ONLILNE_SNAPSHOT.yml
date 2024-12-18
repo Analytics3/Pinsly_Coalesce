@@ -3300,22 +3300,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 1fbcf95a-9818-4b29-b3bf-e9a90bd29fb2
-          stepCounter: d5c44466-fa68-41cc-9079-676913887329
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: NUMBER(38,0)
-        description: ""
-        name: UNUSED_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 1411dbb4-6f11-4428-add5-8f6615d20825
-                stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: d4df3ecf-2f47-4c1b-99f0-9fea0f5b8b0a
           stepCounter: d5c44466-fa68-41cc-9079-676913887329
         config:
@@ -3353,7 +3337,7 @@ operation:
         config:
           isDistinctCount: true
           isNullCount: true
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: WAYBILL_DATE
         nullable: true
@@ -3361,7 +3345,7 @@ operation:
           - columnReferences:
               - columnCounter: e570a750-87f5-4e93-9092-d0a7305f4a32
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_DATE("STG_NX_ONLILNE_SNAPSHOT"."WAYBILL_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 38c181fe-8503-432d-9471-0d16e76c267a

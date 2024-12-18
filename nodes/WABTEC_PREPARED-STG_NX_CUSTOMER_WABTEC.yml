@@ -736,7 +736,7 @@ operation:
           columnCounter: 1dccb60e-a002-41d6-a7bf-326d4903b56a
           stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: STR_DATE_MODIFIED
         nullable: true
@@ -744,13 +744,13 @@ operation:
           - columnReferences:
               - columnCounter: e5cb6de2-1350-4cba-b082-f83e6961d8d1
                 stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
-            transform: ""
+            transform: TRY_TO_DATE(CASE COALESCE("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED", 0)WHEN 0 THEN NULL ELSE CAST(LEFT("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000, 4) || '-' || SUBSTR("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000, 5,2)|| '-' || RIGHT("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000,2) AS DATE) END)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: cbfbc559-b9aa-424b-ac41-ca0098ef3c5b
           stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: STR_TIME_MODIFIED
         nullable: true
@@ -758,7 +758,7 @@ operation:
           - columnReferences:
               - columnCounter: ad9392a0-1050-4b22-8788-ab7187008c8a
                 stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
-            transform: ""
+            transform: try_to_time(SUBSTR("NX_CUSTOMER_WABTEC"."STR_TIME_MODIFIED"::TEXT, 1, 2) || ':' || SUBSTR("NX_CUSTOMER_WABTEC"."STR_TIME_MODIFIED"::TEXT, 3, 2),'HH24:MI')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d09cfbf2-8461-4ed8-b2a9-c8b89b3431ec
@@ -815,6 +815,26 @@ operation:
               - columnCounter: 788904b9-5413-47d6-8d13-e509743ecf0a
                 stepCounter: dcfded73-7ca4-4576-a8ff-ba781a15a789
             transform: NULLIF("NX_CUSTOMER_WABTEC"."ZN_ID_KEY",' ')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac901366-0ea8-4662-b82d-3b4eec31ba29
+          stepCounter: 6fe06a7b-9e02-475b-8c42-e8311376d3ac
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DATETIME_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CAST(TRY_TO_DATE(CASE COALESCE("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED", 0)WHEN 0 THEN NULL ELSE CAST(LEFT("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000, 4) || '-' || SUBSTR("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000, 5,2)|| '-' || RIGHT("NX_CUSTOMER_WABTEC"."STR_DATE_MODIFIED"+19000000,2) AS DATE) END) || ' ' || try_to_time(SUBSTR("NX_CUSTOMER_WABTEC"."STR_TIME_MODIFIED"::TEXT, 1, 2) || ':' || SUBSTR("NX_CUSTOMER_WABTEC"."STR_TIME_MODIFIED"::TEXT, 3, 2),'HH24:MI') as timestamp)
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

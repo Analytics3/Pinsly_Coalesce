@@ -876,7 +876,7 @@ operation:
           columnCounter: 81f6fecf-66d9-4c97-9bed-1f7188366942
           stepCounter: d497d3b6-1e64-442f-852e-967d4d44b46c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: STR_DATE_ENTERED
         nullable: true
@@ -884,7 +884,7 @@ operation:
           - columnReferences:
               - columnCounter: 4446343e-c269-4dd5-8db8-702fd0dec064
                 stepCounter: 0429954c-a126-45c2-862e-ad279b59bae7
-            transform: ""
+            transform: TRY_TO_DATE(CASE COALESCE("NX_EQUIPMENT_HISTORY"."STR_DATE_ENTERED", 0)WHEN 0 THEN NULL ELSE CAST(LEFT("NX_EQUIPMENT_HISTORY"."STR_DATE_ENTERED"+19000000, 4) || '-' || SUBSTR("NX_EQUIPMENT_HISTORY"."STR_DATE_ENTERED"+19000000, 5,2)|| '-' || RIGHT("NX_EQUIPMENT_HISTORY"."STR_DATE_ENTERED"+19000000,2) AS DATE) END)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 22ce027a-9bf2-44b1-a7f6-c4bb07838dd9
@@ -932,7 +932,7 @@ operation:
           columnCounter: 5fad7647-b477-48f1-9b74-585e5fe42ff0
           stepCounter: d497d3b6-1e64-442f-852e-967d4d44b46c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR
         description: ""
         name: TRH_EVENT_DATE_KEY
         nullable: true
@@ -1044,7 +1044,7 @@ operation:
           columnCounter: 73912181-db36-4c47-9c65-53ac17e4d167
           stepCounter: d497d3b6-1e64-442f-852e-967d4d44b46c
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: WAYBILL_DATE
         nullable: true
@@ -1052,7 +1052,7 @@ operation:
           - columnReferences:
               - columnCounter: 2269ce3d-9084-42e7-8ed9-d85b07241cf2
                 stepCounter: 0429954c-a126-45c2-862e-ad279b59bae7
-            transform: ""
+            transform: TRY_TO_DATE("NX_EQUIPMENT_HISTORY"."WAYBILL_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c2aa6294-0abc-4334-9312-bb3b21f50844
