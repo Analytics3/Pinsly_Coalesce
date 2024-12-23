@@ -705,6 +705,26 @@ operation:
                 stepCounter: ab3fb650-78a3-4be2-a523-cd73d32ab66c
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6c0a1f4-4299-451e-9238-978cf440dace
+          stepCounter: 0716e82f-56a9-4b06-a911-1cc6388613f5
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSACTION_STATUS_CLEANED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CASE WHEN  ("STG_TRANSACTION"."TYPE" = 'CustInvc' or  "STG_TRANSACTION"."TYPE" = 'CustCred') and "STG_TRANSACTION"."STATUS" = 'A' THEN 'Open' WHEN  "STG_TRANSACTION"."TYPE" = 'CustDep' and "STG_TRANSACTION"."STATUS" = 'A' THEN 'Not Deposited' WHEN  "STG_TRANSACTION"."TYPE" = 'CustCred' and "STG_TRANSACTION"."STATUS" = 'B' THEN 'Fully applied' WHEN  "STG_TRANSACTION"."TYPE" = 'CustInvc' and "STG_TRANSACTION"."STATUS" = 'B' THEN 'Invoice Paid in Full' WHEN  "STG_TRANSACTION"."TYPE" = 'CustDep' and "STG_TRANSACTION"."STATUS" = 'C' THEN 'Deposit Fully Applied' ELSE NULL END
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

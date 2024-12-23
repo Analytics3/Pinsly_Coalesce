@@ -629,6 +629,26 @@ operation:
                 stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0e9de97-b079-42af-aace-98f625bf5c81
+          stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+        config: {}
+        dataType: Varchar
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSACTION_STATUS_CLEANED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0b186569-eff1-43d5-a7f1-9e6e515a9f8e
+                stepCounter: 9591bed7-4776-4f63-b983-f5816f6274f2
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

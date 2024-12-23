@@ -1209,6 +1209,36 @@ operation:
           - columnReferences: []
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f6485c4-e60a-47b0-915c-0bc6e18322b8
+          stepCounter: f5e3a6f4-5998-4194-b51e-34cba76fc9b2
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRANSACTION_STATUS_CLEANED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38865b76-43a4-4fdb-8433-e25a73e3ddd1
+                stepCounter: b5cfa2af-9453-4a8e-9026-8c2c38fbac45
+            transform: ""
+          - columnReferences:
+              - columnCounter: d0e9de97-b079-42af-aace-98f625bf5c81
+                stepCounter: 3fa1b093-c124-4db9-a38f-68997396d2c6
+            transform: ""
+          - columnReferences:
+              - columnCounter: d6c0a1f4-4299-451e-9238-978cf440dace
+                stepCounter: 0716e82f-56a9-4b06-a911-1cc6388613f5
+            transform: ""
+          - columnReferences: []
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

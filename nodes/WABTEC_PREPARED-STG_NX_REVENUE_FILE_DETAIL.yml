@@ -708,7 +708,7 @@ operation:
           columnCounter: a6498981-204f-4f30-bc81-c9e312fb3d38
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: REVENUE_DATE
         nullable: true
@@ -716,7 +716,7 @@ operation:
           - columnReferences:
               - columnCounter: a04fb1ed-4cad-4d0c-9abf-f1297db2771c
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: TRY_TO_DATE("NX_REVENUE_FILE_DETAIL"."REVENUE_DATE",'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: aeffea95-2f00-4659-904a-ef66a6e5dab0
@@ -983,6 +983,46 @@ operation:
               - columnCounter: 0719e1d6-4c82-47be-8888-482ccab3b1e7
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d422388-eecb-4201-a68c-0cd2d2865dd7
+          stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WB_NUMBER_FILE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_REVENUE_FILE_DETAIL"."WAYBILL_NUMBER", SPLIT_PART(SPLIT_PART("NX_REVENUE_FILE_DETAIL"."FILENAME", '/', 4), '_', 1))
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43ed22bc-68cb-4ee9-8c89-b496833a19fd
+          stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RAIL_FILE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: SPLIT_PART(SPLIT_PART("NX_REVENUE_FILE_DETAIL"."FILENAME", '/', 4), '_', 1)
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

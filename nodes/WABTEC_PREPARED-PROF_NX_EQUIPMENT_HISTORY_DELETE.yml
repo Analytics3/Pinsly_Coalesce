@@ -1,0 +1,248 @@
+fileVersion: 1
+id: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+name: PROF_NX_EQUIPMENT_HISTORY_DELETE
+operation:
+  config:
+    sampleMode: Full Table
+    sampleOption: Fixed Row
+    samplePercent: "10"
+    sampleRows: "1000"
+  database: ""
+  deployEnabled: false
+  description: ""
+  isMultisource: false
+  locationName: WABTEC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ace30ff-80eb-49fe-94f4-e21ad070ce7d
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: PROFILE_METRIC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "NULL"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 460dbbce-9d4b-4845-b8c7-2864b21a45cc
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25d75c3b-da28-49ec-abfe-9739f02627d2
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EQH_EVENT_DATE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1855119a-222b-42aa-94d7-b1093d75cae6
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6255ca7a-838f-40a8-902b-9592f291cc0d
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: EQH_EVENT_TIME_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93ba180f-9d5e-4d3c-a5df-6f3d7c2a15c4
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79da868d-bd2f-4660-9cb7-d718539a967d
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQH_MOVE_TYP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 69710d63-536e-4af3-b300-51cf908d28bd
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9267fb73-ae9a-4050-8e5d-3edc45113b35
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIPMENT_INITIAL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6a9525ce-554b-4da1-b329-e3ec74342200
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e16c597b-e16a-40bb-86db-2c9c1bcbef4d
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EQUIPMENT_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 800f4bb6-71f8-4fb1-a59f-1e7f206e4115
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29910fc3-1e0c-47d9-bf85-341a8477b5ab
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c4aa173d-1f88-4404-99ca-80295a104cc6
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65e0518a-2cbf-46c4-b41b-ccefbd136d73
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: DATE
+        description: ""
+        name: STR_DATE_ENTERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e7eac109-2c6e-4eaf-851b-a41a4fa15ad8
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ee29534-b8f1-490a-a64f-60621e9b6048
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STR_TIME_ENTERED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13b111fe-2ddc-4651-aa2a-c7ac27eb56d3
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71833a09-9d38-4d03-8525-ec3593fa41ce
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: DATE
+        description: ""
+        name: WABILL_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4666b704-c59f-41a2-8d89-7300127abaf7
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1d69cbd-d898-4423-91d0-00267c6ccc6b
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WAYBILL_CONTROL_NBR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e8d4f76-5f73-47d2-8f72-d77c41fb181d
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1146df94-ffcd-4415-a304-4fe2c0287aa5
+          stepCounter: f9a9e3c4-f79a-4dec-b133-de7a2e160fa1
+        config:
+          isDistinctCount: true
+          isNullCount: true
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: WAYBILL_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba12d1ad-f8e1-4fa2-a413-9fe08f23df2c
+                stepCounter: 87224c92-d42a-45ba-a366-b9260a77367f
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WABTEC_PREPARED
+            nodeName: STG_NX_EQUIPMENT_HISTORY_DELETE
+        join:
+          joinCondition: FROM {{ ref('WABTEC_PREPARED', 'STG_NX_EQUIPMENT_HISTORY_DELETE') }} "STG_NX_EQUIPMENT_HISTORY_DELETE"
+        name: PROF_NX_EQUIPMENT_HISTORY_DELETE
+        noLinkRefs: []
+  name: PROF_NX_EQUIPMENT_HISTORY_DELETE
+  overrideSQL: false
+  schema: ""
+  sqlType: "1"
+  type: sql
+  version: 1
+type: Node

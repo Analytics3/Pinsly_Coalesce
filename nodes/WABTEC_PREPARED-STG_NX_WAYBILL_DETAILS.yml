@@ -1240,7 +1240,7 @@ operation:
           columnCounter: 4f49b4d0-51d5-449e-b998-cd55c224379a
           stepCounter: f70718e7-366a-4297-87a0-9a4edf4465f3
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: WB_DATE
         nullable: true
@@ -1248,7 +1248,18 @@ operation:
           - columnReferences:
               - columnCounter: 8b8334bd-3665-4a64-a866-603b8d28d336
                 stepCounter: 6b752247-d8cb-4a70-9c9e-b9ee191823c2
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR(NX_WAYBILL_DETAILS.WB_DATE)) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR(NX_WAYBILL_DETAILS.WB_DATE), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR(NX_WAYBILL_DETAILS.WB_DATE), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR(NX_WAYBILL_DETAILS.WB_DATE)
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 842f9eb5-3344-43f3-a8f8-81180da45e7b
@@ -1324,6 +1335,26 @@ operation:
               - columnCounter: "0"
                 stepCounter: "0"
             transform: SPLIT_PART(SPLIT_PART("NX_WAYBILL_DETAILS"."FILENAME", '/', 4), '_', 1)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad59f8bd-c71a-43b8-9bf9-79c92c9be79b
+          stepCounter: f70718e7-366a-4297-87a0-9a4edf4465f3
+        config: {}
+        dataType: Varchar
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WB_NUMBER_FILE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_WAYBILL_DETAILS"."WB_NUMBER", SPLIT_PART(SPLIT_PART("NX_WAYBILL_DETAILS"."FILENAME", '/', 4), '_', 1))
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
