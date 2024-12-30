@@ -554,7 +554,7 @@ operation:
           columnCounter: 9a1aabb4-9876-41d3-81f8-e0823c7021c1
           stepCounter: d497d3b6-1e64-442f-852e-967d4d44b46c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: EQH_CAR_HIRE_EXTRACT_TIME
         nullable: true
@@ -562,7 +562,7 @@ operation:
           - columnReferences:
               - columnCounter: 1bc99eb5-bf10-4116-ba15-3c429c883fcb
                 stepCounter: 0429954c-a126-45c2-862e-ad279b59bae7
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_EQUIPMENT_HISTORY"."EQH_CAR_HIRE_EXTRACT_TIME", 1, 2) || ':' || SUBSTR("NX_EQUIPMENT_HISTORY"."EQH_CAR_HIRE_EXTRACT_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b025958f-9894-443a-ac54-ac08be021eec
@@ -722,7 +722,7 @@ operation:
           columnCounter: b392953c-4e1e-4d46-a528-7bfadef3b196
           stepCounter: d497d3b6-1e64-442f-852e-967d4d44b46c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: EQH_SPOT_TIME
         nullable: true
@@ -730,7 +730,7 @@ operation:
           - columnReferences:
               - columnCounter: 6030c9b2-5c8d-4a4f-be4f-d4f2b82a605c
                 stepCounter: 0429954c-a126-45c2-862e-ad279b59bae7
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_EQUIPMENT_HISTORY"."EQH_SPOT_TIME", 1, 2) || ':' || SUBSTR("NX_EQUIPMENT_HISTORY"."EQH_SPOT_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 97ceaed3-30f8-455c-881f-7b8a15efa541
@@ -890,7 +890,7 @@ operation:
           columnCounter: 22ce027a-9bf2-44b1-a7f6-c4bb07838dd9
           stepCounter: d497d3b6-1e64-442f-852e-967d4d44b46c
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: STR_TIME_ENTERED
         nullable: true
@@ -898,7 +898,7 @@ operation:
           - columnReferences:
               - columnCounter: a62c484e-ae9d-42a3-8479-a0d676094fb6
                 stepCounter: 0429954c-a126-45c2-862e-ad279b59bae7
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_EQUIPMENT_HISTORY"."STR_TIME_ENTERED", 1, 2) || ':' || SUBSTR("NX_EQUIPMENT_HISTORY"."STR_TIME_ENTERED", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 50772125-b037-49ca-b62f-71b7ec033aa1

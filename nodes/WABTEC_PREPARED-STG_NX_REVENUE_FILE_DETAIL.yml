@@ -58,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: 8196f1db-2f90-4a31-b94a-fca9d4b09aec
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."AIF_DETAIL_LOG_ID",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9d121fac-eee7-4c65-afb7-6cea995bb2ce
@@ -72,7 +72,7 @@ operation:
           - columnReferences:
               - columnCounter: 4a6cc538-0770-488d-9ea9-360b0659b4d4
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."ACCOUNTING_PERIOD",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 69f9024a-60cf-4b32-bf0c-f2ac138cd602
@@ -100,7 +100,7 @@ operation:
           - columnReferences:
               - columnCounter: 06c3d4d5-5d5c-47e2-886e-442032822fc7
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."BILLING_CUST_ADDR_TYP",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fc38d617-000e-4921-ba02-df2a3045d90c
@@ -114,7 +114,7 @@ operation:
           - columnReferences:
               - columnCounter: fa07eee8-eb6b-4209-b24b-cdb066b8ba49
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."BILLING_CUSTOMER_ID",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5354f12f-7636-4b79-b11e-090b95a2774a
@@ -142,7 +142,7 @@ operation:
           - columnReferences:
               - columnCounter: ac6f6230-0089-47db-8e91-12f8746f23cd
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."CAR_COUNT_INDICATOR",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c9b9cb8e-ba4d-4442-8a06-54a5d7162511
@@ -156,7 +156,7 @@ operation:
           - columnReferences:
               - columnCounter: 419b15f6-9797-43f9-82a1-e90163381fc0
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."CHARGE_CODE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ca90ce3e-dc3d-4f7e-b593-67005fb2cb32
@@ -170,7 +170,7 @@ operation:
           - columnReferences:
               - columnCounter: c976b67c-6e9f-4e34-8c7b-b44c97e6f477
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."CLIENT_ROAD",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f1c83c1b-c7be-4d46-9718-0c0425b430b1
@@ -184,7 +184,7 @@ operation:
           - columnReferences:
               - columnCounter: 7a26e49b-f2b6-46fd-8bd2-6456c1f49177
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."CORRECTION_INDICATOR",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d0d52636-0b71-4186-9147-8616f0b28b4f
@@ -198,7 +198,7 @@ operation:
           - columnReferences:
               - columnCounter: 4f66592b-dfea-4f50-b64b-df7d166f3a0a
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."COST_CENTER",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b0516192-6d05-41cc-8869-5528adf3ad7a
@@ -212,7 +212,7 @@ operation:
           - columnReferences:
               - columnCounter: 9b57ea1c-739d-46ab-9f59-1868c86d6d90
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."CURRENCY_CODE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d04893cd-2236-483a-96bd-8b8dc021e54a
@@ -240,7 +240,7 @@ operation:
           - columnReferences:
               - columnCounter: d0fecc12-12f1-420a-8652-5d8e68b509db
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."DATA_SOURCE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1e78ce74-d23f-4e11-9a3b-0e7b191c6925
@@ -260,7 +260,7 @@ operation:
           columnCounter: f7747a3a-b902-45fe-9c5c-885166dcd10f
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: ENTRY_TIME
         nullable: true
@@ -268,7 +268,7 @@ operation:
           - columnReferences:
               - columnCounter: dd674e10-c463-44e0-b2c2-f4fc9f03782f
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_REVENUE_FILE_DETAIL"."ENTRY_TIME", 1, 2) || ':' || SUBSTR("NX_REVENUE_FILE_DETAIL"."ENTRY_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e0a4ec7c-fd56-4759-a0ef-aa014e2b731c
@@ -282,7 +282,7 @@ operation:
           - columnReferences:
               - columnCounter: 3bf45f10-1d65-416f-925d-4b690fcf9db8
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."ENTRY_USER_ID",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 59615199-2109-45af-93c5-f9705ae73832
@@ -296,7 +296,7 @@ operation:
           - columnReferences:
               - columnCounter: 669159c6-41d4-4b7d-8438-5c6c4d2c7eb8
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."EQUIP_INIT",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b8373911-0732-4681-8d57-4cace1047ada
@@ -324,7 +324,7 @@ operation:
           - columnReferences:
               - columnCounter: 21781327-efa5-4319-9f97-f8fb14e8eded
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."ERROR_CODE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 13f8c39f-86d2-4f6a-8be4-73d4c85b5b50
@@ -338,7 +338,7 @@ operation:
           - columnReferences:
               - columnCounter: 5bb33a94-75b5-4729-a061-de1efd666d88
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."ESTIMATED_ACTUAL",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b86554ef-0dd9-4fd6-9a6c-acae6a1ffa9d
@@ -372,7 +372,7 @@ operation:
           columnCounter: efe223ce-5a29-4efd-b2ef-4dc5bdeb0da3
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: EXTRACTED_DATE
         nullable: true
@@ -380,13 +380,13 @@ operation:
           - columnReferences:
               - columnCounter: 9e639f32-c1a3-4f48-a047-6b1c312e688e
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: try_to_date(to_varchar("NX_REVENUE_FILE_DETAIL"."EXTRACTED_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 13bcca9c-a9d8-475b-b949-56bfcc4cfcb1
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: EXTRACTED_TIME
         nullable: true
@@ -394,7 +394,7 @@ operation:
           - columnReferences:
               - columnCounter: db951b8b-f338-46c8-bb4f-aa0573809668
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_REVENUE_FILE_DETAIL"."EXTRACTED_TIME", 1, 2) || ':' || SUBSTR("NX_REVENUE_FILE_DETAIL"."EXTRACTED_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 36bd9eff-a0e3-4723-a4d5-beb663064d99
@@ -408,7 +408,7 @@ operation:
           - columnReferences:
               - columnCounter: 38e4e8d9-5382-404e-938b-d7db575f7cc0
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."FILENAME",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2f993e52-0dc4-4bed-9c74-8c313acc645b
@@ -436,7 +436,7 @@ operation:
           - columnReferences:
               - columnCounter: d124c65e-3d0c-4860-a051-db208997716e
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."GL_ACCOUNT",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 95d7e9db-c312-4388-8a26-833a89a3426a
@@ -450,7 +450,7 @@ operation:
           - columnReferences:
               - columnCounter: dd8b4ed0-2a69-47a8-8587-bf4684cd89fa
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."GL_BATCH_NUMBER",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0c83b424-9e7e-4f46-b384-85bb9444f3b4
@@ -484,7 +484,7 @@ operation:
           columnCounter: af2103c9-d292-4be4-8374-93eca35ebcb3
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: INVOICE_DATE
         nullable: true
@@ -492,7 +492,7 @@ operation:
           - columnReferences:
               - columnCounter: 5f63f252-9a35-4729-8ad2-85c4212ec56b
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: try_to_date(to_varchar("NX_REVENUE_FILE_DETAIL"."INVOICE_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 489c348f-b7ab-4635-af9c-29078e06f354
@@ -506,7 +506,7 @@ operation:
           - columnReferences:
               - columnCounter: 700cf3de-055e-458c-bef0-f3cdfd07d8f6
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."INVOICE_NUMBER",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 882d3f3f-e09f-4e21-b047-1a87df557bf7
@@ -520,7 +520,7 @@ operation:
           - columnReferences:
               - columnCounter: 6ddc358c-c06b-467f-b6f1-dda1dbee7265
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."INVOICE_VERSION",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0e683ebe-47f3-4941-b3c3-b99ddb5c46bb
@@ -534,7 +534,7 @@ operation:
           - columnReferences:
               - columnCounter: 7ba53452-1335-4cdf-aba8-eba13c61e0cc
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."INVOICED",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b7bd28d4-11e7-4bd7-a35d-f902da4a5ad2
@@ -548,7 +548,7 @@ operation:
           - columnReferences:
               - columnCounter: 2ade3f8d-18c7-434a-a21e-4da12688a276
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."METHOD_OF_ENTRY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ecad2d2a-2013-4836-b309-d10e87adde20
@@ -562,13 +562,13 @@ operation:
           - columnReferences:
               - columnCounter: f7679568-aaea-4ff0-93c4-b1ef55eb3917
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."METHOD_OF_PAYMENT",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 940d1e67-9e1d-4f08-940f-271f8f54f8b4
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: MODIFIED_DATE
         nullable: true
@@ -576,13 +576,13 @@ operation:
           - columnReferences:
               - columnCounter: 27a12ad6-12ab-420e-8efa-5f5e82019d83
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: try_to_date(to_varchar("NX_REVENUE_FILE_DETAIL"."MODIFIED_DATE"),'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5cea5518-afa8-4910-8b67-05a4668b357f
           stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: MODIFIED_TIME
         nullable: true
@@ -590,7 +590,7 @@ operation:
           - columnReferences:
               - columnCounter: 6d87551d-164d-4113-b044-72e1002fc5ff
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_REVENUE_FILE_DETAIL"."MODIFIED_TIME", 1, 2) || ':' || SUBSTR("NX_REVENUE_FILE_DETAIL"."MODIFIED_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 931efbc9-ca7d-4633-a9b3-e86e6d2de5e1
@@ -604,7 +604,7 @@ operation:
           - columnReferences:
               - columnCounter: 3c6cb1c7-9fd1-42df-aa94-f0e63cef98ee
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."MODIFIED_USER_ID",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 18c9bc9f-3d74-4ace-baab-af8e162a1075
@@ -674,7 +674,7 @@ operation:
           - columnReferences:
               - columnCounter: 325b4703-c106-4b95-bf81-83f52d897969
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."POST_CLOSE_ADJUST",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ee963f0f-ed7d-4d46-bc91-412c4b1a8bc5
@@ -688,7 +688,7 @@ operation:
           - columnReferences:
               - columnCounter: 78f40e2b-43ce-4804-9e96-069d9d38562c
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."RMS_CONTROL_NBR",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b0a9f849-9f34-4ba8-8aa2-bb3d2220f97d
@@ -730,7 +730,7 @@ operation:
           - columnReferences:
               - columnCounter: 6082a93f-7722-4556-a0da-6cc7075b1085
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."SERVICE_GROUP",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dfcf14ef-673f-4893-bb54-9696ed9cae8e
@@ -744,7 +744,7 @@ operation:
           - columnReferences:
               - columnCounter: 61cd5aaa-9665-4cf0-8ac6-6b58419b1825
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."SERVICE_TYPE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6124d128-e042-446c-8b7f-2704dca41670
@@ -758,7 +758,7 @@ operation:
           - columnReferences:
               - columnCounter: 8876d89f-909e-45b6-bbc1-08bbb7a89f01
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."STATUS",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ca40395c-ca2f-41ba-acad-77da4fef8799
@@ -786,7 +786,7 @@ operation:
           - columnReferences:
               - columnCounter: bcb7fd8e-df03-4845-a545-8dcc8d435b5d
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."TAX_CODE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 37617c12-b05a-4196-8cf7-fb806aeb4437
@@ -814,7 +814,7 @@ operation:
           - columnReferences:
               - columnCounter: 5dd03ea5-c43a-421a-be17-456d04902736
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."TRAFFIC_TYPE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dafe1db5-a2f1-43dc-bfdf-d27e0f1fe1ac
@@ -828,7 +828,7 @@ operation:
           - columnReferences:
               - columnCounter: 44c8b882-1eb2-42f6-88f2-17f039fbfec5
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."TRANSACTION_TYPE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7eb5a7b7-fe17-483a-9a2e-85fbad7c5ef0
@@ -856,7 +856,7 @@ operation:
           - columnReferences:
               - columnCounter: 31f8375f-77b7-4ab3-8acf-de6dd8db55dd
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_1_BYTE__1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 51b80ece-e653-4e2e-8e5d-78bbcc7ca195
@@ -870,7 +870,7 @@ operation:
           - columnReferences:
               - columnCounter: a02cbddc-68b3-4471-803e-f42c71b0923b
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_1_BYTE__2",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0930560f-082c-4184-91a1-3e7cbc3f56b6
@@ -884,7 +884,7 @@ operation:
           - columnReferences:
               - columnCounter: 6289261f-d61e-4f1a-9b59-e60cafc1b17f
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_1_BYTE__3",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2e6df38e-3661-49f2-bad1-6d578d2c11c0
@@ -898,7 +898,7 @@ operation:
           - columnReferences:
               - columnCounter: 1dfdb40a-67d5-4436-84b0-0c8735332d4d
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_1_BYTE__4",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e45752c3-161a-44cb-9cd4-5cc79e3c961b
@@ -912,7 +912,7 @@ operation:
           - columnReferences:
               - columnCounter: f5e86aca-c8a0-4779-85bb-b8a658a08977
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_2_BYTE__1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a2538d59-45c0-4a62-a61c-1e7e1f6a89ac
@@ -926,7 +926,7 @@ operation:
           - columnReferences:
               - columnCounter: 4c610313-fa54-4422-bc3f-03d00de48d93
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_2_BYTE__2",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ecef6867-9502-4b48-b438-9a15a897c090
@@ -940,7 +940,7 @@ operation:
           - columnReferences:
               - columnCounter: 93b056a8-73d2-47ab-aa7e-dae2d517b23c
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_2_BYTE__3",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 661c9c27-700c-4438-a324-bee8d7a2c715
@@ -954,7 +954,7 @@ operation:
           - columnReferences:
               - columnCounter: 59c60a50-302d-489b-916f-8ec0a1892364
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."UNUSED_3_BYTE__1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4d5e976b-4e0a-42fb-a637-dd2f9d9db1d3
@@ -982,7 +982,7 @@ operation:
           - columnReferences:
               - columnCounter: 0719e1d6-4c82-47be-8888-482ccab3b1e7
                 stepCounter: bb863fc5-a92d-4a50-8979-ccfb19fac446
-            transform: ""
+            transform: nullif("NX_REVENUE_FILE_DETAIL"."WAYBILL_NUMBER",' ')
       - acceptedValues:
           strictMatch: true
           values: []

@@ -218,7 +218,7 @@ operation:
           columnCounter: a4582b84-6351-46ee-b581-c67de8ee6b75
           stepCounter: f70718e7-366a-4297-87a0-9a4edf4465f3
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: CHANGE_DATE
         nullable: true
@@ -226,13 +226,24 @@ operation:
           - columnReferences:
               - columnCounter: 7dc44961-4d39-41a2-889e-21f5b17cfe35
                 stepCounter: 6b752247-d8cb-4a70-9c9e-b9ee191823c2
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR("NX_WAYBILL_DETAILS"."CHANGE_DATE")) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR("NX_WAYBILL_DETAILS"."CHANGE_DATE"), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR("NX_WAYBILL_DETAILS"."CHANGE_DATE"), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR("NX_WAYBILL_DETAILS"."CHANGE_DATE")
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2e733152-0bbf-459f-80f9-0cfe66dad878
           stepCounter: f70718e7-366a-4297-87a0-9a4edf4465f3
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: CHANGE_TIME
         nullable: true
@@ -240,7 +251,7 @@ operation:
           - columnReferences:
               - columnCounter: 73f105fd-333c-4619-85f6-02fbfdf12945
                 stepCounter: 6b752247-d8cb-4a70-9c9e-b9ee191823c2
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_WAYBILL_DETAILS"."CHANGE_TIME", 1, 2) || ':' || SUBSTR("NX_WAYBILL_DETAILS"."CHANGE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5c5f9fba-40a9-43f6-a733-3f2f75ce5901

@@ -92,7 +92,7 @@ operation:
           columnCounter: b95e7ab8-f59e-4292-a739-b5d343b1aaa8
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: ALTERNATE__1_LAST_MOVE_TIME
         nullable: true
@@ -100,7 +100,7 @@ operation:
           - columnReferences:
               - columnCounter: b28e7361-14d5-42b3-954e-e2e0d8d94de3
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."ALTERNATE__1_LAST_MOVE_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."ALTERNATE__1_LAST_MOVE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a79df2b0-3685-491e-8e5c-46c760858266
@@ -162,7 +162,7 @@ operation:
           columnCounter: f7baaa28-4527-4e12-b946-e5a1a6bb9ae5
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: ALTERNATE__2_LAST_MOVE_TIME
         nullable: true
@@ -170,7 +170,7 @@ operation:
           - columnReferences:
               - columnCounter: 0ae650f9-1d30-4fd3-be6d-5737387f65de
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."ALTERNATE__2_LAST_MOVE_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."ALTERNATE__2_LAST_MOVE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e6aaa75b-495c-4d37-9e23-6925dc6ec646
@@ -456,7 +456,7 @@ operation:
           columnCounter: d67bb589-3ce9-4d52-bbd6-40d83fcf5682
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: CONSTR_PLACEMENT_TIME
         nullable: true
@@ -464,7 +464,7 @@ operation:
           - columnReferences:
               - columnCounter: bccaf48b-dcb3-44ed-b481-30d802eadf5b
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."CONSTR_PLACEMENT_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."CONSTR_PLACEMENT_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8fc18ced-3b50-44bb-a8b9-b8ed79e25034
@@ -540,7 +540,7 @@ operation:
           columnCounter: 4ddd5d54-f497-4f0e-8bd7-7f5a9d2f56eb
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: CYCLE_START_TIME
         nullable: true
@@ -548,7 +548,7 @@ operation:
           - columnReferences:
               - columnCounter: 0cf5522e-0c4f-4bb3-8bdc-d505b331fc11
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."CYCLE_START_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."CYCLE_START_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 771aeaa4-7bae-433d-8f24-ac3f6ee205e5
@@ -792,7 +792,7 @@ operation:
           columnCounter: f320b792-c6a5-4d45-8a90-a75e94602192
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: INTO_STORAGE_TIME
         nullable: true
@@ -800,7 +800,7 @@ operation:
           - columnReferences:
               - columnCounter: ab0ba701-0401-4d2c-bfa2-69af49c99584
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."INTO_STORAGE_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."INTO_STORAGE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5205cb8c-1d2c-43a3-9353-120cf0ffd8bc
@@ -890,7 +890,7 @@ operation:
           columnCounter: 342fab97-97c8-421d-b7dd-985b26946e2b
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: LAST_MOVE_TIME
         nullable: true
@@ -898,7 +898,7 @@ operation:
           - columnReferences:
               - columnCounter: c4b87c3a-9f14-4586-ab52-97d1f4cd88c9
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."LAST_MOVE_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."LAST_MOVE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e2f8781f-359d-4419-b3d2-aa13be996349
@@ -974,7 +974,7 @@ operation:
           columnCounter: 2ed7b1e9-6eca-40ae-9fab-99c261169566
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: MODIFY_TIME
         nullable: true
@@ -982,7 +982,7 @@ operation:
           - columnReferences:
               - columnCounter: 6f5c9d59-e1c9-4d62-965f-d24db50a02d0
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."MODIFY_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."MODIFY_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 06c68a3e-bc50-40f4-b9c0-cf26fbc24d1f
@@ -1086,7 +1086,7 @@ operation:
           columnCounter: 58ffe079-083d-4ccc-9f99-ceeae69fdbf8
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: OUT_OF_BAD_ORDER_TIME
         nullable: true
@@ -1094,7 +1094,7 @@ operation:
           - columnReferences:
               - columnCounter: 1387a165-dee5-4f7a-b657-eab90eb98bcb
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."OUT_OF_BAD_ORDER_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."OUT_OF_BAD_ORDER_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 364d1cad-b291-429a-85fe-03a699752d36
@@ -1114,7 +1114,7 @@ operation:
           columnCounter: fa9f11d6-d811-476e-ac53-56641ed9b776
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: OUT_OF_STORAGE_TIME
         nullable: true
@@ -1122,7 +1122,7 @@ operation:
           - columnReferences:
               - columnCounter: 9abf3c95-da3a-4347-80e2-65a1a3e26a41
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."OUT_OF_STORAGE_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."OUT_OF_STORAGE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 08280d12-4a87-4bae-b615-1793eb49aa48
@@ -1226,7 +1226,7 @@ operation:
           columnCounter: 3ce432ba-abe5-45b5-9831-e9eefec8d4a6
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: PLACEMENT_TIME
         nullable: true
@@ -1234,7 +1234,7 @@ operation:
           - columnReferences:
               - columnCounter: e63765d3-f831-47c6-9796-053162c923a5
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."PLACEMENT_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."PLACEMENT_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bd763add-6b0c-43e9-9aff-32077a7a5ce0
@@ -1282,7 +1282,7 @@ operation:
           columnCounter: ac65ce54-1c3a-4eb3-989b-0181398f6247
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: RECEIVED_TIME
         nullable: true
@@ -1290,7 +1290,7 @@ operation:
           - columnReferences:
               - columnCounter: 5df4d50d-f43d-40d2-bbaa-dc74ec7eb0f3
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."RECEIVED_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."RECEIVED_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b0a66a4b-66dd-4daa-bcd0-92b8d3c7a613
@@ -1338,7 +1338,7 @@ operation:
           columnCounter: e59b16fc-004d-4e86-bb8d-d62b018f4293
           stepCounter: 953b9104-22ba-4806-88e4-fd3fd3c44b37
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: RELEASE_TIME
         nullable: true
@@ -1346,7 +1346,7 @@ operation:
           - columnReferences:
               - columnCounter: 3527f32c-a04a-45e9-92b8-b01c356d8510
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."RELEASE_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."RELEASE_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 11ad6437-8c76-4d4a-85b5-c881de9d63a2
@@ -1948,7 +1948,7 @@ operation:
           - columnReferences:
               - columnCounter: 0dc9bd8d-308e-4ee8-a3aa-52b6c2e328f0
                 stepCounter: 537fe21a-6535-48f0-aba2-c0c413981593
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."FILE_LOAD_TIME", 1, 2) || ':' || SUBSTR("STG_NX_ONLILNE_SNAPSHOT"."FILE_LOAD_TIME", 3, 2), 'HH:MM')
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

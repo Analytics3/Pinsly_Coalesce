@@ -428,7 +428,7 @@ operation:
           columnCounter: d0c31f79-d1cf-4672-9f09-f61de4bbacc2
           stepCounter: cf2431c3-f8ed-4e5c-b4e3-7ca59b2bfb68
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: TIME_MODIFIED
         nullable: true
@@ -436,7 +436,7 @@ operation:
           - columnReferences:
               - columnCounter: 71958f0e-89d3-4dba-a51e-70a3e08fb97f
                 stepCounter: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_TRACK_MASTER"."TIME_MODIFIED", 1, 2) || ':' || SUBSTR("NX_TRACK_MASTER"."TIME_MODIFIED", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 483b0a50-5bd7-4702-b02a-bc09ee6c5cdd

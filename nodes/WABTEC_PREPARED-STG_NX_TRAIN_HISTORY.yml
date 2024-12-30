@@ -19,38 +19,10 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0d9dfd86-4363-451d-b43e-f0330d0c7c8c
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TRAIN_ID_KEY
-        nullable: false
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 322437b9-5bd4-4e52-ba92-d810c0dd5667
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: d4f9a449-c0ec-41b8-855d-527ddb9a067d
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: CONTROLLING_ROAD
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 7783ce7c-7dd7-4dcf-81a6-7577ce9f198d
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 5956f360-57d8-4179-ab55-6b5dfac8c4a7
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: DATE
         description: ""
         name: DATE_MODIFIED
         nullable: true
@@ -58,215 +30,130 @@ operation:
           - columnReferences:
               - columnCounter: 5f8259ac-32ea-414c-ad01-5db21a89b8f9
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR("NX_TRAIN_HISTORY"."DATE_MODIFIED")) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."DATE_MODIFIED"), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."DATE_MODIFIED"), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR("NX_TRAIN_HISTORY"."DATE_MODIFIED")
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e4194123-a646-4caa-911e-ec1e9d9aaced
+          columnCounter: aff29b01-652d-4ebb-b5a1-9c4f05515e28
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
-        name: FILENAME
+        name: TRH_GS04_GROUP_DATE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: bed720b8-c07b-4159-9743-16e6210a9241
+              - columnCounter: 3d98bbff-5756-491f-a1cf-d3b5d2307dcd
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR("NX_TRAIN_HISTORY"."TRH_GS04_GROUP_DATE")) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_GS04_GROUP_DATE"), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_GS04_GROUP_DATE"), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR("NX_TRAIN_HISTORY"."TRH_GS04_GROUP_DATE")
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3c11309a-2dd2-44bd-b39d-98f5cb997e88
+          columnCounter: 305c272f-3a88-4836-ac44-4003b61ced62
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
-        name: RN_ID_KEY
+        name: TRH_ORIGINAL_BAX04_DATE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: c57a43ed-ed0a-4b09-93e4-fb3bfa2c2446
+              - columnCounter: c29db8f8-92e3-4677-a83b-188727cc55ad
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX04_DATE")) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX04_DATE"), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX04_DATE"), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX04_DATE")
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ba7b6476-9c4c-4c86-b51d-5a1fdad8757f
+          columnCounter: 5c6064e1-1892-4bcd-841d-f17600a59aae
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
-        name: STATION_ID
+        name: TRH_REPORT_DATE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 7fea0737-cde3-4972-971f-91ea75f6e48a
+              - columnCounter: f94f3aa2-599e-4508-a2c3-ccc7b64a19a0
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR("NX_TRAIN_HISTORY"."TRH_REPORT_DATE")) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_REPORT_DATE"), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_REPORT_DATE"), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR("NX_TRAIN_HISTORY"."TRH_REPORT_DATE")
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f88a2555-13c5-4f2e-9a74-f8e514332f9a
+          columnCounter: 06e7e056-355c-4bc0-9e00-5b8f8773d43a
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
-        name: TRH_ACTUAL_ESTIMATED_IND
+        name: TRH_USE_PRIOR_TRAIN_DATE
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 1d997737-c445-479d-b486-df45e93f6192
+              - columnCounter: d56b350b-bd1c-4c5f-a875-4efbd3c8540d
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: |-
+              TRY_TO_DATE(
+                  IFF(
+                      LENGTH(TO_CHAR("NX_TRAIN_HISTORY"."TRH_USE_PRIOR_TRAIN_DATE")) = 5, 
+                      -- If the length is 5 (MDDYY), pad month part
+                      LPAD(SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_USE_PRIOR_TRAIN_DATE"), 1, 1), 2, '0') || 
+                      SUBSTRING(TO_CHAR("NX_TRAIN_HISTORY"."TRH_USE_PRIOR_TRAIN_DATE"), 2, 3),
+                      -- If the length is 6 (MMDDYY), use as-is
+                      TO_CHAR("NX_TRAIN_HISTORY"."TRH_USE_PRIOR_TRAIN_DATE")
+                  ),
+                  'MMDDYY'
+              )
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 62015e6d-40a5-4cd9-9bf2-296d10a4ed5d
+          columnCounter: f37cb292-1e0a-4deb-9315-3604f30472e8
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: FLOAT
         description: ""
-        name: TRH_APPL_SENDERS_CD
+        name: TRAILING_TON_CAR_FACTOR
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: f9757b14-debe-463d-8d78-ad6964ba5bf7
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 1b6df381-28fd-49a4-aa77-25b0c420201e
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_BARGE_IND
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 3a3f00eb-d46a-42ce-8e3e-12dac0353408
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 30172223-589a-4215-8494-b0bfb564d3e8
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_CANADA_PORT_CODE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 4f69b5e8-bb44-4ae7-9989-8cdd32a1cff6
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 659b5f4c-8573-489a-849e-3cf570cfece4
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_CONDUCTOR
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 992bde98-026e-45ba-8ee9-e22bea22766c
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: c3c10aec-ccbf-4394-a228-6f24a60eaa5e
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_DEPART_FROM_ORIG_IND
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: d9794c38-339a-46e6-b7bc-bb5194f1274c
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 5781fe09-c4f2-4697-a1e1-7f7ebc07e025
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_DESCRIPTION
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: ab835fa9-42d2-4f7f-b1e2-b25f718a7c31
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3b8a92a3-73bb-434a-b89d-01533f55f629
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_DESTINATION_RN_ID_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 84a147b4-739d-4bae-86fc-694217d18e74
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 2e67699c-0d76-4fc7-83d9-41d7f749ba88
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_DESTINATION_SN_ID_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f58f41d0-59cf-4e2a-a983-d12e31d24337
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: a19fc9f7-dfee-488b-8f3e-be04cbd202b8
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_DIRECTION_IND
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 076dcc29-c22d-437b-9666-f766ad6a5321
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: f94cf63a-537d-431d-94e2-76ae11cbcda9
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_ENGINEER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 7ade2c57-1d64-4619-95cc-497a47e28ec7
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 4c7f5620-1c15-4eb9-af83-43a13b542343
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR
-        description: ""
-        name: TRH_EVENT_DATE_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: ed55e47e-9952-4147-b391-a4a5fa3700cf
+              - columnCounter: d1ddf7cf-aaec-4ea4-8906-100becf9d391
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
             transform: ""
       - appliedColumnTests: {}
@@ -285,24 +172,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: aff29b01-652d-4ebb-b5a1-9c4f05515e28
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: NUMBER
-        description: ""
-        name: TRH_GS04_GROUP_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 3d98bbff-5756-491f-a1cf-d3b5d2307dcd
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 3e2bca4c-beb2-4a37-9b97-d5910f804f88
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: TRH_GS05_GROUP_TIME
         nullable: true
@@ -310,35 +183,7 @@ operation:
           - columnReferences:
               - columnCounter: 31173588-ace9-4529-89c9-ce354fe03956
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 8fd28ab7-3d30-4a7b-8710-c4dbd2354e20
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_INCL_EOT_DEV_INCONSIS
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: b113f767-be8c-484b-9c2f-130d893df28a
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: fd8a7de9-8c75-42ca-a858-068ea8fe7678
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_INCL_LOCO_IN_CONSIST
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 3de6d343-42d1-463d-8ae2-75df7cf4c180
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_TRAIN_HISTORY"."TRH_GS05_GROUP_TIME", 1, 2) || ':' || SUBSTR("NX_TRAIN_HISTORY"."TRH_GS05_GROUP_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7522cc1f-f6aa-4a41-8c44-e83697c0dbf3
@@ -365,20 +210,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 9cb80209-b649-4365-9794-40c24c870264
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 11697d56-02f4-4f77-84fc-3101c0a41da2
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_MOVE_TYP_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 5df4c74f-79a9-4d9e-9d40-a47044a7309d
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
             transform: ""
       - appliedColumnTests: {}
@@ -607,52 +438,10 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 87b8b963-df53-411f-87d2-59ce8c46c365
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_OCEAN_AMS_3_BYTE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 017e9b69-5508-4727-918d-ed3fc434f871
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: ffaf216e-e6ed-403d-bedb-cc9257c1305a
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_OCEAN_AMS_8_BYTE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 738243ed-205e-4be1-a4b6-683a54c8ebc3
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 305c272f-3a88-4836-ac44-4003b61ced62
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: NUMBER
-        description: ""
-        name: TRH_ORIGINAL_BAX04_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: c29db8f8-92e3-4677-a83b-188727cc55ad
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 8ae9aad7-e21d-4045-8b1d-77e4c2a40d84
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: TRH_ORIGINAL_BAX05_TIME
         nullable: true
@@ -660,147 +449,7 @@ operation:
           - columnReferences:
               - columnCounter: 199d75ad-7d60-4c4a-be93-567150ba5ae9
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: a7757141-2ffc-4625-a85a-18c4e2737925
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_ORIGINAL_TRAIN_ID
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 33819fb2-23bd-4524-b3c9-6f1576b516ca
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: c7050df3-9fcb-4611-9912-19f398d7997f
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_PENDING_TR_CTRL_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 2c814674-980c-4581-8cae-caae16a48d83
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 76f1c617-d67f-4dbf-8e4c-965f972b1706
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_PREVENT_AUTO_PROCESS
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 795fa468-37ca-4140-a1b9-57a381444a37
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 5c6064e1-1892-4bcd-841d-f17600a59aae
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: NUMBER
-        description: ""
-        name: TRH_REPORT_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f94f3aa2-599e-4508-a2c3-ccc7b64a19a0
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 1eef274b-2209-4e53-b794-e5e432fee028
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_REQUIRE_LOCOMOTIVES
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 9d1ddc7c-a5e9-4bba-b4a8-040c3779be22
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 704bfe14-2836-45f9-b1db-e791d883a52d
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_RULE_15_IND
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 970affe2-dd95-4fcc-8d89-a336d729c8bd
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 7968852b-0be9-4478-a6ae-1f30c964864a
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_SCHEDULE_COMPLIANCE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: f8b35535-f567-4a8c-96fa-e4d8ab9effea
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: a5a8c7c4-b4a6-4d77-8357-d395494e59d0
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_SPECIAL_IND
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: c5128b16-a7c4-41de-984a-7209eb6647a2
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: afaba0e5-98a7-48bd-9d1d-4262d35eab69
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_STATUS
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 43741eb5-8405-4a59-a847-046139db18b9
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: a1657f00-3421-4e1c-a0bd-85b34c2d72b8
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TSET_OVERRIDE_FLAG
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 59890f7f-4304-4170-ae5d-f1f858d92a3d
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX05_TIME", 1, 2) || ':' || SUBSTR("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX05_TIME", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 178cddcf-908d-40a8-871a-2b7f8c6fb669
@@ -813,104 +462,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: c93424bb-879d-423f-8042-e0215f13a5a9
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 62140742-bd21-4918-aabb-45007ac1b551
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TRAIN_CONTROL_NBR_KEY
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: fefdad30-7ab9-40a2-ad3a-6de7b648e64a
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 4fdceda1-2c25-428e-9158-392c567561ba
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TRAIN_ID_CHANGED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 6238ad9f-2f0f-4125-bba5-bb826bdd85bc
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: ccd68cd6-e0d4-4367-9888-90870a669743
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TRAIN_TYPE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: d3925d38-976c-4f0b-a7da-72b0ac935389
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 6dfe8243-3d45-4c45-aee5-ce483f046be4
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TRAINMAN
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 3df3ba72-dccd-4a31-a5e8-5f97f63872a3
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 10c94ed1-0c47-41e8-9be6-9f51391d01f5
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TRIP_OPTIMIZER_TR_FLG
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: b5c90037-08a1-401f-9e54-df386538db32
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: d167ff6d-c8f5-400d-bc1a-4c1bf9586249
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_TYP_CONSIST
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 3cabca94-0cca-47c4-b835-6c74d0a87d0b
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: ba788339-6910-4159-ac2e-6b97e3b7f665
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR(16777216)
-        description: ""
-        name: TRH_US_PORT_CODE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 802d6f24-13d6-45d3-bfb7-71a7ef8ab03c
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
             transform: ""
       - appliedColumnTests: {}
@@ -929,6 +480,552 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
+          columnCounter: 4c7f5620-1c15-4eb9-af83-43a13b542343
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: TRH_EVENT_DATE_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed55e47e-9952-4147-b391-a4a5fa3700cf
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e22534bf-5ac0-422d-a6c6-7b9df902025f
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: TIME
+        description: ""
+        name: TIME_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0628a2dd-4e7f-4c27-a77e-5a9e988052cf
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: TRY_TO_TIME(SUBSTR("NX_TRAIN_HISTORY"."TIME_MODIFIED", 1, 2) || ':' || SUBSTR("NX_TRAIN_HISTORY"."TIME_MODIFIED", 3, 2), 'HH:MM')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d9dfd86-4363-451d-b43e-f0330d0c7c8c
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TRAIN_ID_KEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 322437b9-5bd4-4e52-ba92-d810c0dd5667
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TRAIN_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4f9a449-c0ec-41b8-855d-527ddb9a067d
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CONTROLLING_ROAD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7783ce7c-7dd7-4dcf-81a6-7577ce9f198d
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."CONTROLLING_ROAD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4194123-a646-4caa-911e-ec1e9d9aaced
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bed720b8-c07b-4159-9743-16e6210a9241
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."FILENAME",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c11309a-2dd2-44bd-b39d-98f5cb997e88
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: RN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c57a43ed-ed0a-4b09-93e4-fb3bfa2c2446
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."RN_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba7b6476-9c4c-4c86-b51d-5a1fdad8757f
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATION_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fea0737-cde3-4972-971f-91ea75f6e48a
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."STATION_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f88a2555-13c5-4f2e-9a74-f8e514332f9a
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_ACTUAL_ESTIMATED_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1d997737-c445-479d-b486-df45e93f6192
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_ACTUAL_ESTIMATED_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62015e6d-40a5-4cd9-9bf2-296d10a4ed5d
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_APPL_SENDERS_CD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9757b14-debe-463d-8d78-ad6964ba5bf7
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_APPL_SENDERS_CD",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b6df381-28fd-49a4-aa77-25b0c420201e
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_BARGE_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3a3f00eb-d46a-42ce-8e3e-12dac0353408
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_BARGE_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 30172223-589a-4215-8494-b0bfb564d3e8
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_CANADA_PORT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f69b5e8-bb44-4ae7-9989-8cdd32a1cff6
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_CANADA_PORT_CODE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 659b5f4c-8573-489a-849e-3cf570cfece4
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_CONDUCTOR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 992bde98-026e-45ba-8ee9-e22bea22766c
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_CONDUCTOR",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3c10aec-ccbf-4394-a228-6f24a60eaa5e
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_DEPART_FROM_ORIG_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d9794c38-339a-46e6-b7bc-bb5194f1274c
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_DEPART_FROM_ORIG_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5781fe09-c4f2-4697-a1e1-7f7ebc07e025
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab835fa9-42d2-4f7f-b1e2-b25f718a7c31
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_DESCRIPTION",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b8a92a3-73bb-434a-b89d-01533f55f629
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_DESTINATION_RN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 84a147b4-739d-4bae-86fc-694217d18e74
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_DESTINATION_RN_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e67699c-0d76-4fc7-83d9-41d7f749ba88
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_DESTINATION_SN_ID_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f58f41d0-59cf-4e2a-a983-d12e31d24337
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_DESTINATION_SN_ID_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a19fc9f7-dfee-488b-8f3e-be04cbd202b8
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_DIRECTION_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 076dcc29-c22d-437b-9666-f766ad6a5321
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_DIRECTION_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f94cf63a-537d-431d-94e2-76ae11cbcda9
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_ENGINEER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7ade2c57-1d64-4619-95cc-497a47e28ec7
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_ENGINEER",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8fd28ab7-3d30-4a7b-8710-c4dbd2354e20
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_INCL_EOT_DEV_INCONSIS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b113f767-be8c-484b-9c2f-130d893df28a
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_INCL_EOT_DEV_INCONSIS",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd8a7de9-8c75-42ca-a858-068ea8fe7678
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_INCL_LOCO_IN_CONSIST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3de6d343-42d1-463d-8ae2-75df7cf4c180
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_INCL_LOCO_IN_CONSIST",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11697d56-02f4-4f77-84fc-3101c0a41da2
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_MOVE_TYP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5df4c74f-79a9-4d9e-9d40-a47044a7309d
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_MOVE_TYP_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87b8b963-df53-411f-87d2-59ce8c46c365
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_OCEAN_AMS_3_BYTE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 017e9b69-5508-4727-918d-ed3fc434f871
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_OCEAN_AMS_3_BYTE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ffaf216e-e6ed-403d-bedb-cc9257c1305a
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_OCEAN_AMS_8_BYTE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 738243ed-205e-4be1-a4b6-683a54c8ebc3
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_OCEAN_AMS_8_BYTE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7757141-2ffc-4625-a85a-18c4e2737925
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_ORIGINAL_TRAIN_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 33819fb2-23bd-4524-b3c9-6f1576b516ca
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_ORIGINAL_TRAIN_ID",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7050df3-9fcb-4611-9912-19f398d7997f
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_PENDING_TR_CTRL_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2c814674-980c-4581-8cae-caae16a48d83
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_PENDING_TR_CTRL_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76f1c617-d67f-4dbf-8e4c-965f972b1706
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_PREVENT_AUTO_PROCESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 795fa468-37ca-4140-a1b9-57a381444a37
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_PREVENT_AUTO_PROCESS",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1eef274b-2209-4e53-b794-e5e432fee028
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_REQUIRE_LOCOMOTIVES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9d1ddc7c-a5e9-4bba-b4a8-040c3779be22
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_REQUIRE_LOCOMOTIVES",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 704bfe14-2836-45f9-b1db-e791d883a52d
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_RULE_15_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 970affe2-dd95-4fcc-8d89-a336d729c8bd
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_RULE_15_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7968852b-0be9-4478-a6ae-1f30c964864a
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_SCHEDULE_COMPLIANCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8b35535-f567-4a8c-96fa-e4d8ab9effea
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_SCHEDULE_COMPLIANCE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5a8c7c4-b4a6-4d77-8357-d395494e59d0
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_SPECIAL_IND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5128b16-a7c4-41de-984a-7209eb6647a2
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_SPECIAL_IND",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: afaba0e5-98a7-48bd-9d1d-4262d35eab69
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43741eb5-8405-4a59-a847-046139db18b9
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_STATUS",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1657f00-3421-4e1c-a0bd-85b34c2d72b8
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TSET_OVERRIDE_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59890f7f-4304-4170-ae5d-f1f858d92a3d
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TSET_OVERRIDE_FLAG",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62140742-bd21-4918-aabb-45007ac1b551
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TRAIN_CONTROL_NBR_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fefdad30-7ab9-40a2-ad3a-6de7b648e64a
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TRAIN_CONTROL_NBR_KEY",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fdceda1-2c25-428e-9158-392c567561ba
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TRAIN_ID_CHANGED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6238ad9f-2f0f-4125-bba5-bb826bdd85bc
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TRAIN_ID_CHANGED",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccd68cd6-e0d4-4367-9888-90870a669743
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TRAIN_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3925d38-976c-4f0b-a7da-72b0ac935389
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TRAIN_TYPE",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dfe8243-3d45-4c45-aee5-ce483f046be4
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TRAINMAN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3df3ba72-dccd-4a31-a5e8-5f97f63872a3
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TRAINMAN",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10c94ed1-0c47-41e8-9be6-9f51391d01f5
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TRIP_OPTIMIZER_TR_FLG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5c90037-08a1-401f-9e54-df386538db32
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TRIP_OPTIMIZER_TR_FLG",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d167ff6d-c8f5-400d-bc1a-4c1bf9586249
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_TYP_CONSIST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3cabca94-0cca-47c4-b835-6c74d0a87d0b
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_TYP_CONSIST",' ')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba788339-6910-4159-ac2e-6b97e3b7f665
+          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TRH_US_PORT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 802d6f24-13d6-45d3-bfb7-71a7ef8ab03c
+                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_US_PORT_CODE",' ')
+      - appliedColumnTests: {}
+        columnReference:
           columnCounter: e135a88a-8c37-415b-9434-209310941784
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
@@ -940,7 +1037,7 @@ operation:
           - columnReferences:
               - columnCounter: a992ed05-f25a-4f6d-b4f4-44552f95426a
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_1_BYTE_06",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4b6f72ca-a7d1-4b61-b90c-92935d1cd857
@@ -954,7 +1051,7 @@ operation:
           - columnReferences:
               - columnCounter: 2019f8ef-5000-4c3d-8237-78876e322b3b
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_1_BYTE_07",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c5722b7a-dca7-416e-b8e9-06286b5efe40
@@ -968,7 +1065,7 @@ operation:
           - columnReferences:
               - columnCounter: 273adca0-24b4-4b35-88cd-18aa183ca7f4
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_1_BYTE_08",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6e549146-4f61-4f24-bc59-d0d632125ad1
@@ -982,7 +1079,7 @@ operation:
           - columnReferences:
               - columnCounter: 89329047-8ebc-4322-927e-eaa6388c1acf
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_1_BYTE_09",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d15dc299-a6b7-4cbc-a496-e2adfbcf53ca
@@ -996,7 +1093,7 @@ operation:
           - columnReferences:
               - columnCounter: 541927ca-67b5-4ad4-a598-734d71dac26a
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_2_BYTE_01",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c4bc77cc-36e7-4033-b028-d7d1a2e6877d
@@ -1010,7 +1107,7 @@ operation:
           - columnReferences:
               - columnCounter: 50b4547c-22ae-41bf-8999-b2fcdd7d5cd8
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_2_BYTE_02",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 677d2624-2b97-4f31-a123-47555632648b
@@ -1024,7 +1121,7 @@ operation:
           - columnReferences:
               - columnCounter: a473365d-eb97-400d-a976-3e60d47e0cbf
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_2_BYTE_03",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 891004f6-2f4c-4b97-a2a0-f338a27874dc
@@ -1038,21 +1135,7 @@ operation:
           - columnReferences:
               - columnCounter: 496f36a9-5749-4147-9c0a-bb3b33ebe681
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 06e7e056-355c-4bc0-9e00-5b8f8773d43a
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: VARCHAR
-        description: ""
-        name: TRH_USE_PRIOR_TRAIN_DATE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: d56b350b-bd1c-4c5f-a875-4efbd3c8540d
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_UNUSED_YES_NO_FIELD",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 96ecd21b-96f2-4bc8-abb9-de33f54b1bc4
@@ -1066,35 +1149,7 @@ operation:
           - columnReferences:
               - columnCounter: b05c888c-62e1-4653-80b9-47e8373c0140
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: e22534bf-5ac0-422d-a6c6-7b9df902025f
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: TIME_MODIFIED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 0628a2dd-4e7f-4c27-a77e-5a9e988052cf
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: f37cb292-1e0a-4deb-9315-3604f30472e8
-          stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
-        config: {}
-        dataType: FLOAT
-        description: ""
-        name: TRAILING_TON_CAR_FACTOR
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: d1ddf7cf-aaec-4ea4-8906-100becf9d391
-                stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."TRH_VOYAGE_NBR",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: db3384c7-9504-4e88-bc63-547d77c2e4a7
@@ -1108,7 +1163,7 @@ operation:
           - columnReferences:
               - columnCounter: 8ccd9953-da18-46b6-a21a-a85dbf4efefa
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."USER_ID_MODIFIED",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bb67d9c3-9665-430d-a291-2c7acec1eec4
@@ -1122,7 +1177,7 @@ operation:
           - columnReferences:
               - columnCounter: f7b57829-26aa-4f25-b348-c9fdd825b869
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: ""
+            transform: nullif("NX_TRAIN_HISTORY"."WARN_OUT_OF_SERVICE_LOCO",' ')
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

@@ -400,7 +400,7 @@ operation:
           columnCounter: 4126b101-7492-4952-9e99-242981bc9501
           stepCounter: 389aa30f-aefa-4c0f-ac39-92c58b72d40f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: SN_TIME_ZONE_ADJUSTMENT
         nullable: true
@@ -408,13 +408,13 @@ operation:
           - columnReferences:
               - columnCounter: 38e14631-c957-405b-9528-5d9b7f8a3307
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_STATION_MASTER"."SN_TIME_ZONE_ADJUSTMENT", 1, 2) || ':' || SUBSTR("NX_STATION_MASTER"."SN_TIME_ZONE_ADJUSTMENT", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e340b40f-a28a-429e-8d63-222e7ddf9e44
           stepCounter: 389aa30f-aefa-4c0f-ac39-92c58b72d40f
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: TIME
         description: ""
         name: SN_TIME_ZONE_QUALIFIER
         nullable: true
@@ -422,7 +422,7 @@ operation:
           - columnReferences:
               - columnCounter: 05115010-bf3c-4c69-99ae-78bfeb9a83f6
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_STATION_MASTER"."SN_TIME_ZONE_QUALIFIER", 1, 2) || ':' || SUBSTR("NX_STATION_MASTER"."SN_TIME_ZONE_QUALIFIER", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f1544275-b523-4c40-8868-8037fffc2981
@@ -526,7 +526,7 @@ operation:
           columnCounter: eec7b23e-5a74-4bb9-b051-8e8d6a21eeb1
           stepCounter: 389aa30f-aefa-4c0f-ac39-92c58b72d40f
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: TIME
         description: ""
         name: STR_TIME_MODIFIED
         nullable: true
@@ -534,7 +534,7 @@ operation:
           - columnReferences:
               - columnCounter: 309c6fe6-14d8-421b-804e-96ff92bdce14
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: TRY_TO_TIME(SUBSTR("NX_STATION_MASTER"."STR_TIME_MODIFIED", 1, 2) || ':' || SUBSTR("NX_STATION_MASTER"."STR_TIME_MODIFIED", 3, 2), 'HH:MM')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fb581b62-0ba6-4188-905f-e720d3f4599e
