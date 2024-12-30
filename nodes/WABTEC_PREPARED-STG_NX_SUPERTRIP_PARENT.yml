@@ -17,86 +17,6 @@ operation:
   metadata:
     appliedNodeTests: []
     columns:
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 41c7de65-f4d3-4988-8cb2-93d434564c03
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: TRAFFIC_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRAFFIC_DATE", 'YYYYMMDD')
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: dfd3232d-0348-4c43-8200-21cea2a9b64c
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: REVENUE_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."REVENUE_DATE", 'YYYYMMDD')
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: b1bad8a0-2442-4f91-97e0-1dbb84c450be
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: TRIP_END_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_END_DATE", 'YYYYMMDD')
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: b496e231-645b-45f2-9d0e-66220863ccac
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: TRIP_BEGIN_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_DATE", 'YYYYMMDD')
-        systemColumnType: None
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7ba3f46f-f8bd-454e-995e-0d0998e26d01
@@ -110,7 +30,7 @@ operation:
           - columnReferences:
               - columnCounter: 15a1d233-4437-48d0-9d66-3176d0870293
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."A_S_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a1462b8d-fd59-40fb-b4cd-2cb32f63851a
@@ -124,7 +44,7 @@ operation:
           - columnReferences:
               - columnCounter: d64e9375-eff7-4c37-a6a3-795eccbda245
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."AAR_CAR_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9659a6d8-ce04-48d9-bb59-901d39786632
@@ -138,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: c2b8ce4e-fcdf-4a35-ab11-0a915fec1a95
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ACCOUNT_REP_CONSIGNEE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a9463d2a-e9d3-441d-b17a-b5e67c4654e7
@@ -152,7 +72,7 @@ operation:
           - columnReferences:
               - columnCounter: 9a6e8844-fdef-4747-a42c-d7df9f57bf81
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ACCOUNT_REP_SHIPPER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 875f2997-460f-4bc6-9362-92ebe16d84cc
@@ -166,7 +86,7 @@ operation:
           - columnReferences:
               - columnCounter: 20e3831f-9d4b-4c29-8d3b-391039e7718e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ACCOUNT_REP_THE_CUST",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 88468ad6-cdb2-45ca-aa42-b4342fd33aa4
@@ -194,7 +114,7 @@ operation:
           - columnReferences:
               - columnCounter: 1749ec6f-c833-4e25-bc33-2e6106dd5f06
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."BAD_ORDER_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 033d59b6-9359-41fd-b957-a2512f6169f4
@@ -208,7 +128,7 @@ operation:
           - columnReferences:
               - columnCounter: ac18f5bc-ef00-490b-acca-b95c6d15364d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."BILL_OF_LADING",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 45e81837-e9e3-4e3a-aa08-b4c26180c226
@@ -222,7 +142,7 @@ operation:
           - columnReferences:
               - columnCounter: 2f932a44-8e27-4cf4-9103-cb26e65b9da6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."BLOCK_TO_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d30c30a2-b916-4a10-9d56-ae9275a7cd2f
@@ -236,7 +156,7 @@ operation:
           - columnReferences:
               - columnCounter: 23757cd0-a121-4145-b8ad-86fb542000e1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."BLOCK_TO_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: eabbc4af-af8f-42ff-a026-8dee9a4a592c
@@ -278,7 +198,7 @@ operation:
           - columnReferences:
               - columnCounter: 9a886fb5-40e0-4193-bb78-7a0e8e2d27f4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CHARM_RATE_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8b60b22d-d7b7-47af-97ed-d7a46bfdd510
@@ -320,7 +240,7 @@ operation:
           - columnReferences:
               - columnCounter: 979de2f2-9251-49fb-925b-f9dbe494cdde
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CAR_HIRE_IMPORT_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1978af55-f470-4cf1-9918-9cf02f3f51d2
@@ -334,7 +254,7 @@ operation:
           - columnReferences:
               - columnCounter: 4bf10bb0-5388-4b69-8fc3-f1b1e9e233fe
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CAR_HIRE_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 38ff5a61-68bd-4c30-a06d-5debd341e592
@@ -404,7 +324,7 @@ operation:
           - columnReferences:
               - columnCounter: e295000b-c143-47da-8a60-aec423d9e69b
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CAR_HIRE_OWNER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ed9a1e50-611a-4fbb-99fb-a605c4419f9c
@@ -418,7 +338,7 @@ operation:
           - columnReferences:
               - columnCounter: c3285bca-333b-4067-a6ae-f3cb2b957b23
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CAR_HIRE_RECLAIM_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 634f8644-4d9d-4277-a1e9-d7fb45badef7
@@ -488,7 +408,7 @@ operation:
           - columnReferences:
               - columnCounter: fae4e632-459f-4e8c-8685-54ecdcf5cfb4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CAR_HIRE_SOURCE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f7cc0c76-f741-4c82-8eb2-9eaf86848072
@@ -502,7 +422,7 @@ operation:
           - columnReferences:
               - columnCounter: 917ad775-9c11-4dca-a85d-88654eeac652
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CAR_OWNER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e1407883-f142-478d-b622-f99d4cb3a21d
@@ -516,7 +436,7 @@ operation:
           - columnReferences:
               - columnCounter: 0f86acca-aa63-47e7-a84d-4d9c60a34205
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."COMMODITY_DESCRIPTION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a6b976dd-5cf6-424d-bb2b-4a4c3445a1a5
@@ -544,7 +464,7 @@ operation:
           - columnReferences:
               - columnCounter: 90cdb3b3-6ef3-4fd9-9a68-38b0f8be6c5f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONSIGNEE_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 21f9049c-cc1d-4052-b61a-e8313eb3c74c
@@ -558,7 +478,7 @@ operation:
           - columnReferences:
               - columnCounter: ffa1ee5c-1f38-4d19-ad13-97e074f82c8a
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONSIGNEE_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 72938657-ac46-4fd2-8b50-a3a92c53d0f8
@@ -572,7 +492,7 @@ operation:
           - columnReferences:
               - columnCounter: bc492ca9-8c24-47fb-b301-26f3330bca3c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONSIGNEE_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 08e952a6-488a-464e-a85e-fae57275aecc
@@ -586,7 +506,7 @@ operation:
           - columnReferences:
               - columnCounter: 543d7ad5-a7ce-40e5-8f48-9829bb22e500
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONSIGNEE_PARENT_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4ba0ce19-6529-4d23-96e8-20b0fa473873
@@ -600,7 +520,7 @@ operation:
           - columnReferences:
               - columnCounter: 0f278943-6df1-49d5-a2ec-d66d59069444
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONSIGNEE_PARENT_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d5ccc6b7-49c3-4a03-83ac-c85260a60c83
@@ -642,7 +562,7 @@ operation:
           - columnReferences:
               - columnCounter: ae2f8bd6-bfd6-4783-859e-f83a978affe0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONSTRUCTIVE_PLACE_SEGMENT",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 93ed9eba-b011-4a3f-804c-f8453d6e1d47
@@ -656,7 +576,7 @@ operation:
           - columnReferences:
               - columnCounter: f249f519-a014-4b4d-9190-5939d0980db6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONTROLLING_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 14e4d176-1bf9-4fe3-ba54-adeaf4ed9e42
@@ -684,7 +604,7 @@ operation:
           - columnReferences:
               - columnCounter: f506a08d-ae92-45d6-a47b-ac29d9fac7b1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONVEYING_CONTROL_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8c052a88-d326-4f23-9d23-ca9a86119425
@@ -698,7 +618,7 @@ operation:
           - columnReferences:
               - columnCounter: 22579504-2919-4c2c-ac0c-e2f9e3f6ad5e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONVEYING_EQUIPMENT_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 474dba47-c042-4fe7-b84d-96955a8886ca
@@ -712,7 +632,7 @@ operation:
           - columnReferences:
               - columnCounter: 905a066d-492a-4876-b8f7-d7a424327083
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."CONVEYING_EQUIPMENTMENT_INITIAL",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0f065bff-e513-4dcd-9b29-84e171877cc6
@@ -726,7 +646,7 @@ operation:
           - columnReferences:
               - columnCounter: 77237ff3-9eb2-4fa7-a319-2e4617c29a88
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DATE_MODIFIED",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 69abdec7-7d7d-46a9-bc36-2595da0d8300
@@ -740,7 +660,7 @@ operation:
           - columnReferences:
               - columnCounter: 1fe6dcba-0b39-4cfd-b095-8c4e5545545c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DELIVERY_SWITCH_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: cae400a4-b748-4438-98e5-b83d209359be
@@ -782,7 +702,7 @@ operation:
           - columnReferences:
               - columnCounter: 96cf0be3-acd6-4db9-a8a2-a7adb6bfe3d0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DEMURRAGE_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f294aff6-ac16-45be-8560-db81bf6517d5
@@ -796,7 +716,7 @@ operation:
           - columnReferences:
               - columnCounter: fe533685-989a-4ac8-92ea-6c44c3288819
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DEMURRAGE_CURRENCY_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f93821f7-1bb1-49f5-88b6-4cf92ab498ea
@@ -838,7 +758,7 @@ operation:
           - columnReferences:
               - columnCounter: 0fd6c0b2-fd3c-4941-a2cf-d60efe18e799
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DEMURRAGE_PARTY_ADDRESSESS_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9128c488-743a-468b-93b3-c631e28241ab
@@ -852,7 +772,7 @@ operation:
           - columnReferences:
               - columnCounter: 3662434d-b682-45b1-af09-bc647c8bcc67
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DEMURRAGE_PARTY_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bd848937-88d9-420f-b247-4b2479dc61af
@@ -866,7 +786,7 @@ operation:
           - columnReferences:
               - columnCounter: 16cec50c-9d0f-4ffb-af9d-cc8acf71b0be
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DEMURRAGE_SOURCE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2dd05599-bdf9-4267-8979-b710ad152388
@@ -880,7 +800,7 @@ operation:
           - columnReferences:
               - columnCounter: aa4aa30a-671b-4c39-b1ac-3454e23655b7
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DEMURRAGE_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 84be507a-be9d-4b86-98b7-1b2495ce395e
@@ -894,7 +814,7 @@ operation:
           - columnReferences:
               - columnCounter: 64e0fc49-c8cb-4325-964d-7e94e9d89f41
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DESTINATION_FSAC",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 17090dca-b379-4901-b3c8-e8ccfbc44f72
@@ -908,7 +828,7 @@ operation:
           - columnReferences:
               - columnCounter: 97191255-57e4-444b-be2a-bfa9e4b4f800
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DESTINATION_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 028efb57-4c2e-4a52-bae1-6b4daf4515e7
@@ -922,7 +842,7 @@ operation:
           - columnReferences:
               - columnCounter: 56f38d39-4e64-4141-95ab-20e61a4eb495
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DESTINATION_STATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d73d9e88-5140-4b99-ace2-e1a02a05dd86
@@ -936,7 +856,7 @@ operation:
           - columnReferences:
               - columnCounter: 66bca939-091d-425c-a360-ae1bd91ee36e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."DESTINATION_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 61e1f53f-8257-4f1f-92c5-7764701625db
@@ -964,7 +884,7 @@ operation:
           - columnReferences:
               - columnCounter: e5c4895b-d74b-4b72-8392-25acd4d7fb33
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EMPTY_MILES_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dea5a94d-3dc3-476a-b4d7-7318fbd3588b
@@ -992,7 +912,7 @@ operation:
           - columnReferences:
               - columnCounter: a1048b36-a7a6-414c-91f6-e1b4f0c3a224
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EMPTY_TRAIN_CONTROL_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 50708eff-9e79-4aec-babf-4d7a2fee340a
@@ -1006,7 +926,7 @@ operation:
           - columnReferences:
               - columnCounter: 94ac8f1e-443a-46e3-a88f-973b27a957af
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EMPTY_TRAIN_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 61e0d143-6b76-4984-9224-df256037fa33
@@ -1020,7 +940,7 @@ operation:
           - columnReferences:
               - columnCounter: fb34b936-fdb5-4e9e-b662-17bf24172fa4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ENTRY_DATE_NUM",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 20df6be5-5bf6-4abd-9272-26d2e0a29788
@@ -1034,7 +954,7 @@ operation:
           - columnReferences:
               - columnCounter: c8e8420d-6258-4898-b73b-2bafeaa974c6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ENTRY_TIME_NUM",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 81799a68-45c0-4e14-93bc-124d94f76e75
@@ -1048,7 +968,7 @@ operation:
           - columnReferences:
               - columnCounter: be97ab20-9881-4234-a3ea-7b1491ca9a31
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ENTRY_USER_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 13102ff6-1f7c-4e75-9eeb-040e928821f1
@@ -1076,7 +996,7 @@ operation:
           - columnReferences:
               - columnCounter: 3e603fb9-0f93-4fb0-8902-481e1ef02e81
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EQUIPMENTMENT_DESCRIPTION_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 30e100c8-ca1a-4af0-b419-4c9a775f88be
@@ -1090,7 +1010,7 @@ operation:
           - columnReferences:
               - columnCounter: 42d626ac-4fac-4856-a5ac-b8b50fc9aad9
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EQUIPMENTMENT_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1ce67bce-c9a4-4327-9e0f-577e3b55913e
@@ -1104,7 +1024,7 @@ operation:
           - columnReferences:
               - columnCounter: ae3f3bdc-140e-4620-8f18-18c1e27e4ae9
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EQUIPMENTMENT_INITIAL",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e0094d03-c333-4cb3-a118-b139c84441e9
@@ -1118,7 +1038,7 @@ operation:
           - columnReferences:
               - columnCounter: e7b6f786-ce29-4aa2-ad59-583ec90be77d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."EQUIPMENTMENT_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4d89ffa3-890b-4599-b462-7104e97fc0bc
@@ -1132,7 +1052,7 @@ operation:
           - columnReferences:
               - columnCounter: 66face59-7d93-4de7-a082-8166f7985fc4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FILENAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d1918c0f-fb07-4be0-8cfb-b2a20bf37a65
@@ -1146,7 +1066,7 @@ operation:
           - columnReferences:
               - columnCounter: 82b4890c-945a-4f67-9397-df9dde413376
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FLEET_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f763fd29-7166-4252-88c5-ad32890fba6f
@@ -1174,7 +1094,7 @@ operation:
           - columnReferences:
               - columnCounter: 2bb315f1-1ec7-4842-8061-9d2da9c53222
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FREIGHT_BILL_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 63edb2c7-555b-427e-869f-6b3a38c0e7cf
@@ -1188,7 +1108,7 @@ operation:
           - columnReferences:
               - columnCounter: 3707fbb3-35fc-4875-acde-2bc291f786bf
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FREIGHT_BILL_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f60d0a67-6744-4298-81ff-864ada341767
@@ -1202,7 +1122,7 @@ operation:
           - columnReferences:
               - columnCounter: f21b557f-45ab-4da9-9cdd-d25ae40dea72
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FREIGHT_BILL_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 36cb36a0-b580-405f-b910-7aef0e34d376
@@ -1216,7 +1136,7 @@ operation:
           - columnReferences:
               - columnCounter: 2c580250-f78f-4633-be28-62f8282fe728
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FREIGHT_BILL_PARENT_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 43b31d82-124f-4044-ab7f-828ce0eb1803
@@ -1230,7 +1150,7 @@ operation:
           - columnReferences:
               - columnCounter: 87f7c52a-6ada-41e6-a6dd-e93c175c70b8
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FREIGHT_BILL_PARENT_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e5cfecb3-817e-49d4-8008-e9b253b7af36
@@ -1244,7 +1164,7 @@ operation:
           - columnReferences:
               - columnCounter: e657a29c-9201-4adc-b7ba-d623589c9ff9
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."FROM_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b06c016d-3fd7-441a-9abc-77267e3fe85a
@@ -1272,7 +1192,7 @@ operation:
           - columnReferences:
               - columnCounter: 36678011-6f73-4e87-abb7-ffb5dc662569
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."HAULAGE_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c00c5f9f-fa3a-4efa-be67-4673009f0ce4
@@ -1342,7 +1262,7 @@ operation:
           - columnReferences:
               - columnCounter: 5bd5534a-a6ae-4809-9e73-123cf8380632
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ICHH",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1f89dbbc-e3b1-4cc1-9db5-953c5856d933
@@ -1356,7 +1276,7 @@ operation:
           - columnReferences:
               - columnCounter: cada0d89-1cf1-4e1d-a618-6da41d923596
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ISS_CURRENCY_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7a567e12-6869-4a29-8cb3-dc9ce93b5df0
@@ -1370,7 +1290,7 @@ operation:
           - columnReferences:
               - columnCounter: 881415c5-e347-4d97-b8ea-ff2ef47580f8
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."IN_CARE_OF_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6b2e0b3c-ba73-4b41-9c9d-fb9793bb3d38
@@ -1384,7 +1304,7 @@ operation:
           - columnReferences:
               - columnCounter: b57b6d87-3c42-40c2-8f87-d711b1cfd28a
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."IN_CARE_OF_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5803159c-d5b8-4120-963f-c4f4481867fc
@@ -1398,7 +1318,7 @@ operation:
           - columnReferences:
               - columnCounter: 1a07873f-8d72-4b7d-ac75-374dda5231d1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."IN_CARE_OF_PARENT_ADD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e9f4dadc-da8e-4da4-a857-9ccfc396479e
@@ -1412,7 +1332,7 @@ operation:
           - columnReferences:
               - columnCounter: f39f5264-8783-4693-a772-5cab4b7ca073
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."IN_CARE_OF_PARENT_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a20c0757-8864-490e-a9be-31f3380d88e1
@@ -1426,7 +1346,7 @@ operation:
           - columnReferences:
               - columnCounter: 60f0c9cb-a120-4004-b944-67abc0743990
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."IN_CARE_OF_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e7d4f690-72f1-4606-a2d3-8b4f790d7873
@@ -1454,7 +1374,7 @@ operation:
           - columnReferences:
               - columnCounter: 41a0be83-e06b-49e4-ae5a-9ffd1e6157af
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."INTERCHANGE_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9175f8aa-1822-4ffe-8101-18d9d6229b70
@@ -1485,40 +1405,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 6ff466b8-b594-4fa2-842f-901c0766c7f6
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: WAYBILL_NUMBER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: c266cc0e-36e4-44d8-8b8f-5a96254909a9
-                stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: a3636183-7bd5-4ddb-9bdb-e88e8b775e15
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: VARCHAR
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: RAIL_FILE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: SPLIT_PART(SPLIT_PART("NX_SUPERTRIP_PARENT"."FILENAME", '/', 4), '_', 1)
-        systemColumnType: None
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: 98e37fb9-65e7-49dd-acfd-e76463d9847f
           stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
         config: {}
@@ -1544,7 +1430,7 @@ operation:
           - columnReferences:
               - columnCounter: 2105a06a-f3c0-4b32-a59d-b03b9e7a78c7
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ITEM_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f13b454d-ea3e-4b49-9f46-81547ee9f283
@@ -1558,7 +1444,7 @@ operation:
           - columnReferences:
               - columnCounter: 89f3d8d0-b7bf-4aa0-b0e8-8ee600b01127
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."JOB_SOURCE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b158c831-4673-465f-9b7a-a425dcaa373c
@@ -1586,7 +1472,7 @@ operation:
           - columnReferences:
               - columnCounter: 9dad2086-f72d-46c2-912c-b874ba2cfaa8
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LEASE_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4d63ba53-8185-4492-98fb-5f08a78d1d7d
@@ -1600,7 +1486,7 @@ operation:
           - columnReferences:
               - columnCounter: 7cdea750-6f1e-48c5-87d3-94893c27210b
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LESSOR_ADDRESS_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4ed211c6-4e23-4a37-9fe1-eaf81ea8a505
@@ -1614,7 +1500,7 @@ operation:
           - columnReferences:
               - columnCounter: 104817d4-ca5c-4c68-809d-d0f08f13e47d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LESSOR_PD_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 77d25dbb-c880-420f-b37f-172b208ae5af
@@ -1642,7 +1528,7 @@ operation:
           - columnReferences:
               - columnCounter: 44a78388-c050-4105-b47d-83cc5fcd8fb3
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LOADED_MILES_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 010b9584-d8ab-454b-9f61-aa57c0a93132
@@ -1656,7 +1542,7 @@ operation:
           - columnReferences:
               - columnCounter: 071f00a2-c8e4-42f6-9fdd-d67fdfc6f2ae
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LOADED_TRAIN_CONTROL_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 89ba2620-8ead-4c53-834e-3b00a7d1a817
@@ -1670,7 +1556,7 @@ operation:
           - columnReferences:
               - columnCounter: 2f9df0cb-9f53-43ee-87fd-1e91bce9a146
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LOADED_TRAIN_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4bbb7f86-091c-489f-959d-5d0560279e78
@@ -1698,7 +1584,7 @@ operation:
           - columnReferences:
               - columnCounter: 66cc2ab5-bec8-4c12-aeb0-0c5cedc4d2b6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."LOCK_SUPERTRIP_RECORD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 091d4f3a-6eee-4501-a86d-231897c9c500
@@ -1712,7 +1598,7 @@ operation:
           - columnReferences:
               - columnCounter: 41368afc-0258-446e-ba64-037c414a01db
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."MCREW_TRANSACTION_FLAG",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 574d1d9f-e908-45b3-b7c3-d57675fba843
@@ -1726,7 +1612,7 @@ operation:
           - columnReferences:
               - columnCounter: 677e2461-5da9-47eb-8ed1-56e2030082b4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."METHOD_OF_PAYMENT",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dce838c7-5bdb-4a05-9106-1b518ce76775
@@ -1754,7 +1640,7 @@ operation:
           - columnReferences:
               - columnCounter: 9ea31fe2-9968-40e5-99a1-b8cfc1bc1be7
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."MULTI_CAR_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1e5d51e3-4b7a-4960-a807-bc6aa3928325
@@ -1768,7 +1654,7 @@ operation:
           - columnReferences:
               - columnCounter: 0f9964ba-b89e-4ffa-a8f3-e97dffe02d3a
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."NET_FREIGHT_REVENUE_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 727205ed-826d-46e0-b3b3-0092d59a83f2
@@ -1796,7 +1682,7 @@ operation:
           - columnReferences:
               - columnCounter: 236d6b09-ae1e-41fa-b7f5-4fce932a2ca9
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."NOTIFY_PARTY_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 850282a2-8987-49f5-b10f-e5a315cb616a
@@ -1810,7 +1696,7 @@ operation:
           - columnReferences:
               - columnCounter: 43da7f8d-dabd-40f1-9a4d-edf2672d97ed
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."NOTIFY_PARTY_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fa9dabcb-c4c0-416f-b419-1f2d43e9ce2b
@@ -1824,7 +1710,7 @@ operation:
           - columnReferences:
               - columnCounter: ef2b2980-67c0-4ccc-834c-774a35cf91a2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."NOTIFY_PARTY_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a18629a4-0c49-445c-8987-fb28ad9bb09d
@@ -1838,7 +1724,7 @@ operation:
           - columnReferences:
               - columnCounter: 38f30439-ab35-4afa-ba5c-1bfcaf7a3650
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."NOTIFY_PARTY_PARENT_ADD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d340c9d8-ad17-467d-b592-5266b6aa8c59
@@ -1852,7 +1738,7 @@ operation:
           - columnReferences:
               - columnCounter: 9b7d7b01-d5e9-4fd4-8bb1-1a810f1c502c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."NOTIFY_PARTY_PARENT_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2f576bc5-d494-46c6-99cc-26b04cae2a15
@@ -1908,7 +1794,7 @@ operation:
           - columnReferences:
               - columnCounter: 79824080-e6d1-4dc5-961e-bf9fbb16748e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."OFFLINE_TRIP_COMPLETE_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 67cf8a55-b594-4cc4-94ec-4316d68e3b03
@@ -1950,7 +1836,7 @@ operation:
           - columnReferences:
               - columnCounter: 82611078-4e9a-4686-a2b9-8b8ab8d82066
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ONLINE_SEGMENT_1",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7f5347e5-86b9-4f46-ae3c-c45bc18d6613
@@ -1964,7 +1850,7 @@ operation:
           - columnReferences:
               - columnCounter: 8396114b-b8ff-4f09-8bef-1a08469954b0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ONLINE_SEGMENT_2",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 921ad745-1164-46d9-93b1-99f3beddae0a
@@ -1978,7 +1864,7 @@ operation:
           - columnReferences:
               - columnCounter: bdc9eafc-f48f-4548-980a-d2d633ce80a3
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ONLINE_SEGMENT_3",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3714a0fe-7015-452a-9942-8e8ee55a5fd4
@@ -2006,7 +1892,7 @@ operation:
           - columnReferences:
               - columnCounter: edb2b7b0-77b0-46d2-9688-210d7ffe2073
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ORIGIN_FSAC",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e210ebd4-b062-4b7a-937e-e3f14632030e
@@ -2020,7 +1906,7 @@ operation:
           - columnReferences:
               - columnCounter: 665942c4-114d-44a8-8735-c05379fc9cef
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ORIGIN_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 863a759f-fc1d-40c0-bd25-cccedc630c52
@@ -2034,7 +1920,7 @@ operation:
           - columnReferences:
               - columnCounter: 7b486880-b6c5-4360-b997-364086a404af
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ORIGIN_STATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6e82ed6b-4d4f-4ea0-bb5b-71dc4743ce9c
@@ -2048,7 +1934,7 @@ operation:
           - columnReferences:
               - columnCounter: 4c56ca99-0501-4433-aac2-fb1b5a6ea105
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ORIGIN_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d510bcc6-6cee-47c7-bbc3-4a90df962fce
@@ -2062,7 +1948,7 @@ operation:
           - columnReferences:
               - columnCounter: c02e4742-e4eb-48a2-8ae9-f7161c156c22
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ORIGIN_SWITCH_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 38a6f7d7-8501-4626-8820-efffda8da386
@@ -2076,7 +1962,7 @@ operation:
           - columnReferences:
               - columnCounter: 02320ee3-370e-4e0c-bbd8-79960c4f6d4b
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."OTHER_CURRENCY_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 12f673e6-8bce-420d-89ce-7a8d6ca0d199
@@ -2104,7 +1990,7 @@ operation:
           - columnReferences:
               - columnCounter: 39309a70-1aa5-42b5-a318-231c9ec8125c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."OUR_PROPORTION_SOURCE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 001bc079-4ea9-4b7a-95c7-d035b34fa5c4
@@ -2174,7 +2060,7 @@ operation:
           - columnReferences:
               - columnCounter: 1d31c414-cf5f-4d5e-906a-ea8aecca3ff0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PFPS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 87a1e456-6bd6-47d8-9f42-d214dcbb5d6c
@@ -2202,7 +2088,7 @@ operation:
           - columnReferences:
               - columnCounter: e043bf2d-ae3b-45a6-bb78-d3b13f647fe4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PAYABLE_CHARGES_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6f1a7c6e-d57c-4344-b178-207a46d0c874
@@ -2230,7 +2116,7 @@ operation:
           - columnReferences:
               - columnCounter: 214b98c4-fd32-4d1c-b648-9754a72c9a23
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PLACEMENT_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fc195aba-1fa2-4a96-a98a-e7c1f45d3192
@@ -2244,7 +2130,7 @@ operation:
           - columnReferences:
               - columnCounter: 856648e3-fc45-444f-ac26-277397ccd801
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PLACEMENT_L_E_STATUS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 48c45bcf-5865-4fd7-842d-1e7cd3817b4d
@@ -2258,7 +2144,7 @@ operation:
           - columnReferences:
               - columnCounter: 5bdc5bb6-989c-43f0-bb16-f1a2b9b29a48
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PLACEMENT_LOCATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 52c35b99-9578-4f63-af84-5ab4ff86e3ab
@@ -2272,7 +2158,7 @@ operation:
           - columnReferences:
               - columnCounter: 235d319c-ca7f-4e4e-95b9-ed3773729fb1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PLACEMENT_MOVE_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ad1bb19f-1ffb-4046-9d82-370eb4a1abc8
@@ -2286,7 +2172,7 @@ operation:
           - columnReferences:
               - columnCounter: d9da8b29-3e81-4a14-b2dd-ee4578658dc4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PLACEMENT_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dc08257e-5c3c-4376-b3bf-d1cbe950dde1
@@ -2314,7 +2200,7 @@ operation:
           - columnReferences:
               - columnCounter: 27d268f0-390a-428b-90c0-08404362c26e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."POOL_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a15b2fd9-dd5b-42d5-b950-68c3d2f75ba7
@@ -2328,7 +2214,7 @@ operation:
           - columnReferences:
               - columnCounter: 0e8b41dd-ba97-420c-9f32-3a792d57fddb
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PREVIOUS_TRIP_UNIQUE_TRIP_NUMBER_KEY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3cdb245d-6c99-487a-8d25-f384389ca908
@@ -2342,7 +2228,7 @@ operation:
           - columnReferences:
               - columnCounter: 2fbe0026-aa2b-4224-a156-7e0e76e9857c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PRICE_AUTH_AGENCY_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 065dbbc1-86f9-4f99-9c85-26f1eec05e8c
@@ -2356,7 +2242,7 @@ operation:
           - columnReferences:
               - columnCounter: 433a4bae-5d7c-4378-b69c-7d2fd1db2bb5
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PRICE_AUTHORITY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 9e7b1562-e63a-4fb5-b5af-5221bbbeff29
@@ -2370,7 +2256,7 @@ operation:
           - columnReferences:
               - columnCounter: 9d33db37-43d7-48fb-a778-0de11d26cddc
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PRICE_AUTHORITY_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 919bf623-9641-47d5-afa6-3cb31d74eb32
@@ -2384,7 +2270,7 @@ operation:
           - columnReferences:
               - columnCounter: 12aa4c21-4420-49a6-8f73-ba505dc115e6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PRICE_AUTHORITY_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a6bb466e-45b3-4ee7-b13f-277d982fe2f3
@@ -2398,7 +2284,7 @@ operation:
           - columnReferences:
               - columnCounter: 4720cef3-e56e-44a4-a7a4-4dd26aaccbb5
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PRIORITY_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2e801dfc-2729-470a-b740-dcf60fc1d63f
@@ -2412,7 +2298,7 @@ operation:
           - columnReferences:
               - columnCounter: 4e3d11c1-e9cf-4623-8708-e7a4d75b4e02
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."PRODUCT_GROUP_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5ab8b58d-e830-4696-aafa-1e0985ebd0c5
@@ -2440,7 +2326,7 @@ operation:
           - columnReferences:
               - columnCounter: 5a8f9743-2b9e-42ff-bc09-373e61bb742e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RMS_ENS_AMOUNT_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2f0ca33a-9dbc-4f57-b041-cd4a5ca65664
@@ -2468,7 +2354,7 @@ operation:
           - columnReferences:
               - columnCounter: fa04b6e9-faf4-47a4-b4c5-d101b32dc82c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RMS_ENS_PAYBL_AMOUNT_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fc96a749-b53f-46a5-a573-7a0812c3cf79
@@ -2482,7 +2368,7 @@ operation:
           - columnReferences:
               - columnCounter: 4aeda8e4-4cd3-4eb6-bb19-92cdfc6edbf0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RMS_ENS_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3e3d25b7-6d5f-4b3f-a795-27811c9bbe78
@@ -2510,7 +2396,7 @@ operation:
           - columnReferences:
               - columnCounter: 74a6f6ad-4b92-448a-8b20-36bd15c43d39
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RMS_OTHER_CHARGES_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 69af9172-33e4-460e-b2a3-6d93c6f11d4b
@@ -2538,7 +2424,7 @@ operation:
           - columnReferences:
               - columnCounter: 8f85af95-e9ae-4a0a-8f73-34a25e4b09ff
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RMS_PAYABLES_AMOUNT_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6c765a4e-36f1-44a1-931f-3f5d899158a5
@@ -2580,7 +2466,7 @@ operation:
           - columnReferences:
               - columnCounter: 5e35e520-b14e-4e98-924c-81c8644f5b6d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RWC_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 16bc4f66-2af9-4608-802d-60738278e382
@@ -2608,7 +2494,7 @@ operation:
           - columnReferences:
               - columnCounter: c11afb62-42f9-4cb8-bb6c-68888ea617fb
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RELEASE_CONSTRUCTIVE_PLACE_SEGMENT",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4b624d12-0007-4a7b-b0a5-9a9999ad3376
@@ -2636,7 +2522,7 @@ operation:
           - columnReferences:
               - columnCounter: fc0d5e01-371a-4531-8086-b6cb2bb0bf52
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RELEASE_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d971b099-b486-4fe3-b7fe-2877e7b7f59e
@@ -2650,7 +2536,7 @@ operation:
           - columnReferences:
               - columnCounter: ae7ad106-60cc-4345-bd4d-bb44e33a0411
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RELEASE_L_E_STATUS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 818c0496-c2f0-4bef-8e9d-f93bd09060fc
@@ -2664,7 +2550,7 @@ operation:
           - columnReferences:
               - columnCounter: a84f441f-cff5-4a38-b391-4957543aecdf
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RELEASE_LOCATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f1c263ab-9ebc-4bbf-a4ec-e45ef2432d58
@@ -2678,7 +2564,7 @@ operation:
           - columnReferences:
               - columnCounter: 3f733141-d9e5-4363-9420-ef56030b9a99
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RELEASE_MOVE_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5ab7b748-a208-42f6-95c2-b2ba291c23bd
@@ -2692,7 +2578,7 @@ operation:
           - columnReferences:
               - columnCounter: 896cbe5a-4c5c-48e1-a7cf-917838fe77db
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."RELEASE_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8043875a-0bfe-4719-bcdb-c0074b45ca7b
@@ -2720,7 +2606,7 @@ operation:
           - columnReferences:
               - columnCounter: 731ec446-cbd5-4546-9db9-c4cca53d5813
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."REVENUE_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8665c804-3956-453b-95ba-3bcf88005dc8
@@ -2734,7 +2620,7 @@ operation:
           - columnReferences:
               - columnCounter: ea0a842b-fde0-4da5-b12c-151e72fee414
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."REVENUE_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 38691938-7c95-4290-9752-c8364152aae7
@@ -2748,7 +2634,7 @@ operation:
           - columnReferences:
               - columnCounter: 5a80d855-8976-4df8-bd28-6546c48b21f2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_01",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 20f28231-a39e-4716-8e7a-7e51446b5349
@@ -2762,7 +2648,7 @@ operation:
           - columnReferences:
               - columnCounter: cf227f74-c410-4acc-b091-d77c2943696e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_02",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 89ed6f87-cfeb-4d49-8a5a-071771eff5dc
@@ -2776,7 +2662,7 @@ operation:
           - columnReferences:
               - columnCounter: a4eb1942-54cb-423b-ad29-e8ee8b2492f4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_03",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 070442b4-507d-44a1-8737-5f341c4822c7
@@ -2790,7 +2676,7 @@ operation:
           - columnReferences:
               - columnCounter: f8fb993c-c65c-4de3-bbda-4e3e2157e407
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_04",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5a3ab475-4336-4429-aea7-f6199112e98f
@@ -2804,7 +2690,7 @@ operation:
           - columnReferences:
               - columnCounter: 32c65955-5717-4928-91d7-5f418c8fe512
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_05",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 11de3282-8f21-46b0-8034-b1056d9620d2
@@ -2818,7 +2704,7 @@ operation:
           - columnReferences:
               - columnCounter: 5d5bd2e4-1a86-47b5-9e9e-61b98ea6685f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_06",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bad1734b-5f51-4f32-8323-16c1d1bc7148
@@ -2832,7 +2718,7 @@ operation:
           - columnReferences:
               - columnCounter: 4df87a7f-9562-4643-b1ae-6acfec9299ea
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_07",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 712fabbc-548a-4d47-992a-5ce8bcdbfca8
@@ -2846,7 +2732,7 @@ operation:
           - columnReferences:
               - columnCounter: dedc6092-a3c6-4047-a544-a7ee0fa07e8c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_08",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2874b159-a007-477f-893c-afaab73cd401
@@ -2860,7 +2746,7 @@ operation:
           - columnReferences:
               - columnCounter: 948735c8-4892-4416-ae23-026ca2279f7f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_09",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f74d1b3d-defd-42c7-bc19-f62dfa0467b9
@@ -2874,7 +2760,7 @@ operation:
           - columnReferences:
               - columnCounter: 1c2a3dc7-d465-4563-a3a3-0174b4bce40d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_10",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ce498f8e-3660-45cf-9722-26471a0f2f85
@@ -2888,7 +2774,7 @@ operation:
           - columnReferences:
               - columnCounter: 99fd1d09-ce4a-49bc-82ed-5cb48c42342f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_11",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 586a1052-885c-46dc-9a58-edfe105dc6d9
@@ -2902,7 +2788,7 @@ operation:
           - columnReferences:
               - columnCounter: b8ef8747-f727-436f-9c24-dade8e082ab0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."ROUTE_ROAD_12",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8c846260-d388-4ccd-8e4e-0a410e6ebb49
@@ -2916,7 +2802,7 @@ operation:
           - columnReferences:
               - columnCounter: 36443039-6e36-4739-bf80-32b2fd9b4460
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STCC_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6c35e4fe-a687-4ab2-b366-6285d891bc2c
@@ -2944,7 +2830,7 @@ operation:
           - columnReferences:
               - columnCounter: fba2fde2-cc3b-4bda-aab1-9097c1e4ab6f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SCRUBBER_MODE_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6a95bfc9-6bd2-47c9-adf3-d465958bdfe8
@@ -2958,7 +2844,7 @@ operation:
           - columnReferences:
               - columnCounter: a557878e-7856-4277-9ada-1b7a0ec50984
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SEGMENT_1_MILEPOST",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 01aae9f0-c57c-4276-8a5e-057e99ae0ae5
@@ -2972,7 +2858,7 @@ operation:
           - columnReferences:
               - columnCounter: c9d21b1f-6cb8-4af9-9b90-83e7407083c2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SEGMENT_2_MILEPOST",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 477bb5b0-935c-4aac-b2e5-7c1b8387be96
@@ -2986,7 +2872,7 @@ operation:
           - columnReferences:
               - columnCounter: 9aa424e7-2d39-44a9-ac17-48c3c93431ee
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SEGMENT_3_MILEPOST",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1685bf8a-f1f4-4139-a33f-f02a58bf590a
@@ -3000,7 +2886,7 @@ operation:
           - columnReferences:
               - columnCounter: 735b4968-4825-42b8-a538-a8b465d5bdab
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SEGMENT_4_MILEPOST",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8bb51c89-c1ea-4e8d-b467-38541a50530e
@@ -3014,7 +2900,7 @@ operation:
           - columnReferences:
               - columnCounter: ce13d68b-c855-4eb3-a535-b8adecc04131
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SHIPPER_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b942f2cd-a730-4f55-a932-7ff88d690577
@@ -3028,7 +2914,7 @@ operation:
           - columnReferences:
               - columnCounter: fa05bfb8-663f-4a46-b0b5-3b999ed9aabf
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SHIPPER_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 45ec7fa1-7bbf-4d48-ac51-dc5c1e92be0e
@@ -3042,7 +2928,7 @@ operation:
           - columnReferences:
               - columnCounter: 546c8b3a-dac7-4f6a-a140-da69e5a2cf03
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SHIPPER_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b3173993-be12-4334-a92a-af2184051b7f
@@ -3056,7 +2942,7 @@ operation:
           - columnReferences:
               - columnCounter: e7cf15a6-37f8-41ea-8843-08f40b8ef4fe
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SHIPPER_PARENT_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ba67b917-2679-49c4-ad66-36d8323a1ff9
@@ -3070,7 +2956,7 @@ operation:
           - columnReferences:
               - columnCounter: 826d38e0-9c32-4fe3-b4a0-b29e40bd201a
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SHIPPER_PARENT_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a4bf055d-2f3e-45c1-bb8a-85227e44b5b5
@@ -3084,7 +2970,7 @@ operation:
           - columnReferences:
               - columnCounter: 5afc8535-a5b2-472a-8a07-d9c24be1cc17
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_01",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6f5fd991-c7e4-4cd1-86f7-d65d6f38feec
@@ -3098,7 +2984,7 @@ operation:
           - columnReferences:
               - columnCounter: 2a6a3046-3193-42de-a096-861ade32c0ba
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_02",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f8736381-2007-4e79-b397-4c45e62772fd
@@ -3112,7 +2998,7 @@ operation:
           - columnReferences:
               - columnCounter: f5c6144a-672e-4980-82bb-5951835a698b
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_03",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 989ed65d-279b-40ca-b8aa-e67c233133f9
@@ -3126,7 +3012,7 @@ operation:
           - columnReferences:
               - columnCounter: a09c5c3e-597e-4f40-8f28-e462deabcc57
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_04",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7dbe79dc-2f8f-4bc4-9a30-7049fd8f09d6
@@ -3140,7 +3026,7 @@ operation:
           - columnReferences:
               - columnCounter: 6ce32db8-d9cf-446e-94fc-9f5db3291e31
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_05",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 43f8641d-6cde-4a68-888d-b57f74f04cd8
@@ -3154,7 +3040,7 @@ operation:
           - columnReferences:
               - columnCounter: a09ad04a-54d8-48ae-8b7d-a2cb679d8de8
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_06",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 6cedece9-1fd7-40fd-b872-79b13ed2566a
@@ -3168,7 +3054,7 @@ operation:
           - columnReferences:
               - columnCounter: 97969083-621d-41ad-90a4-e7aabb6be9ac
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_07",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: eb359372-510a-461a-b1c6-a464034f6c50
@@ -3182,7 +3068,7 @@ operation:
           - columnReferences:
               - columnCounter: b174f993-01fe-46bb-bb1a-777633844e06
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_08",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d6a46ac4-b1b6-46b7-bb2e-5aadf84fcc99
@@ -3196,7 +3082,7 @@ operation:
           - columnReferences:
               - columnCounter: 35a3dc8a-4f88-46a0-b6c6-09c325446b59
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_09",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: cc92949f-aa43-44c3-bdd0-4fd91b2444d9
@@ -3210,7 +3096,7 @@ operation:
           - columnReferences:
               - columnCounter: 3d6766d0-c657-43a9-bd72-ad282597b372
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_10",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 50c64ac1-131e-4305-b707-2b4e67978a55
@@ -3224,13 +3110,13 @@ operation:
           - columnReferences:
               - columnCounter: 3dba3214-8deb-4aeb-a3a1-87d68690a9b6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_11",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fd2f1d23-5ec3-4ebc-a51e-891ece8cbe9f
           stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: REVENUE_DATE
         nullable: true
@@ -3238,7 +3124,7 @@ operation:
           - columnReferences:
               - columnCounter: 8ffc3567-c5e7-499e-bfe6-4748e4e46038
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STATION_260_ABREVIATION_12",' ')
+            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."REVENUE_DATE", 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 56277d79-12af-416b-bd7d-d15c0898287e
@@ -3266,7 +3152,7 @@ operation:
           - columnReferences:
               - columnCounter: 6f51e11b-a1d3-4507-b0b3-7c58e49de576
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STORAGE_AMOUNT_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 253ce6e2-dfe1-4998-a4d8-ef1f51f0b068
@@ -3280,7 +3166,7 @@ operation:
           - columnReferences:
               - columnCounter: 32f7165b-1a6b-42a4-be36-a29dbdd6e9e4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STORAGE_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 55979da2-4731-4ce5-8691-6da71c117846
@@ -3308,7 +3194,7 @@ operation:
           - columnReferences:
               - columnCounter: f96ff3b9-2998-4c08-aabd-b837a74020d0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STORAGE_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c09e3533-e0e2-4117-bbc6-1d6a60e4ed4a
@@ -3322,7 +3208,7 @@ operation:
           - columnReferences:
               - columnCounter: fc764d18-9008-41dd-a105-256a2533fcdd
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STORAGE_PARTY_ADDRESSESS_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c4dfebc7-1429-4ea1-87d9-15c77a6efbae
@@ -3336,7 +3222,7 @@ operation:
           - columnReferences:
               - columnCounter: 64c30feb-edc4-4920-ba1a-51a904f475c7
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."STORAGE_PARTY_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b63202a8-78a5-4312-8369-c177f5dc1325
@@ -3364,7 +3250,7 @@ operation:
           - columnReferences:
               - columnCounter: 33ad5c10-6b90-4ba1-b536-2f25207e310f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SUPPLEMENT_UP_AMOUNT_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1e0cac01-09ae-4d24-b6e6-cd45e77df3cf
@@ -3378,7 +3264,7 @@ operation:
           - columnReferences:
               - columnCounter: 963935da-0128-4ae6-bbab-d8739f84a488
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."SWITCH_CURRENCY_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a0966177-3df3-475a-9e78-854bfcdd3443
@@ -3392,7 +3278,7 @@ operation:
           - columnReferences:
               - columnCounter: 04795354-261c-4894-9328-a48045a6e1e2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."T_CODE_EMPTY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b87cb1de-4a33-4ff6-aeb1-332ab004e704
@@ -3406,7 +3292,7 @@ operation:
           - columnReferences:
               - columnCounter: 8e4e646e-3a7e-425b-b5c8-d174d90aa018
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."T_CODE_LOADED",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 61f89179-9299-4b25-bd40-4690feef910b
@@ -3420,7 +3306,7 @@ operation:
           - columnReferences:
               - columnCounter: 54b9add3-7cae-42ff-a1ac-53c4e684ea66
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TIH_FLAG",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e0f8411d-a691-41bf-a85b-5815e3eb37c6
@@ -3434,7 +3320,7 @@ operation:
           - columnReferences:
               - columnCounter: 22eddf24-a413-4500-91f9-720cba8c1f0a
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TMS_ENS_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 456e6d95-6ef6-4b29-b61f-d4be77d16c8b
@@ -3462,7 +3348,7 @@ operation:
           - columnReferences:
               - columnCounter: eada351a-c1dd-48f3-ac14-7994ea65837e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TMS_ENS_TOTAL_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 21edace4-f4ca-44e4-95ba-c0a7c9dfeac2
@@ -3504,7 +3390,7 @@ operation:
           - columnReferences:
               - columnCounter: f0fa2dfb-e0cf-46f4-a348-0fa92f268900
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TOFC_PLAN",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4ced10d6-1976-4920-bf37-7560a81e48f4
@@ -3518,7 +3404,7 @@ operation:
           - columnReferences:
               - columnCounter: 79697d62-b5d6-4ff4-9308-bc7cc171f2f8
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_CUSTOMER_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b5c3b108-904d-40fd-b2dd-e41a01b6f462
@@ -3532,7 +3418,7 @@ operation:
           - columnReferences:
               - columnCounter: 533e292b-9052-413e-b6ba-6d09a37aab9f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_CUSTOMER_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 305ea499-b8bc-4dcc-9ea4-cef3c5e0b997
@@ -3546,7 +3432,7 @@ operation:
           - columnReferences:
               - columnCounter: 443c900d-060b-4656-a110-d4efa95f81af
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_CUSTOMER_NAME",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4b73ead1-7b5f-4143-a272-9f0d38d1dc54
@@ -3560,7 +3446,7 @@ operation:
           - columnReferences:
               - columnCounter: 140aad67-51cf-4627-971e-4ba6e8a41cfd
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_CUSTOMER_PARENT_ADDRESS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1c1a8716-d61f-47f0-8d97-aede021a7e4a
@@ -3574,7 +3460,7 @@ operation:
           - columnReferences:
               - columnCounter: 4cf0a3c5-5814-4462-b015-b992cfd7c40f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_CUSTOMER_PARENT_ID",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7102adc0-6024-40b6-9c5f-ec42d7704692
@@ -3588,7 +3474,7 @@ operation:
           - columnReferences:
               - columnCounter: 93e74cb2-ed7c-44f8-b015-ea0204588ce2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_CUSTOMER_TRAFFIC_GROUP",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a68f75ef-6887-4270-8925-252caf112009
@@ -3602,7 +3488,7 @@ operation:
           - columnReferences:
               - columnCounter: 9ff7c828-d0da-412b-bfe5-6fe3a96c27e0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_INTERCHANGE_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4b989b17-d68d-4814-8f83-a7e0c94feb43
@@ -3616,7 +3502,7 @@ operation:
           - columnReferences:
               - columnCounter: 1a5cfc00-3ca1-4380-8bc5-5c47ce3cc0a4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a655ff8b-d0f1-4e56-820c-df2a98155125
@@ -3630,7 +3516,7 @@ operation:
           - columnReferences:
               - columnCounter: 477085d0-e8c5-4107-9208-0215f83e7edf
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: aee4d89c-1544-46a7-bb45-7bdee4672a97
@@ -3644,7 +3530,7 @@ operation:
           - columnReferences:
               - columnCounter: fad31d97-804f-4960-aaad-8f0be0e30ba2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."THE_STATION_TRAFFIC_GROUP",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 30b4551e-9016-4d3a-ac81-aea176a3b4fe
@@ -3714,7 +3600,7 @@ operation:
           - columnReferences:
               - columnCounter: 2b40c30c-281b-4903-a8c0-9c16c152bb20
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TO_ROAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fbce2197-2bbc-4ca1-8bd9-c5e0c90130a1
@@ -3742,7 +3628,7 @@ operation:
           - columnReferences:
               - columnCounter: daa482d8-94e2-4eae-bf3f-30da12283cc1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TOTAL_ENS_AMOUNT_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c8069636-cc6d-40d6-822b-496f5a0ecf26
@@ -3756,7 +3642,7 @@ operation:
           - columnReferences:
               - columnCounter: 89cef477-01dc-4f1a-8dcf-d75448bfc332
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TOTAL_FREIGHT_REV_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 405ab9a0-24b8-4211-bc9a-bbee6beae3ad
@@ -3812,7 +3698,7 @@ operation:
           - columnReferences:
               - columnCounter: 99962f6f-3c22-4e50-b36a-5cf6d9e05ff4
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TOTAL_NET_REVENUE_CURRENCY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3858471c-7372-4112-9d32-2a780f62fd96
@@ -3896,7 +3782,7 @@ operation:
           - columnReferences:
               - columnCounter: e2f8cccc-da61-47e9-abc5-ef9466b59aeb
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRAFFIC_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: dfe4264e-860c-4f95-a925-abd2aa261789
@@ -3910,7 +3796,7 @@ operation:
           - columnReferences:
               - columnCounter: eb60bd74-fd3b-4864-9012-109ced5feed2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRAFFIC_GROUP_INDICATOR___BEGIN",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e0b9240e-6bed-4eb4-88f5-74df18b0116e
@@ -3924,7 +3810,7 @@ operation:
           - columnReferences:
               - columnCounter: b9cd78ef-816e-4c75-86f1-1525fea577db
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRAFFIC_GROUP_INDICATOR___END",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f64f0a99-12c6-4055-8c25-0ac8a16efa58
@@ -3938,7 +3824,7 @@ operation:
           - columnReferences:
               - columnCounter: bddc27fb-fbbf-47ff-9c86-6df0c7cfe649
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRAFFIC_GROUP_INDICATOR___PLACEMENT",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0ff08550-a493-4cb1-a1c4-55f753e14d68
@@ -3952,7 +3838,7 @@ operation:
           - columnReferences:
               - columnCounter: b424bf32-2b3e-4607-9417-f1d037440ec2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRAFFIC_GROUP_INDICATOR___RELEASE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: affb5a26-1c59-44eb-a4e7-0298d2ae116a
@@ -3966,7 +3852,7 @@ operation:
           - columnReferences:
               - columnCounter: 35c811e9-f5ce-48ed-af9d-18698c953ba1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRAFFIC_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e8e794f9-1e85-40f6-8be9-f6594d909983
@@ -3980,7 +3866,7 @@ operation:
           - columnReferences:
               - columnCounter: 61176935-1fb3-41fd-9a77-57a07912f05d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRANSPORTATION_METHOD_CODE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bff72a0c-5bd5-4896-b47c-84d42ef45cd5
@@ -3994,7 +3880,7 @@ operation:
           - columnReferences:
               - columnCounter: 836d1743-6799-472b-a757-ac34add53476
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4720aced-e958-4167-ab22-19db2b217a0d
@@ -4008,7 +3894,7 @@ operation:
           - columnReferences:
               - columnCounter: 729a81f2-7027-4420-bd27-a96441d93dca
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_L_E_STATUS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 80099e93-517d-4c1b-ba92-c1ede10f6c2e
@@ -4022,7 +3908,7 @@ operation:
           - columnReferences:
               - columnCounter: 3150b4ea-d55a-47b9-9bae-abf9bba11a50
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_LOCATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 65ec3b61-b834-4a6d-9a77-3a24f889fa80
@@ -4036,7 +3922,7 @@ operation:
           - columnReferences:
               - columnCounter: 3a94061c-2ab1-4492-b76a-f94390111b0d
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_MOVE_TYPE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 34b75e90-9cfa-460d-b818-3f9fcc7207e3
@@ -4050,7 +3936,7 @@ operation:
           - columnReferences:
               - columnCounter: 493e808d-f382-4300-b62a-e9460b7e98c1
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fcc5f6a3-4826-4329-b229-33d9a3a2c417
@@ -4078,7 +3964,7 @@ operation:
           - columnReferences:
               - columnCounter: 1facf245-6611-4772-b279-9890e49b1463
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_COMPLETE_INDICATOR",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: fb7c2810-3ad0-438d-a323-2455b28ffd7c
@@ -4092,7 +3978,7 @@ operation:
           - columnReferences:
               - columnCounter: 59e67242-81b1-47b0-b71f-4e0166462d7f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_END_DATE",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 99254706-3986-4771-b4b1-617a9cff0e6b
@@ -4106,7 +3992,7 @@ operation:
           - columnReferences:
               - columnCounter: 4dbf33f1-27d9-4a80-a096-a9c8659a4b7f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_END_L_E_STATUS",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 15ac3a5a-127a-412c-96ea-06168b421294
@@ -4120,7 +4006,7 @@ operation:
           - columnReferences:
               - columnCounter: 6dba34ac-1bac-4bef-8859-54cba8d43136
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_END_LOCATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e4727b93-a84d-4a26-8720-315ea030ae0b
@@ -4134,7 +4020,7 @@ operation:
           - columnReferences:
               - columnCounter: 095434e0-7ec1-4661-899d-d4465d6fb5aa
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_END_MOVE_TYPE",' ')
+            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRAFFIC_DATE", 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2f25bcbe-46bb-4a63-baa0-00f453369801
@@ -4148,7 +4034,7 @@ operation:
           - columnReferences:
               - columnCounter: 5cae5d50-a867-424d-8ccf-a4440fdcd08a
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_END_STATION",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0bb63729-2a56-488c-b946-e4e9dbe7a314
@@ -4204,7 +4090,7 @@ operation:
           - columnReferences:
               - columnCounter: 2010b89e-741c-416f-bd72-5cba18aee69b
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_1_DELAY_EVENT_EMPTY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8fd7f25f-383a-4e4d-8b55-182fc5eec361
@@ -4218,13 +4104,13 @@ operation:
           - columnReferences:
               - columnCounter: 48f118a3-8a7a-4b2a-b534-0c8b2bd97086
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_1_DELAY_EVENT_LOAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 32367a77-683f-4a3e-9d57-2341c2be6952
           stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: TRIP_BEGIN_DATE
         nullable: true
@@ -4232,7 +4118,7 @@ operation:
           - columnReferences:
               - columnCounter: 0a4ed2bb-2663-435e-a169-42fd27522f98
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_1_DELAY_STATION_EMPTY",' ')
+            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_DATE", 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 981e3d11-78a5-4c23-9e7c-86fc92c26d06
@@ -4246,7 +4132,7 @@ operation:
           - columnReferences:
               - columnCounter: ab4cabd8-7dfe-4d45-add6-a7fa2d5bcdcb
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_1_DELAY_STATION_LOAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0f7014f4-a8c9-4c14-87fa-9e6bad39eaca
@@ -4308,7 +4194,7 @@ operation:
           columnCounter: 857b2a74-64bb-4d14-9f05-9f38394ef717
           stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: DATE
         description: ""
         name: TRIP_END_DATE
         nullable: true
@@ -4316,7 +4202,7 @@ operation:
           - columnReferences:
               - columnCounter: ccf9fc23-e03a-497f-8d9d-0ae405af66a6
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_BEGIN_EVENT_EMPTY",' ')
+            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_END_DATE", 'YYYYMMDD')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c4e030d4-62f7-4e57-8ef5-a389aeb42924
@@ -4330,7 +4216,7 @@ operation:
           - columnReferences:
               - columnCounter: 4dadc09f-4dd9-45d6-bee1-fa17270c9f20
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_BEGIN_EVT_LOAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ec2707f8-3cef-4c14-827f-e07c33856d4d
@@ -4344,7 +4230,7 @@ operation:
           - columnReferences:
               - columnCounter: c638db91-b31c-436d-88ff-a72155a33e8c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_BEGIN_STATION_EMPTY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c7b9d1f0-043f-46bd-99cf-251cd0faa577
@@ -4358,7 +4244,7 @@ operation:
           - columnReferences:
               - columnCounter: 5511d00e-225e-4112-b8c5-d3cca6d8d325
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_BEGIN_STN_LOAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: cc21f6b3-3651-4ff4-a1b2-f0c6b4f43e4b
@@ -4428,7 +4314,7 @@ operation:
           - columnReferences:
               - columnCounter: 9e4bbdab-af9e-44bc-a654-a0439fd6371f
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_END_EVENT_EMPTY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e07bc6d4-1398-430f-a498-634844943be9
@@ -4442,7 +4328,7 @@ operation:
           - columnReferences:
               - columnCounter: 1a03e596-4789-469b-a815-6bb59f04596c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_END_EVENT_LOAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 072bae64-1e9c-4e32-9268-9a356e4db690
@@ -4456,7 +4342,7 @@ operation:
           - columnReferences:
               - columnCounter: 16ac8093-5a57-4e2b-8432-2228f82b410e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_END_STATION_EMPTY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3ca41d19-649a-4897-b536-3e7da10ccb2c
@@ -4470,7 +4356,7 @@ operation:
           - columnReferences:
               - columnCounter: 9d633531-8119-4481-99d9-f062c236cd75
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."TRIP_PLAN_END_STATION_LOAD",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f167d88c-67f7-465e-b959-32586d1b26ae
@@ -4554,7 +4440,7 @@ operation:
           - columnReferences:
               - columnCounter: b1ae8d0d-ad7d-46d2-a455-6820e41c20a3
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNIQUE_EMPTY_WAYBILL_CONTROL_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7495d966-b27d-4b91-ac3f-3c9bd3e1ab94
@@ -4568,7 +4454,7 @@ operation:
           - columnReferences:
               - columnCounter: c1bb1d2c-54ec-4d8f-ba51-cabb92cfb791
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNIQUE_LOADED_WAYBILL_CONTROL_NUMBER",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e1c0b4ff-db70-429b-b853-8cbd2ee4f25d
@@ -4582,7 +4468,7 @@ operation:
           - columnReferences:
               - columnCounter: 6489e871-6304-4797-ab32-5cd2e48f353c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNIQUE_TRIP_NUMBER_KEY",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d912b3bf-2a9a-4768-a881-17a7c30a67ab
@@ -4596,7 +4482,7 @@ operation:
           - columnReferences:
               - columnCounter: ffea77e8-f9ba-4683-89da-d8a6b79fd94c
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_15_BYTE_1",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8d8d9f46-a68c-4a4f-8492-d55f70d3de09
@@ -4610,7 +4496,7 @@ operation:
           - columnReferences:
               - columnCounter: 5dffba9b-9aaf-48a6-a768-e0023d026732
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_CODE__01",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1681f7a0-5beb-40f6-a576-54b97903ca34
@@ -4624,7 +4510,7 @@ operation:
           - columnReferences:
               - columnCounter: 5e1a40bf-122a-46b9-929d-7a88f4b13b06
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_CODE__02",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 138355ca-cdb1-4ca9-b3aa-f9001ab0aada
@@ -4638,7 +4524,7 @@ operation:
           - columnReferences:
               - columnCounter: 98bf563e-1fc7-401f-905a-dd10ecf8acbb
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_DTE__1",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: ce68b6cc-128b-4948-963e-97ed0644d1b7
@@ -4652,7 +4538,7 @@ operation:
           - columnReferences:
               - columnCounter: ca864b5f-eee1-4dae-864b-60e9b55eca21
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_DTE__2",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 38a7f928-b344-4839-ba14-1e2c3aec0237
@@ -4666,7 +4552,7 @@ operation:
           - columnReferences:
               - columnCounter: 801db599-f7f4-4042-855c-02df7e6d7531
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_NUMBER__01",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7d3f9bdf-ab65-41c9-a488-30468d3f2f8c
@@ -4680,7 +4566,7 @@ operation:
           - columnReferences:
               - columnCounter: be80d25f-d7f9-471f-bf2c-a89b32ca007e
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_NUMBER__02",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3eae4d69-92f9-4a8d-9a1f-f420f72dcec4
@@ -4694,7 +4580,7 @@ operation:
           - columnReferences:
               - columnCounter: b4b9e01b-778a-4b78-a4f4-17057794999b
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_NUMBER__04",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 80fa6d1f-12ab-46da-8c6f-f9fb4a0c0b1c
@@ -4708,7 +4594,7 @@ operation:
           - columnReferences:
               - columnCounter: eea54d7a-5c21-4e9a-9708-8bb2495042c0
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_STS__02",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 10323fbb-2ffa-4680-af73-d5fe29262be2
@@ -4722,7 +4608,7 @@ operation:
           - columnReferences:
               - columnCounter: 7a59d58a-1143-486a-bb7e-2e288244d769
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_STATUS__1",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f42b6d5c-411f-44d1-a4ca-0bdfe36d2819
@@ -4736,7 +4622,7 @@ operation:
           - columnReferences:
               - columnCounter: b12a451e-9ee8-4f61-96f1-cbb9c38e4bc9
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_TXT__01",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b2f85bec-5623-43d7-a094-17fe124eb7c8
@@ -4750,7 +4636,7 @@ operation:
           - columnReferences:
               - columnCounter: 8f134ff3-fa06-4f2a-87cc-7854576062f2
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."UNUSED_TXT__02",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8f6f23fc-e873-4929-a073-f096c5ba9988
@@ -4764,7 +4650,7 @@ operation:
           - columnReferences:
               - columnCounter: 8241ab97-4632-4262-8e72-cdcce3675143
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."USER_ID_MODIFIED",' ')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 89606d06-614d-4b5f-8f38-eae6d75d846c
@@ -4778,81 +4664,7 @@ operation:
           - columnReferences:
               - columnCounter: 46341066-8995-47d8-8be5-07526f879164
                 stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
-            transform: NULLIF("NX_SUPERTRIP_PARENT"."WAYBILL_DATE",' ')
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 6ff466b8-b594-4fa2-842f-901c0766c7f6
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: NUMBER(38,0)
-        description: ""
-        name: WAYBILL_NUMBER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: c266cc0e-36e4-44d8-8b8f-5a96254909a9
-                stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: a3636183-7bd5-4ddb-9bdb-e88e8b775e15
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: VARCHAR
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: RAIL_FILE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: SPLIT_PART(SPLIT_PART("NX_SUPERTRIP_PARENT"."FILENAME", '/', 4), '_', 1)
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 41c7de65-f4d3-4988-8cb2-93d434564c03
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: TRAFFIC_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRAFFIC_DATE", 'YYYYMMDD')
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: dfd3232d-0348-4c43-8200-21cea2a9b64c
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: REVENUE_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."REVENUE_DATE", 'YYYYMMDD')
-        systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
@@ -4891,47 +4703,7 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: "\"NX_SUPERTRIP_PARENT\".\"GROSS_WEIGHT\"/2000"
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: b1bad8a0-2442-4f91-97e0-1dbb84c450be
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: TRIP_END_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_END_DATE", 'YYYYMMDD')
-        systemColumnType: None
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: b496e231-645b-45f2-9d0e-66220863ccac
-          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-        config: {}
-        dataType: DATE
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: TRIP_BEGIN_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: TRY_TO_DATE("NX_SUPERTRIP_PARENT"."TRIP_BEGIN_DATE", 'YYYYMMDD')
+            transform: ""
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -4951,13 +4723,47 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: |-
-              CASE
-                      WHEN "NX_SUPERTRIP_PARENT"."STCC_CODE" LIKE '01%' THEN 'Agriculture'
-                      WHEN "NX_SUPERTRIP_PARENT"."STCC_CODE" LIKE '09%' THEN 'Agriculture'
-                      WHEN "NX_SUPERTRIP_PARENT"."STCC_CODE" LIKE '20%' THEN 'Food Product'
-                      ELSE 'Other'
-                  END
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49c0367a-c15e-41a7-b634-56437657e2a1
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WAYBILL_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c266cc0e-36e4-44d8-8b8f-5a96254909a9
+                stepCounter: a1219d2b-dfbc-4c76-8696-d2429ef5b716
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2fa217ba-12f5-4d5f-bfb3-e857459a3ea1
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RAIL_FILE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: SPLIT_PART(SPLIT_PART("NX_SUPERTRIP_PARENT"."FILENAME", '/', 4), '_', 1)
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []

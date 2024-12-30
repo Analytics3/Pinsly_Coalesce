@@ -288,7 +288,7 @@ operation:
           columnCounter: aff29b01-652d-4ebb-b5a1-9c4f05515e28
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: DATE
+        dataType: NUMBER
         description: ""
         name: TRH_GS04_GROUP_DATE
         nullable: true
@@ -296,7 +296,7 @@ operation:
           - columnReferences:
               - columnCounter: 3d98bbff-5756-491f-a1cf-d3b5d2307dcd
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: TRY_TO_DATE("NX_TRAIN_HISTORY"."TRH_GS04_GROUP_DATE",'YYYYMMDD')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 3e2bca4c-beb2-4a37-9b97-d5910f804f88
@@ -638,7 +638,7 @@ operation:
           columnCounter: 305c272f-3a88-4836-ac44-4003b61ced62
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: DATE
+        dataType: NUMBER
         description: ""
         name: TRH_ORIGINAL_BAX04_DATE
         nullable: true
@@ -646,7 +646,7 @@ operation:
           - columnReferences:
               - columnCounter: c29db8f8-92e3-4677-a83b-188727cc55ad
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: TRY_TO_DATE("NX_TRAIN_HISTORY"."TRH_ORIGINAL_BAX04_DATE",'YYYYMMDD')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 8ae9aad7-e21d-4045-8b1d-77e4c2a40d84
@@ -708,7 +708,7 @@ operation:
           columnCounter: 5c6064e1-1892-4bcd-841d-f17600a59aae
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: DATE
+        dataType: NUMBER
         description: ""
         name: TRH_REPORT_DATE
         nullable: true
@@ -716,7 +716,7 @@ operation:
           - columnReferences:
               - columnCounter: f94f3aa2-599e-4508-a2c3-ccc7b64a19a0
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: TRY_TO_DATE("NX_TRAIN_HISTORY"."TRH_REPORT_DATE",'YYYYMMDD')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1eef274b-2209-4e53-b794-e5e432fee028
@@ -1044,7 +1044,7 @@ operation:
           columnCounter: 06e7e056-355c-4bc0-9e00-5b8f8773d43a
           stepCounter: 4c0c60f4-7c72-4b8a-81ec-e54e8627b883
         config: {}
-        dataType: DATE
+        dataType: VARCHAR
         description: ""
         name: TRH_USE_PRIOR_TRAIN_DATE
         nullable: true
@@ -1052,7 +1052,7 @@ operation:
           - columnReferences:
               - columnCounter: d56b350b-bd1c-4c5f-a875-4efbd3c8540d
                 stepCounter: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
-            transform: TRY_TO_DATE("NX_TRAIN_HISTORY"."TRH_USE_PRIOR_TRAIN_DATE",'YYYYMMDD')
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 96ecd21b-96f2-4bc8-abb9-de33f54b1bc4
