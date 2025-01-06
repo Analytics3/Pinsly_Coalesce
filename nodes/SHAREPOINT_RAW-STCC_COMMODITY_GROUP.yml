@@ -1,0 +1,58 @@
+fileVersion: 1
+id: 7d9e2352-99fc-49ea-a283-ee3590691da2
+name: STCC_COMMODITY_GROUP
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SHAREPOINT_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f22711ce-d9a3-4573-be60-cea04a5e360e
+          stepCounter: 7d9e2352-99fc-49ea-a283-ee3590691da2
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STCC_COMMODITY_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35e3d603-260f-4999-b6ed-ce953025a414
+          stepCounter: 7d9e2352-99fc-49ea-a283-ee3590691da2
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: COMMODITY_GROUP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'STCC_COMMODITY_GROUP') }}
+  name: STCC_COMMODITY_GROUP
+  schema: ""
+  sqlType: Source
+  table: STCC_COMMODITY_GROUP
+  type: sourceInput
+  version: 1
+type: Node

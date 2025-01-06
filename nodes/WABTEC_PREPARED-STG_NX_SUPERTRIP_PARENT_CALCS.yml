@@ -3279,6 +3279,46 @@ operation:
                       ELSE 0
                END
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 049ec58b-9906-4bd3-9205-7eab38dbc4cb
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COMMODITY_SPLIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e92b692a-d7f6-455f-a480-7d5282333bbd
+                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 745677fc-fff9-411c-817c-f8097ecaeb3f
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WB_NUMBER_FILE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2a65ee3-7589-4456-b4ae-e6f2b7f5c123
+                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

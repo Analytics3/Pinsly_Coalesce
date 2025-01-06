@@ -19,6 +19,9 @@ mappingDefinitions:
   SAFETRACK_RAW:
     database: PINSLY_RAW
     schema: PUBLIC
+  SHAREPOINT_RAW:
+    database: PINSLY_RAW_DEV
+    schema: SHAREPOINT
   WABTEC_PREPARED:
     database: PINSLY_PREPARED_PROD
     schema: WABTEC_PREPARED

@@ -5364,70 +5364,6 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e69c5e36-ec65-45a8-8c48-fc24b2212ade
-          stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: NUMBER(38,0)
-        description: ""
-        name: WAYBILL_NUMBER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 6ff466b8-b594-4fa2-842f-901c0766c7f6
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 8e2557c5-3149-4647-9536-8f3cd97d0d86
-          stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: VARCHAR
-        description: ""
-        name: RAIL_FILE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: a3636183-7bd5-4ddb-9bdb-e88e8b775e15
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 103cc0f8-96ec-4693-8b4a-87a5db560082
-          stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: DATE
-        description: ""
-        name: TRAFFIC_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 41c7de65-f4d3-4988-8cb2-93d434564c03
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: f15dac50-329c-4a57-b39e-1df539f6e980
-          stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: DATE
-        description: ""
-        name: REVENUE_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: dfd3232d-0348-4c43-8200-21cea2a9b64c
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
           columnCounter: f6445cc2-5b49-434f-bfa0-32301429b211
           stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
         config:
@@ -5456,38 +5392,6 @@ operation:
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: 060164cb-d9db-4b94-a9ee-25a8dcc31bb3
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3966accb-4901-417d-8f79-014479496614
-          stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: DATE
-        description: ""
-        name: TRIP_END_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: b1bad8a0-2442-4f91-97e0-1dbb84c450be
-                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
-            transform: ""
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: bcb58693-4dac-468d-9fa4-8b5f29ceebd6
-          stepCounter: 563628ca-250a-4c86-b0c4-724bda19efef
-        config:
-          isDistinctCount: true
-          isNullCount: true
-        dataType: DATE
-        description: ""
-        name: TRIP_BEGIN_DATE_CONVERTED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: b496e231-645b-45f2-9d0e-66220863ccac
                 stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
             transform: ""
     cteString: ""

@@ -4721,7 +4721,12 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: ""
+            transform: |-
+              CASE 
+                  WHEN "NX_SUPERTRIP_PARENT"."STCC_CODE" LIKE '01%' THEN 'Agriculture Products'
+                  WHEN "NX_SUPERTRIP_PARENT"."STCC_CODE"  LIKE '20%' THEN 'Food Products'
+                  ELSE 'Other'
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
@@ -4762,6 +4767,26 @@ operation:
               - columnCounter: "0"
                 stepCounter: "0"
             transform: SPLIT_PART(SPLIT_PART("NX_SUPERTRIP_PARENT"."FILENAME", '/', 4), '_', 1)
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2a65ee3-7589-4456-b4ae-e6f2b7f5c123
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: WB_NUMBER_FILE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_SUPERTRIP_PARENT"."WAYBILL_NUMBER", SPLIT_PART(SPLIT_PART("NX_SUPERTRIP_PARENT"."FILENAME", '/', 4), '_', 1))
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []

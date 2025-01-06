@@ -44,7 +44,7 @@ operation:
           - columnReferences:
               - columnCounter: fd83471c-1e28-435c-9ceb-926d46f19cfd
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."FSAC_ROAD_KEY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 376eaaa9-f1d9-416f-9530-ff702b566562
@@ -58,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: 5efb1dfb-5d65-41c0-a8bf-ef923c045aab
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."FILENAME",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 1ae17f36-83bd-4b11-990a-6a2121bff79d
@@ -72,7 +72,7 @@ operation:
           - columnReferences:
               - columnCounter: e0ab8d9f-88d5-4b31-870f-fdc5765a4dcf
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."JCT_STATION_260_ABREV",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a2d66553-1a9c-4b54-a837-2b69a7c57ef4
@@ -86,7 +86,7 @@ operation:
           - columnReferences:
               - columnCounter: ee409e49-bfc7-4e6f-9847-093535f8fb64
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."LEFT_AT_SN_ID_KEY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 911aeb24-d1b6-45bf-96b3-073812cd72e2
@@ -100,7 +100,7 @@ operation:
           - columnReferences:
               - columnCounter: 7ab5eef3-ba60-4686-ae20-ae8f6f35eae3
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."RN_ID_KEY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 02d353d2-6f17-4634-addc-4c36b15df914
@@ -114,7 +114,7 @@ operation:
           - columnReferences:
               - columnCounter: df44cc2a-c481-4887-bfb7-0bd78511a6de
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_423_TRANSLATION_CODE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4da8a3d9-6171-4fe5-b791-cf1272b5fdbf
@@ -128,7 +128,7 @@ operation:
           - columnReferences:
               - columnCounter: 35eb02cd-b474-4419-9ec2-f25f9821b82c
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_CLM_CITY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: aa570d3f-2d1e-4fa0-881b-358e2f9fc444
@@ -142,7 +142,7 @@ operation:
           - columnReferences:
               - columnCounter: c4afd9c9-ea93-4925-9bd8-94888937d06b
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_CANADA_PORT_OF_ENTRY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 25972a7e-5725-4661-9245-8956658d6249
@@ -156,7 +156,7 @@ operation:
           - columnReferences:
               - columnCounter: a645a6a0-9a93-47cf-b299-2cd855ff5816
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_CIRCUS_LOAD_ONLY_IND",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7349adae-4a51-490d-81a0-895f7b1f82ed
@@ -170,7 +170,7 @@ operation:
           - columnReferences:
               - columnCounter: bcf212e5-daab-4023-8416-a1692b3659a0
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DEFAULT_CLASS_CATEGORY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0eaef574-f166-4ca3-b460-ffb4988321ec
@@ -184,7 +184,7 @@ operation:
           - columnReferences:
               - columnCounter: 69f0f6a9-2e9b-4670-9ced-c6685c13a94b
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DEFAULT_CLASS_LEAD_TRK",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 07ea73c8-2592-4370-9313-6a33211e8106
@@ -198,7 +198,7 @@ operation:
           - columnReferences:
               - columnCounter: f79e5c03-bed4-47cf-999c-a7f49edda8a8
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_DERAMP_LOCATION_L",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 002cc037-cd75-48a1-934e-0d088d2fca45
@@ -212,7 +212,7 @@ operation:
           - columnReferences:
               - columnCounter: a12c0acd-5372-40db-8232-6f260efad86e
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_DERAMP_LOCATION_Z",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: bd75a1f4-3e19-4d23-9f65-df5f0b9343fc
@@ -226,7 +226,7 @@ operation:
           - columnReferences:
               - columnCounter: 6c77d354-52a9-44e7-b489-bd34727a6197
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_INGATE_LOCATION_L",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a5e31131-3cee-43bc-bc2b-1c263ed0b7a8
@@ -240,7 +240,7 @@ operation:
           - columnReferences:
               - columnCounter: b5af1823-df88-476e-b056-26c717a34689
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_INGATE_LOCATION_Z",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 52493991-e3c0-45c7-a49d-40182ae5fbb9
@@ -254,7 +254,7 @@ operation:
           - columnReferences:
               - columnCounter: f96e66a1-f689-4f67-aaf6-0ac6fe57bfb3
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_RAIL_LOCATION_L",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: c2d2504c-6e39-4f0d-a330-5c80c74f5a37
@@ -268,7 +268,7 @@ operation:
           - columnReferences:
               - columnCounter: 3cbfc076-91df-4f08-bf03-4049f3935470
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_RAIL_LOCATION_ZONE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 97ba3ab6-dd81-4835-b5d8-4604b1884fc4
@@ -282,7 +282,7 @@ operation:
           - columnReferences:
               - columnCounter: b47898a2-fc56-4523-a9f1-9f98ec5a7dcd
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_STREET_LOCATION_L",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: b2ff29dd-f4f8-4832-8c0c-fb46a49c5556
@@ -296,7 +296,7 @@ operation:
           - columnReferences:
               - columnCounter: 72e5ae0d-b31f-4b66-81bb-bacb11c1c5f8
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DFT_STREET_LOCATION_Z",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 19d48d18-5c9e-4579-bb89-79a381937741
@@ -310,7 +310,7 @@ operation:
           - columnReferences:
               - columnCounter: 2687a0bb-b64b-4c58-96d0-6d6e56fd3a9a
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DIGICON_STATION_CODE",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2217d7c3-4c01-4cbd-960e-041caad09f44
@@ -324,7 +324,7 @@ operation:
           - columnReferences:
               - columnCounter: a34c7cfa-04c2-4e4e-b397-83307b729042
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_DRIVE_AROUND_IND",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 14673bb3-9038-4730-a479-9d1dd3b906bc
@@ -352,7 +352,7 @@ operation:
           - columnReferences:
               - columnCounter: eae2cfd7-f91a-440e-a026-c18a7601d50b
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_HIWAY_MARK",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 256edb2d-df3c-43af-aa66-a278ee466fa9
@@ -366,7 +366,7 @@ operation:
           - columnReferences:
               - columnCounter: 74e8aa64-fb91-4717-954e-824ef22fbcd5
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_LEFT_AT_RN_ID_KEY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 684aecb4-e702-41fe-a955-e675dc001d25
@@ -380,7 +380,7 @@ operation:
           - columnReferences:
               - columnCounter: aaa2b114-fe7f-4ac1-9108-10cbb1cb0820
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_ORIGIN_BILLING_FSAC_CO",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 5ef74051-980e-477c-81fb-b1e1ace8a383
@@ -394,7 +394,7 @@ operation:
           - columnReferences:
               - columnCounter: 8bffdb75-e793-4c6e-8d1b-3bfe4ddb5f2b
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_ORIGIN_BILLING_FSAC_RO",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4126b101-7492-4952-9e99-242981bc9501
@@ -436,7 +436,7 @@ operation:
           - columnReferences:
               - columnCounter: 8ed8f11f-ae11-45de-b414-cc15003d7e5c
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_TRAFFIC_GROUPING_IND",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 94ec7b60-9f35-49d3-82a5-20b92381e93b
@@ -450,7 +450,7 @@ operation:
           - columnReferences:
               - columnCounter: 461a79f3-4a34-41da-a1df-c8f77f54dbb3
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_US_PORT_OF_ENTRY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 60177e1b-f9bb-475c-bb87-90f299cf500a
@@ -464,7 +464,7 @@ operation:
           - columnReferences:
               - columnCounter: 5bc61ad9-5636-4844-802b-0c8a602a5ee7
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_UNUSED_6_CHAR_1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a57ed2e4-fac6-4a22-9180-c1416efff538
@@ -478,7 +478,7 @@ operation:
           - columnReferences:
               - columnCounter: 7f8bd7a3-3842-496a-bcdc-90cbab896d54
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_UNUSED_MARK_1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7c7b45c8-3be1-4e1b-bfc9-5fb8f71669ae
@@ -492,7 +492,7 @@ operation:
           - columnReferences:
               - columnCounter: 7102138f-63a1-4a30-98fd-3acb5bbc98a6
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SN_UNUSED_TEXT_FIELD_1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d7d4b29a-fbbe-4e3b-b463-e81b28a1f6f3
@@ -506,7 +506,7 @@ operation:
           - columnReferences:
               - columnCounter: 7b0389ab-4e29-48ec-bd08-9a2b4f8a6af6
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."SPLC_KEY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0c4f7280-02f8-4666-aed5-2c17c120a90a
@@ -548,7 +548,7 @@ operation:
           - columnReferences:
               - columnCounter: 8cacf629-6e65-4aa9-b9d6-856bce0615f3
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."STR_USER_ID_MODIFIED",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7545154e-d187-402f-b70b-ae4c1bf446a6
@@ -562,7 +562,7 @@ operation:
           - columnReferences:
               - columnCounter: adce93ba-8702-43c6-b5aa-64cf77c00d50
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."ST_ID_KEY",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: e710db83-0406-4f72-8f59-d4762e73e72a
@@ -576,7 +576,7 @@ operation:
           - columnReferences:
               - columnCounter: 1a22d166-b0e9-4fcf-b9ce-88d1b541719a
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."STATION_ID",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 0a29ec6e-8e5d-4430-ab5d-4369f884c27a
@@ -590,7 +590,7 @@ operation:
           - columnReferences:
               - columnCounter: cf58cb9b-93b8-4dde-ac6c-be3bfeb2b177
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."STATION_MILE_POST",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d3bfc9e2-1037-4d87-bd63-dd0c07c792b5
@@ -604,7 +604,7 @@ operation:
           - columnReferences:
               - columnCounter: 326b0f18-2ac6-4040-a947-7e8c72c2eb61
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."STATION_NAME",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 2038ff6e-e4ba-4893-a01e-2c095157d4c4
@@ -618,7 +618,7 @@ operation:
           - columnReferences:
               - columnCounter: 0ac658f1-b6ff-409b-93e3-15e6899b998e
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."TRAIN01_REPORTING_IND",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 7b6777e5-3bbb-4e0d-8a69-6e37f414c848
@@ -632,7 +632,7 @@ operation:
           - columnReferences:
               - columnCounter: 94e52743-2093-4f0e-8b56-3f4afd5fa947
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."UNUSED_IND_1",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f2abe7ee-f137-4436-8591-b3696786b373
@@ -646,7 +646,7 @@ operation:
           - columnReferences:
               - columnCounter: b75c3ef2-0664-4e8d-89e8-4a5d09a3f001
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."UNUSED_IND_2",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 4dd9922f-7416-453b-8187-0b612f850bc9
@@ -660,7 +660,7 @@ operation:
           - columnReferences:
               - columnCounter: b8731d25-59d9-45ec-b173-9d6f2a39ec87
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."UNUSED_IND_3",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 226f4e0d-16ab-4c1b-8f05-7ac3a6e4ac75
@@ -674,7 +674,7 @@ operation:
           - columnReferences:
               - columnCounter: 87c2bed7-bdf8-4f59-9593-a3de859f9f3b
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."UNUSED_IND_4",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: eae9a454-9f6f-4e07-836e-b3aecfb56633
@@ -688,7 +688,7 @@ operation:
           - columnReferences:
               - columnCounter: 9ed492be-6881-4c48-a23d-63c5895bde9b
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."UNUSED_IND_5",' ')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: d5d3496e-f710-46e6-98a3-8318ab1d19b6
@@ -702,7 +702,7 @@ operation:
           - columnReferences:
               - columnCounter: 9d2270a5-4f8f-4b26-aa3b-a9d1db63af7c
                 stepCounter: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
-            transform: ""
+            transform: nullif("NX_STATION_MASTER"."USE_RESERVATION_SYSTEM",' ')
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

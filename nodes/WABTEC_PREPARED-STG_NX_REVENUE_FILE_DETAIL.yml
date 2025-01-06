@@ -1023,6 +1023,26 @@ operation:
                 stepCounter: "0"
             transform: SPLIT_PART(SPLIT_PART("NX_REVENUE_FILE_DETAIL"."FILENAME", '/', 4), '_', 1)
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34284d2d-e95b-4fd1-8b60-7c6641c50000
+          stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: BASE_REVENUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"NX_REVENUE_FILE_DETAIL\".\"OUR_REVENUE\" - \"NX_REVENUE_FILE_DETAIL\".\"FUEL_SURCHARGE_AMOUNT\" - \"NX_REVENUE_FILE_DETAIL\".\"OTHER_CHARGES_AMOUNT\" - \"NX_REVENUE_FILE_DETAIL\".\"UP_SUPPLEMENT_AMOUNT\""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
