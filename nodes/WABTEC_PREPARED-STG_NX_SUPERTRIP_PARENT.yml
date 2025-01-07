@@ -4788,17 +4788,40 @@ operation:
                 stepCounter: "0"
             transform: CONCAT("NX_SUPERTRIP_PARENT"."WAYBILL_NUMBER", SPLIT_PART(SPLIT_PART("NX_SUPERTRIP_PARENT"."FILENAME", '/', 4), '_', 1))
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68bbf6fc-f28d-40e6-b7fc-b8d9ae9f94b4
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UNIQUE_JOIN_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_SUPERTRIP_PARENT"."CONTROLLING_ROAD", "NX_SUPERTRIP_PARENT"."LOADED_TRAIN_CONTROL_NUMBER", "NX_SUPERTRIP_PARENT"."EQUIPMENTMENT_INITIAL", "NX_SUPERTRIP_PARENT"."WAYBILL_NUMBER")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_SUPERTRIP_PARENT: a1219d2b-dfbc-4c76-8696-d2429ef5b716
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_SUPERTRIP_PARENT
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_SUPERTRIP_PARENT') }} "NX_SUPERTRIP_PARENT"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_SUPERTRIP_PARENT') }} "NX_SUPERTRIP_PARENT"
+            GROUP BY ALL
         name: STG_NX_SUPERTRIP_PARENT
         noLinkRefs: []
   name: STG_NX_SUPERTRIP_PARENT

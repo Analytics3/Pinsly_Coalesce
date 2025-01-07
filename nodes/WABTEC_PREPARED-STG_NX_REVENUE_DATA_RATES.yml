@@ -188,14 +188,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_REVENUE_DATA_RATES: bbcae7bd-4995-40ff-99ac-870e9dd088d9
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_REVENUE_DATA_RATES
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_DATA_RATES') }} "NX_REVENUE_DATA_RATES"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_DATA_RATES') }} "NX_REVENUE_DATA_RATES"
+            GROUP BY ALL
         name: STG_NX_REVENUE_DATA_RATES
         noLinkRefs: []
   name: STG_NX_REVENUE_DATA_RATES

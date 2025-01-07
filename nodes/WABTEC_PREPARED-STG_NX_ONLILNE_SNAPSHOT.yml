@@ -3065,14 +3065,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_ONLILNE_SNAPSHOT: e47f02be-365c-487c-a5a1-25e6b4c6fa9b
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_ONLILNE_SNAPSHOT
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_ONLILNE_SNAPSHOT') }} "NX_ONLILNE_SNAPSHOT"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_ONLILNE_SNAPSHOT') }} "NX_ONLILNE_SNAPSHOT"
+            GROUP BY ALL
         name: STG_NX_ONLILNE_SNAPSHOT
         noLinkRefs: []
   name: STG_NX_ONLILNE_SNAPSHOT

@@ -174,14 +174,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_EQUIPMENT_HISTORY_DELETE: 7ec06bb4-c167-4fd8-b0b4-5dbd087b84fb
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_EQUIPMENT_HISTORY_DELETE
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_EQUIPMENT_HISTORY_DELETE') }} "NX_EQUIPMENT_HISTORY_DELETE"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_EQUIPMENT_HISTORY_DELETE') }} "NX_EQUIPMENT_HISTORY_DELETE"
+            GROUP BY ALL
         name: STG_NX_EQUIPMENT_HISTORY_DELETE
         noLinkRefs: []
   name: STG_NX_EQUIPMENT_HISTORY_DELETE

@@ -468,14 +468,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_TRACK_MASTER: 8fbbeb9f-1d1e-4e6d-9843-5070ad0d890a
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_TRACK_MASTER
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_TRACK_MASTER') }} "NX_TRACK_MASTER"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_TRACK_MASTER') }} "NX_TRACK_MASTER"
+            GROUP BY ALL
         name: STG_NX_TRACK_MASTER
         noLinkRefs: []
   name: STG_NX_TRACK_MASTER

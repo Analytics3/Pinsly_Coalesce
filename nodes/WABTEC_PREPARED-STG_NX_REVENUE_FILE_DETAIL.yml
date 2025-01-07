@@ -1043,17 +1043,40 @@ operation:
                 stepCounter: "0"
             transform: "\"NX_REVENUE_FILE_DETAIL\".\"OUR_REVENUE\" - \"NX_REVENUE_FILE_DETAIL\".\"FUEL_SURCHARGE_AMOUNT\" - \"NX_REVENUE_FILE_DETAIL\".\"OTHER_CHARGES_AMOUNT\" - \"NX_REVENUE_FILE_DETAIL\".\"UP_SUPPLEMENT_AMOUNT\""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c27b5799-2e6d-4bda-ba1f-dad68183065b
+          stepCounter: 83051280-adde-4fa3-be16-775126e18e8f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UNIQUE_JOIN_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_REVENUE_FILE_DETAIL"."CLIENT_ROAD", "NX_REVENUE_FILE_DETAIL"."RMS_CONTROL_NBR", "NX_REVENUE_FILE_DETAIL"."EQUIP_INIT", "NX_REVENUE_FILE_DETAIL"."WAYBILL_NUMBER")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_REVENUE_FILE_DETAIL: bb863fc5-a92d-4a50-8979-ccfb19fac446
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_REVENUE_FILE_DETAIL
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_FILE_DETAIL') }} "NX_REVENUE_FILE_DETAIL"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_FILE_DETAIL') }} "NX_REVENUE_FILE_DETAIL"
+            GROUP BY ALL
         name: STG_NX_REVENUE_FILE_DETAIL
         noLinkRefs: []
   name: STG_NX_REVENUE_FILE_DETAIL

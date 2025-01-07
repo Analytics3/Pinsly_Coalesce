@@ -835,17 +835,40 @@ operation:
                 stepCounter: "0"
             transform: SPLIT_PART(SPLIT_PART("NX_REVENUE_FILE_SUMMARY"."FILENAME", '/', 4), '_', 1)
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a08e6414-1439-45d4-8b2e-f7ec1df0cdf9
+          stepCounter: 908c1fd2-9942-47a4-9d1d-896cd209a698
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UNIQUE_JOIN_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_REVENUE_FILE_SUMMARY"."CLIENT_ROAD", "NX_REVENUE_FILE_SUMMARY"."RMS_CONTROL_NBR", "NX_REVENUE_FILE_SUMMARY"."EQUIP_INIT", "NX_REVENUE_FILE_SUMMARY"."WAYBILL_NUMBER")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_REVENUE_FILE_SUMMARY: 1d0aff80-81de-437b-9610-e411291ba8a0
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_REVENUE_FILE_SUMMARY
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_FILE_SUMMARY') }} "NX_REVENUE_FILE_SUMMARY"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_FILE_SUMMARY') }} "NX_REVENUE_FILE_SUMMARY"
+            GROUP BY ALL
         name: STG_NX_REVENUE_FILE_SUMMARY
         noLinkRefs: []
   name: STG_NX_REVENUE_FILE_SUMMARY

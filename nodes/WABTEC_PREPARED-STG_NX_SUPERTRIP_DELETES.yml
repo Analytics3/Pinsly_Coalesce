@@ -124,14 +124,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_SUPERTRIP_DELETES: 5b6fc5e1-3211-40f6-aa3f-ddb97b14e320
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_SUPERTRIP_DELETES
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_SUPERTRIP_DELETES') }} "NX_SUPERTRIP_DELETES"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_SUPERTRIP_DELETES') }} "NX_SUPERTRIP_DELETES"
+            GROUP BY ALL
         name: STG_NX_SUPERTRIP_DELETES
         noLinkRefs: []
   name: STG_NX_SUPERTRIP_DELETES

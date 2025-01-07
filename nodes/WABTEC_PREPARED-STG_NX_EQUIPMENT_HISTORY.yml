@@ -1084,14 +1084,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_EQUIPMENT_HISTORY: 0429954c-a126-45c2-862e-ad279b59bae7
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_EQUIPMENT_HISTORY
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_EQUIPMENT_HISTORY') }} "NX_EQUIPMENT_HISTORY"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_EQUIPMENT_HISTORY') }} "NX_EQUIPMENT_HISTORY"
+            GROUP BY ALL
         name: STG_NX_EQUIPMENT_HISTORY
         noLinkRefs: []
   name: STG_NX_EQUIPMENT_HISTORY

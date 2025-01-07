@@ -838,14 +838,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_CUSTOMER_WABTEC: dcfded73-7ca4-4576-a8ff-ba781a15a789
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_CUSTOMER_WABTEC
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_CUSTOMER_WABTEC') }} "NX_CUSTOMER_WABTEC"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_CUSTOMER_WABTEC') }} "NX_CUSTOMER_WABTEC"
+            GROUP BY ALL 
         name: STG_NX_CUSTOMER_WABTEC
         noLinkRefs: []
   name: STG_NX_CUSTOMER_WABTEC

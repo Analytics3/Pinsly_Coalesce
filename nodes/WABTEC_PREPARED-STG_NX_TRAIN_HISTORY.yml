@@ -1181,14 +1181,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_TRAIN_HISTORY: 1e72d70a-2216-42ad-9aff-cf8f59f7646b
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_TRAIN_HISTORY
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_TRAIN_HISTORY') }} "NX_TRAIN_HISTORY"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_TRAIN_HISTORY') }} "NX_TRAIN_HISTORY"
+            GROUP bY ALL
         name: STG_NX_TRAIN_HISTORY
         noLinkRefs: []
   name: STG_NX_TRAIN_HISTORY

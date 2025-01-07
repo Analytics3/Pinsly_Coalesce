@@ -426,14 +426,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_SUPERTRIP_CHARGES: f24c78e8-f383-4fed-9f59-b60ce54470d0
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_SUPERTRIP_CHARGES
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_SUPERTRIP_CHARGES') }} "NX_SUPERTRIP_CHARGES"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_SUPERTRIP_CHARGES') }} "NX_SUPERTRIP_CHARGES"
+            GROUP BY ALL
         name: STG_NX_SUPERTRIP_CHARGES
         noLinkRefs: []
   name: STG_NX_SUPERTRIP_CHARGES

@@ -1367,17 +1367,40 @@ operation:
                 stepCounter: "0"
             transform: CONCAT("NX_WAYBILL_DETAILS"."WB_NUMBER", SPLIT_PART(SPLIT_PART("NX_WAYBILL_DETAILS"."FILENAME", '/', 4), '_', 1))
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38e2f3ff-bed1-45e4-8cbb-09141f0b8405
+          stepCounter: f70718e7-366a-4297-87a0-9a4edf4465f3
+        config: {}
+        dataType: Varchar
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: UNIQUE_JOIN_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_WAYBILL_DETAILS"."CTRL_ROAD", "NX_WAYBILL_DETAILS"."WB_CTRL", "NX_WAYBILL_DETAILS"."WB_NUMBER")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_WAYBILL_DETAILS: 6b752247-d8cb-4a70-9c9e-b9ee191823c2
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_WAYBILL_DETAILS
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_WAYBILL_DETAILS') }} "NX_WAYBILL_DETAILS"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_WAYBILL_DETAILS') }} "NX_WAYBILL_DETAILS"
+            GROUP BY ALL
         name: STG_NX_WAYBILL_DETAILS
         noLinkRefs: []
   name: STG_NX_WAYBILL_DETAILS

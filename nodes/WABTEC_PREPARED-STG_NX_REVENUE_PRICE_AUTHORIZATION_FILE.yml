@@ -216,14 +216,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_REVENUE_PRICE_AUTHORIZATION_FILE: 5bb41f2e-0f9d-44ab-af99-6ef246b49cb8
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_REVENUE_PRICE_AUTHORIZATION_FILE
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_PRICE_AUTHORIZATION_FILE') }} "NX_REVENUE_PRICE_AUTHORIZATION_FILE"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_REVENUE_PRICE_AUTHORIZATION_FILE') }} "NX_REVENUE_PRICE_AUTHORIZATION_FILE"
+            GROUP BY ALL
         name: STG_NX_REVENUE_PRICE_AUTHORIZATION_FILE
         noLinkRefs: []
   name: STG_NX_REVENUE_PRICE_AUTHORIZATION_FILE

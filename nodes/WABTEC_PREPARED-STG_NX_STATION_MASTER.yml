@@ -706,14 +706,17 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          NX_STATION_MASTER: 2f0d7664-c6b1-42fa-93dc-f95fdc21ec86
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: WABTEC_RAW
             nodeName: NX_STATION_MASTER
         join:
-          joinCondition: FROM {{ ref('WABTEC_RAW', 'NX_STATION_MASTER') }} "NX_STATION_MASTER"
+          joinCondition: |-
+            FROM {{ ref('WABTEC_RAW', 'NX_STATION_MASTER') }} "NX_STATION_MASTER"
+            GROUP BY ALL
         name: STG_NX_STATION_MASTER
         noLinkRefs: []
   name: STG_NX_STATION_MASTER
