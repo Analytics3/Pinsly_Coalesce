@@ -1,0 +1,210 @@
+fileVersion: 1
+id: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+name: FREIGHT_BUDGET
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SHAREPOINT_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ca9a11b-9cd8-40a9-8825-7824e12d2e55
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4f19a5b-ccac-40ca-a4f4-6638a95f1146
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: CUSTOMER_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 137c89fb-978e-4702-a035-3917525d61fd
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PATRON_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57f0740a-1193-4778-ad97-84cfb0bd1078
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: BUDGET_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7083051a-6448-4bfe-a66e-6ad18d5aafbc
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: MONTH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f3d0662-5bf8-41e5-86f0-7880cff2ed1f
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: YEAR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58fbc24e-2bee-4f3c-8143-895be1ff81da
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: MONTH_START_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4670ee78-237b-4e1c-be63-0b3ee604964e
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: NUMBER(38,9)
+        defaultValue: ""
+        description: ""
+        name: CARLOADS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a5daa0a-a2c1-4209-9be7-be65325dfb0b
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: NUMBER(38,2)
+        defaultValue: ""
+        description: ""
+        name: RATE_PER_CAR
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96145c9f-50b6-4452-bd88-3650e782d166
+          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+        config: {}
+        dataType: NUMBER(38,6)
+        defaultValue: ""
+        description: ""
+        name: REVENUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'FREIGHT_BUDGET') }}
+  name: FREIGHT_BUDGET
+  schema: ""
+  sqlType: Source
+  table: FREIGHT_BUDGET
+  type: sourceInput
+  version: 1
+type: Node

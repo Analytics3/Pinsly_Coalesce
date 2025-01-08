@@ -1,0 +1,179 @@
+fileVersion: 1
+id: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+name: STG_FREIGHT_BUDGET
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: MISC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bb80442-4731-40c2-bb66-46de7a24baf2
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ca9a11b-9cd8-40a9-8825-7824e12d2e55
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebcd88e2-98c2-4670-ac20-aed2c5fc31c1
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CUSTOMER_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d4f19a5b-ccac-40ca-a4f4-6638a95f1146
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2998d758-0db1-49d5-8b07-df868c563b55
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PATRON_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 137c89fb-978e-4702-a035-3917525d61fd
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2b60e3c-c9ed-47bd-b775-bdeb7d88b7a4
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: BUDGET_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57f0740a-1193-4778-ad97-84cfb0bd1078
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e455cf1-4070-4577-a6c4-195a46fee65b
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7083051a-6448-4bfe-a66e-6ad18d5aafbc
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83dd5293-e868-4973-bf86-96f2ce9893bf
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7f3d0662-5bf8-41e5-86f0-7880cff2ed1f
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b7d8fd1-003d-4ab2-949a-30924a733948
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: DATE
+        description: ""
+        name: MONTH_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58fbc24e-2bee-4f3c-8143-895be1ff81da
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: adc34add-d9cc-49b8-b35a-d228de76651f
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: NUMBER(38,9)
+        description: ""
+        name: CARLOADS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4670ee78-237b-4e1c-be63-0b3ee604964e
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4860c0f-639f-43e7-b332-8787b90a6551
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: NUMBER(38,2)
+        description: ""
+        name: RATE_PER_CAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a5daa0a-a2c1-4209-9be7-be65325dfb0b
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f421997-b0b3-40aa-8219-233aa9bd61ef
+          stepCounter: 758c7d46-54d4-4bd6-881b-ab4a78b6ee30
+        config: {}
+        dataType: NUMBER(38,6)
+        description: ""
+        name: REVENUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96145c9f-50b6-4452-bd88-3650e782d166
+                stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SHAREPOINT_RAW
+            nodeName: FREIGHT_BUDGET
+        join:
+          joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'FREIGHT_BUDGET') }} "FREIGHT_BUDGET"
+        name: STG_FREIGHT_BUDGET
+        noLinkRefs: []
+  name: STG_FREIGHT_BUDGET
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,267 @@
+fileVersion: 1
+id: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+name: DAILY_ADP_HOURS_REPORT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SHAREPOINT_RAW
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: abcbfaee-5bfc-4834-a9d3-5f555663e58e
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PAYROLL_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ee3cdbc-5740-45bb-870d-5b2dd42b946f
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PAY_CODE_TIMECARD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4d86be1-b3b2-454a-927d-672cc90b1ca1
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TIME_IN
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec02c14b-8765-4806-86f4-394f2d8baab8
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TIME_OUT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59d56470-ec78-4f3c-a311-ff04e7597dee
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: HOURS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: de67403c-ff15-4b66-8542-852964c57cd4
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: REGULAR_PAY_RATE_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49363a8c-5b65-4726-a135-208704a430ec
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PAYROLL_COMPANY_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45cefef0-50a5-441a-908c-320944fed396
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: JOB_TITLE_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 325fc8a8-6282-4d50-a3e3-e43c9b949873
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: HOME_DEPARTMENT_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e1a2742-98ce-490f-879a-4c15043073bb
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: TIME(9)
+        defaultValue: ""
+        description: ""
+        name: TIMECARD_HOURS_AS_TIME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0160189d-352f-4dce-8a70-403565adf219
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TIMECARD_PAY_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8215e03-6137-4158-b32f-27bbc6c7cb88
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TIMECARD_WORK_JOB
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f894ebe-0bdc-4995-b4b7-169ee6893c2c
+          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: TIMECARD_WORKED_JOB_DESCRIPTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'DAILY_ADP_HOURS_REPORT') }}
+  name: DAILY_ADP_HOURS_REPORT
+  schema: ""
+  sqlType: Source
+  table: DAILY_ADP_HOURS_REPORT
+  type: sourceInput
+  version: 1
+type: Node
