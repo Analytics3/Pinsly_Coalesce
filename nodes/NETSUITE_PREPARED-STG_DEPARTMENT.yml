@@ -1,0 +1,224 @@
+fileVersion: 1
+id: ae00bc7d-8a78-4873-ad72-3b92758d2671
+name: STG_DEPARTMENT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 36b96557-b55f-4987-b915-89fbb9e586f0
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0188047-803c-4cf8-98fb-beefd145dbc9
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58ffef12-401d-4576-a23e-0123eb54b082
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CUSTRECORD_NSPBCS_DEPT_PLANNING_CAT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c676b42-7c6e-489d-a44c-7581dce60493
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a7a1b9c-b937-477a-ae41-ad03765f52b6
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: VARCHAR(2040)
+        description: ""
+        name: EXTERNALID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 857b7692-3eb6-4c88-9821-aa35c1b14f30
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e996d6a-b0f8-4406-90b4-6c2373d65737
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: VARCHAR(248)
+        description: ""
+        name: FULLNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f624e4e7-d634-493c-8f20-409877a88368
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 988d91f9-e116-4860-8d05-86015797c9fe
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: INCLUDECHILDREN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4670aee8-df7c-4d67-97c8-bfb83916a372
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91b0d4a9-9f46-4d9f-8d73-c575e566edbd
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f6d8d23-cc8e-47e7-8e92-abb8b57edf5a
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9fdd30b-d6fc-4a8a-b5ac-8e9d93085ac8
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d7a8c23b-09dd-4240-acbf-9dc037e38932
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6db9f96-dd15-444e-a8a3-e383f069911e
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: VARCHAR(480)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d4cd1f4-9822-46f7-8277-b37cb83ce5d1
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6953901a-9afb-4448-84c1-3e9ce5909f51
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e5d4ca2-1eab-46ff-acd3-aac316994243
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fda15b42-2248-4878-a55b-e4093e094f67
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: VARCHAR(32000)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ccbbc53c-1239-4ecf-9878-422718fe7c71
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ba26591-03b3-46d7-9125-29a73ec22c3f
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 72fa36ab-bbe0-4aef-aa10-441434381781
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d35bdbec-b5ae-4087-834f-9365b3fa9e67
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d5026f6-c289-4dee-b989-d80125f8bcdc
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6b52c94-67e2-4092-9c8a-5b68cd1f16b1
+          stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: _FIVETRAN_SYNCED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4a6a707f-5a33-41b6-8d90-084551d86bef
+                stepCounter: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DEPARTMENT: 22536a54-69c6-4d0c-ae64-9758d8aa183b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_RAW
+            nodeName: DEPARTMENT
+        join:
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_RAW', 'DEPARTMENT') }} "DEPARTMENT"
+            WHERE "_FIVETRAN_DELETED" = FALSE
+        name: STG_DEPARTMENT
+        noLinkRefs: []
+  name: STG_DEPARTMENT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

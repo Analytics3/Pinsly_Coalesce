@@ -1,0 +1,124 @@
+fileVersion: 1
+id: a8159857-a24f-4314-95ba-64829e41e409
+name: STG_ADP_JOB_LOOKUP
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: MISC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 494df334-88c5-4c42-a8e9-c4c0d1924d6a
+          stepCounter: a8159857-a24f-4314-95ba-64829e41e409
+        config: {}
+        dataType: varchar
+        description: ""
+        name: ADP_DESC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e833899b-7fd3-4430-8bef-8835daad7e6d
+                stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 890cdfb0-124b-4fc0-bb46-5297063c683e
+          stepCounter: a8159857-a24f-4314-95ba-64829e41e409
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: JOBNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d7fd566-f188-4c85-ad2b-f35c99b14fa2
+                stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d52b9e19-8520-466e-9da0-d8f93469274d
+          stepCounter: a8159857-a24f-4314-95ba-64829e41e409
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29ace496-8d28-45a1-9c9b-36d9c1da887d
+                stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed1cbcc4-0903-4065-9364-c355c90b1c4f
+          stepCounter: a8159857-a24f-4314-95ba-64829e41e409
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SIMILARITY_SCORE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47b7a93f-8991-41a8-966b-0b6543104d75
+                stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48d989d5-878e-4753-8c63-c13cc4649929
+          stepCounter: a8159857-a24f-4314-95ba-64829e41e409
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ADP_LOOKUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9cc3a5a-b18c-4051-b72f-c1eaa3be2d9f
+                stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_ADP_JOB_SIMILARITY: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: MISC_PREPARED
+            nodeName: STG_ADP_JOB_SIMILARITY
+        join:
+          joinCondition: |-
+            FROM {{ ref('MISC_PREPARED', 'STG_ADP_JOB_SIMILARITY') }} "STG_ADP_JOB_SIMILARITY"
+            QUALIFY row_number() over (partition by "ADP_DESC" order by "SIMILARITY_SCORE" desc) = 1
+        name: STG_ADP_JOB_LOOKUP
+        noLinkRefs: []
+  name: STG_ADP_JOB_LOOKUP
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

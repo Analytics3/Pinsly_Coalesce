@@ -1053,6 +1053,26 @@ operation:
               - columnCounter: 9a0f6865-cac0-4ed8-917c-def157b55809
                 stepCounter: b6e868c8-94e4-4e1e-83f3-3f4463c96252
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ab0a61c-675b-428f-b5be-fbd9fb569af1
+          stepCounter: 9f4f19be-1fc0-48f2-9656-b1bdeea3df00
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SEQUENCE_ROAD_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("STG_NX_REVENUE_FILE_DETAIL_RANK"."SEQUENCE_NBR_KEY", "STG_NX_REVENUE_FILE_DETAIL_RANK"."CLIENT_ROAD")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

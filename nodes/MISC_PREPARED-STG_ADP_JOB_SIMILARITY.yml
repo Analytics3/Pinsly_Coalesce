@@ -1,0 +1,139 @@
+fileVersion: 1
+id: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+name: STG_ADP_JOB_SIMILARITY
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: MISC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e833899b-7fd3-4430-8bef-8835daad7e6d
+          stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+        config: {}
+        dataType: varchar
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ADP_DESC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed1e2975-77e8-4037-b5b3-056dff6b98eb
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: distinct "STG_DAILY_ADP_HOURS_REPORT"."TIMECARD_WORK_JOB"||' '||"TIMECARD_WORKED_JOB_DESCRIPTION"
+        systemColumnType: None
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9cc3a5a-b18c-4051-b72f-c1eaa3be2d9f
+          stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+        config: {}
+        dataType: varchar
+        description: ""
+        name: ADP_LOOKUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed1e2975-77e8-4037-b5b3-056dff6b98eb
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d7fd566-f188-4c85-ad2b-f35c99b14fa2
+          stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: JOBNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 997c92ff-44b2-4b00-a3e8-b4f68cba105f
+                stepCounter: 69728e88-069c-4f87-be3d-ac62f15ddb57
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29ace496-8d28-45a1-9c9b-36d9c1da887d
+          stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0051cf74-fe08-4da1-be8a-a02e576b835c
+                stepCounter: 69728e88-069c-4f87-be3d-ac62f15ddb57
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47b7a93f-8991-41a8-966b-0b6543104d75
+          stepCounter: 4cfd7223-8326-47df-af2e-0c28f613a1d5
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SIMILARITY_SCORE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: JAROWINKLER_SIMILARITY(TIMECARD_WORK_JOB||' '||TIMECARD_WORKED_JOB_DESCRIPTION,companyname)
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_DAILY_ADP_HOURS_REPORT: 5374424b-2fa4-47cb-8999-c68cb673dc51
+          STG_JOB: 69728e88-069c-4f87-be3d-ac62f15ddb57
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: MISC_PREPARED
+            nodeName: STG_DAILY_ADP_HOURS_REPORT
+          - locationName: NETSUITE_PREPARED
+            nodeName: STG_JOB
+        join:
+          joinCondition: |-
+            FROM {{ ref('MISC_PREPARED', 'STG_DAILY_ADP_HOURS_REPORT') }} "STG_DAILY_ADP_HOURS_REPORT",{{ ref('NETSUITE_PREPARED', 'STG_JOB') }} "STG_JOB"
+            WHERE JAROWINKLER_SIMILARITY(TIMECARD_WORK_JOB||' '||TIMECARD_WORKED_JOB_DESCRIPTION,companyname) > 75
+        name: STG_ADP_JOB_SIMILARITY
+        noLinkRefs: []
+  name: STG_ADP_JOB_SIMILARITY
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

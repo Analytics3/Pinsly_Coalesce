@@ -1,0 +1,177 @@
+fileVersion: 1
+id: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+name: DIM_DEPARTMENT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: NETSUITE_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a055a27-c23e-44ae-991f-b69ee608a8f6
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 36b96557-b55f-4987-b915-89fbb9e586f0
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34ff161e-700d-4518-9bea-bd722e7fcb38
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: VARCHAR(248)
+        description: ""
+        name: FULLNAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e996d6a-b0f8-4406-90b4-6c2373d65737
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51b55f93-6baf-44f2-b9a5-13675ba73584
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: INCLUDECHILDREN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 988d91f9-e116-4860-8d05-86015797c9fe
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ef44227-0f44-484c-a21d-f8540ab0fb76
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: VARCHAR(8)
+        description: ""
+        name: ISINACTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91b0d4a9-9f46-4d9f-8d73-c575e566edbd
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 623d994a-4735-494b-8f65-514e2e75061c
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e9fdd30b-d6fc-4a8a-b5ac-8e9d93085ac8
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41ccc350-3aeb-4aab-848e-abbab07ecef2
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: VARCHAR(480)
+        description: ""
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6db9f96-dd15-444e-a8a3-e383f069911e
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a0d0ef1-6d38-4e1c-9b0e-f595020e37da
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6953901a-9afb-4448-84c1-3e9ce5909f51
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5053dc0c-172c-47ff-b55f-a27f126ea0c6
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: VARCHAR(32000)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fda15b42-2248-4878-a55b-e4093e094f67
+                stepCounter: ae00bc7d-8a78-4873-ad72-3b92758d2671
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a22ce023-86f5-4cce-88ea-448e5cdd5e5a
+          stepCounter: 1f8f7ff1-4c70-4a3c-b6ef-7970599babb0
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PARENT_DEPARTMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: COALESCE("STG_DEPARTMENT_PARENT"."FULLNAME","STG_DEPARTMENT"."FULLNAME")
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_DEPARTMENT: ae00bc7d-8a78-4873-ad72-3b92758d2671
+          STG_DEPARTMENT_PARENT: ae00bc7d-8a78-4873-ad72-3b92758d2671
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NETSUITE_PREPARED
+            nodeName: STG_DEPARTMENT
+        join:
+          joinCondition: |-
+            FROM {{ ref('NETSUITE_PREPARED', 'STG_DEPARTMENT') }} "STG_DEPARTMENT"
+            LEFT JOIN {{ ref('NETSUITE_PREPARED', 'STG_DEPARTMENT') }} "STG_DEPARTMENT_PARENT"
+            ON "STG_DEPARTMENT_PARENT"."ID" = "STG_DEPARTMENT"."PARENT"
+            WHERE "STG_DEPARTMENT"."ISINACTIVE" = 'F'
+        name: DIM_DEPARTMENT
+        noLinkRefs: []
+  name: DIM_DEPARTMENT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

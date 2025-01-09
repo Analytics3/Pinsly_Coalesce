@@ -855,6 +855,26 @@ operation:
                 stepCounter: "0"
             transform: CONCAT("NX_REVENUE_FILE_SUMMARY"."CLIENT_ROAD", "NX_REVENUE_FILE_SUMMARY"."RMS_CONTROL_NBR", "NX_REVENUE_FILE_SUMMARY"."EQUIP_INIT", "NX_REVENUE_FILE_SUMMARY"."WAYBILL_NUMBER")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77174997-4103-483b-9ed5-11b994d20aa5
+          stepCounter: 908c1fd2-9942-47a4-9d1d-896cd209a698
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SEQUENCE_ROAD_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("NX_REVENUE_FILE_SUMMARY"."SEQUENCE_NBR_KEY", "NX_REVENUE_FILE_SUMMARY"."CLIENT_ROAD")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

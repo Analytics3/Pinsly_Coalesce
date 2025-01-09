@@ -1,0 +1,242 @@
+fileVersion: 1
+id: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+name: STG_DAILY_ADP_HOURS_REPORT_JOB_LOOKUP
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: MISC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3423500-7d21-4ab9-8aac-bb4df82aef65
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d52b9e19-8520-466e-9da0-d8f93469274d
+                stepCounter: a8159857-a24f-4314-95ba-64829e41e409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 146b41be-e5b4-46d9-b995-05a8051afe40
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PAYROLL_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2de38008-485f-4638-bf83-63daf6b56d12
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0596f9ed-8354-49be-9f18-9f38d70e80fc
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PAY_CODE_TIMECARD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4bf3bdea-ecaf-4ee5-a5dd-6689e5c1aca1
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef359605-6898-466e-8fca-81efd63ad915
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: TIME_IN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f0b04ab-8c8c-4f91-920c-aa90f12be534
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: TO_TIMESTAMP("STG_DAILY_ADP_HOURS_REPORT"."TIME_IN",'MM/DD/YYYY HH12:MI AM')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83a5f133-f82d-45e0-8698-11b3b654fea2
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: TIME_OUT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b72b720-60a2-49b3-be61-db36de7832b7
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: TO_TIMESTAMP("STG_DAILY_ADP_HOURS_REPORT"."TIME_OUT",'MM/DD/YYYY HH12:MI AM')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 229a6d15-ab44-430c-a054-e61a33f31b9c
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: HOURS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9882d9ef-54a0-4707-b0ea-4a0a02bfa2f1
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: TO_NUMBER("STG_DAILY_ADP_HOURS_REPORT"."HOURS")
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 670a92d8-7482-4efb-ae44-d3b1a15897f9
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: DECIMAL
+        description: ""
+        name: REGULAR_PAY_RATE_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5aefb56-7c79-4de1-b38c-fe43f964fe95
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: TRY_TO_DECIMAL(REPLACE("STG_DAILY_ADP_HOURS_REPORT"."REGULAR_PAY_RATE_AMOUNT",'$',''))
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 421f3a85-dd98-4b20-bd45-96800afb383a
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PAYROLL_COMPANY_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd5c5e4d-c78e-4c89-8e9f-31dc2e87561c
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7939aee3-fd27-4224-ba6d-0990f563e88b
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: JOB_TITLE_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1474fb72-2545-43e7-aeff-d9941b29fa4d
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a3bec3e-84e0-4987-a1ad-8c9a9d0c35e9
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: HOME_DEPARTMENT_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 906d2643-f6d4-4e00-b1a4-dabd44b64ccd
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3666f84-bb73-48a8-95a4-f8d8d73f6e02
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: TIME
+        description: ""
+        name: TIMECARD_HOURS_AS_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 14a60878-c122-41f6-8731-d599d7e1c25e
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 02c61bd4-c744-4e93-ab48-a157d1893fc3
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TIMECARD_PAY_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6db87bdf-f1e9-44dc-8db8-5ccc1b97572b
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a34d56ae-472c-477b-a241-bdd7b81fe3fd
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TIMECARD_WORK_JOB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed1e2975-77e8-4037-b5b3-056dff6b98eb
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d9defacf-b02f-421b-9ff9-a6b694eee26d
+          stepCounter: c4472954-407a-4a7d-8bc1-9b2c5fe2c5f7
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TIMECARD_WORKED_JOB_DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c3d0574-a3b7-49aa-9cd2-cc179bb36298
+                stepCounter: 5374424b-2fa4-47cb-8999-c68cb673dc51
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_ADP_JOB_LOOKUP: a8159857-a24f-4314-95ba-64829e41e409
+          STG_DAILY_ADP_HOURS_REPORT: 5374424b-2fa4-47cb-8999-c68cb673dc51
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: MISC_PREPARED
+            nodeName: STG_ADP_JOB_LOOKUP
+          - locationName: MISC_PREPARED
+            nodeName: STG_DAILY_ADP_HOURS_REPORT
+        join:
+          joinCondition: |-
+            FROM {{ ref('MISC_PREPARED', 'STG_ADP_JOB_LOOKUP') }} "STG_ADP_JOB_LOOKUP"
+            INNER JOIN {{ ref('MISC_PREPARED', 'STG_DAILY_ADP_HOURS_REPORT') }} "STG_DAILY_ADP_HOURS_REPORT"
+            ON "STG_ADP_JOB_LOOKUP"."ADP_LOOKUP" = "STG_DAILY_ADP_HOURS_REPORT"."TIMECARD_WORK_JOB"
+        name: STG_DAILY_ADP_HOURS_REPORT_JOB_LOOKUP
+        noLinkRefs: []
+  name: STG_DAILY_ADP_HOURS_REPORT_JOB_LOOKUP
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
