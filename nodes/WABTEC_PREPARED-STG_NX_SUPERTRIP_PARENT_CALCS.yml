@@ -3263,7 +3263,7 @@ operation:
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: KGTM
+        name: CAR_HIRE_KGTM
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -3319,19 +3319,136 @@ operation:
                 stepCounter: ff9090ae-ea67-417c-820b-764e019a41a3
             transform: ""
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 786526bb-c3e6-4a82-a84c-341a6feb4e1e
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: FLOAT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TRIP_KGTM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE 
+                      WHEN "STG_NX_SUPERTRIP_PARENT_RANK"."LOADED_MILES" <> 0 THEN ("STG_NX_SUPERTRIP_PARENT_RANK"."LOADED_MILES" * "STG_NX_SUPERTRIP_PARENT_RANK"."G_TONS") / 1000
+                      ELSE 0 
+                  END +
+                  CASE 
+                      WHEN "STG_NX_SUPERTRIP_PARENT_RANK"."EMPTY_MILES"  <> 0 THEN ("STG_NX_SUPERTRIP_PARENT_RANK"."EMPTY_MILES" * "STG_NX_SUPERTRIP_PARENT_RANK"."TARE_TONS") / 1000
+                      ELSE 0
+               END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eedc3303-0eaf-463b-b436-80e3c36c3fe1
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COMPANY_MATERIALS_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE WHEN "STG_NX_SUPERTRIP_PARENT_RANK"."COMMODITY_DESCRIPTION" in ('TIES', 'CARS, RAILWAY')
+                  THEN 'Company Materials'
+                  ELSE NULL 
+                  END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7b86aee-ea2d-46e4-b617-11f1d9ae42fa
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: STCC_CODE_PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4baa6fa5-a564-4a58-8475-5e9988699c6e
+                stepCounter: ff9090ae-ea67-417c-820b-764e019a41a3
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3eb14d94-b391-48c6-8afb-4993d965df69
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: COMMODITY_GROUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35e3d603-260f-4999-b6ed-ce953025a414
+                stepCounter: 7d9e2352-99fc-49ea-a283-ee3590691da2
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 659a3d78-8aa9-4fff-880d-4d2e7447db23
+          stepCounter: f7902862-f0ba-49d6-9ff9-657d1a11936f
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REVENUE_SUPERTRIP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("STG_NX_SUPERTRIP_PARENT_RANK"."CONTROLLING_ROAD", "STG_NX_SUPERTRIP_PARENT_RANK"."UNIQUE_TRIP_NUMBER_KEY")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
+          STCC_COMMODITY_GROUP: 7d9e2352-99fc-49ea-a283-ee3590691da2
           STG_NX_SUPERTRIP_PARENT_RANK: ff9090ae-ea67-417c-820b-764e019a41a3
         customSQL:
           customSQL: ""
         dependencies:
+          - locationName: SHAREPOINT_RAW
+            nodeName: STCC_COMMODITY_GROUP
           - locationName: WABTEC_PREPARED
             nodeName: STG_NX_SUPERTRIP_PARENT_RANK
         join:
           joinCondition: |-
             FROM {{ ref('WABTEC_PREPARED', 'STG_NX_SUPERTRIP_PARENT_RANK') }} "STG_NX_SUPERTRIP_PARENT_RANK"
+            LEFT JOIN {{ ref('SHAREPOINT_RAW', 'STCC_COMMODITY_GROUP') }} "STCC_COMMODITY_GROUP"  
+                ON "STG_NX_SUPERTRIP_PARENT_RANK"."STCC_CODE_PARENT" = "STCC_COMMODITY_GROUP"."STCC_COMMODITY_GROUP"
             WHERE "STG_NX_SUPERTRIP_PARENT_RANK"."MODIFIED_RANK" = 1
         name: STG_NX_SUPERTRIP_PARENT_CALCS
         noLinkRefs: []

@@ -4783,6 +4783,26 @@ operation:
                 stepCounter: "0"
             transform: ROW_NUMBER() OVER (PARTITION BY "STG_NX_SUPERTRIP_PARENT"."CONTROLLING_ROAD","STG_NX_SUPERTRIP_PARENT"."UNIQUE_TRIP_NUMBER_KEY" ORDER BY "STG_NX_SUPERTRIP_PARENT"."DATE_MODIFIED" DESC)
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4baa6fa5-a564-4a58-8475-5e9988699c6e
+          stepCounter: ff9090ae-ea67-417c-820b-764e019a41a3
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: STCC_CODE_PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f34c672b-e269-424d-8523-b47e4c81be91
+                stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+            transform: ""
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

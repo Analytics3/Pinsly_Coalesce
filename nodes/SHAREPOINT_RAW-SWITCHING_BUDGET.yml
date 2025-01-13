@@ -1,6 +1,6 @@
 fileVersion: 1
-id: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
-name: FREIGHT_BUDGET
+id: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+name: SWITCHING_BUDGET
 operation:
   database: ""
   dataset: ""
@@ -14,13 +14,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 57f0740a-1193-4778-ad97-84cfb0bd1078
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+          columnCounter: f9407704-dfa5-44bf-9c62-305e1b9e06ff
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: BUDGET_TYPE
+        name: CHARGE_TYPE
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -33,8 +33,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d4f19a5b-ccac-40ca-a4f4-6638a95f1146
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+          columnCounter: 40a49b10-6c48-426e-930f-e043d47782a0
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
@@ -52,8 +52,27 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 7083051a-6448-4bfe-a66e-6ad18d5aafbc
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+          columnCounter: 131fbdb8-0152-4a38-ae38-86143a33416b
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EMPTY_LOADED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43859212-18b5-4d57-b7c3-40598b8b7331
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
@@ -71,84 +90,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 137c89fb-978e-4702-a035-3917525d61fd
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: PATRON_ID
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 5ca9a11b-9cd8-40a9-8825-7824e12d2e55
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: SUBSIDIARY
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 7f3d0662-5bf8-41e5-86f0-7880cff2ed1f
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
-        config: {}
-        dataType: NUMBER(38,0)
-        defaultValue: ""
-        description: ""
-        name: YEAR
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 4670ee78-237b-4e1c-be63-0b3ee604964e
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
-        config: {}
-        dataType: FLOAT
-        defaultValue: ""
-        description: ""
-        name: CARLOADS
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 58fbc24e-2bee-4f3c-8143-895be1ff81da
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+          columnCounter: cf80892c-f2d2-48ca-afe2-54d2a7c9bfe3
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
         config: {}
         dataType: VARCHAR(16777216)
         defaultValue: ""
@@ -166,13 +109,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 7a5daa0a-a2c1-4209-9be7-be65325dfb0b
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+          columnCounter: ad874fad-e9a7-42cb-9a24-4b80d9ca0542
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
         config: {}
-        dataType: FLOAT
+        dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
-        name: RATE_PER_CAR
+        name: NUMBER_OF_SWITCHES
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -185,13 +128,89 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 96145c9f-50b6-4452-bd88-3650e782d166
-          stepCounter: a3cd4e7f-b0df-45cd-997e-dbed8869b4ef
+          columnCounter: 0fec21c9-2fe9-4b4a-862a-b0f7aacdcf85
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
         config: {}
-        dataType: FLOAT
+        dataType: VARCHAR(16777216)
         defaultValue: ""
         description: ""
-        name: REVENUE
+        name: PATRON_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ae8bf3c-9274-4c63-b6bc-87af5ac47ec9
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: RATE_PER_SWITCH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 766909c1-2f62-40bf-939b-d44350054166
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: STO_SWITCHING_REVENUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d541e297-c7dd-4114-bb91-a21e8aa807a0
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f94af22b-c840-440e-85d5-296edf0ab9d5
+          stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: YEAR
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -200,11 +219,11 @@ operation:
         transform: ""
         uniqueKey: false
     join:
-      joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'FREIGHT_BUDGET') }}
-  name: FREIGHT_BUDGET
+      joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'SWITCHING_BUDGET') }}
+  name: SWITCHING_BUDGET
   schema: ""
   sqlType: Source
-  table: FREIGHT_BUDGET
+  table: SWITCHING_BUDGET
   type: sourceInput
   version: 1
 type: Node

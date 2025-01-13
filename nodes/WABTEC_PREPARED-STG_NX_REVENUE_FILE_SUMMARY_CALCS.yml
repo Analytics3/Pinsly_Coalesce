@@ -857,6 +857,26 @@ operation:
               - columnCounter: 7ea23d46-af58-4c66-bed5-0c5ca07cbf49
                 stepCounter: 46fabe4f-0236-4f7d-8d3d-d7ede2a3a503
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 694f4002-f7cc-4d16-8ea1-b33b00e8e81b
+          stepCounter: 88d69eb2-0a65-42e6-8f67-26ab0f4520a3
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: REVENUE_SUPERTRIP_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CONCAT("STG_NX_REVENUE_FILE_SUMMARY_RANK"."CLIENT_ROAD","STG_NX_REVENUE_FILE_SUMMARY_RANK"."STP_UTN")
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

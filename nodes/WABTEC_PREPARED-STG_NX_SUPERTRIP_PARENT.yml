@@ -4808,6 +4808,26 @@ operation:
                 stepCounter: "0"
             transform: CONCAT("NX_SUPERTRIP_PARENT"."CONTROLLING_ROAD", "NX_SUPERTRIP_PARENT"."LOADED_TRAIN_CONTROL_NUMBER", "NX_SUPERTRIP_PARENT"."EQUIPMENTMENT_INITIAL", "NX_SUPERTRIP_PARENT"."WAYBILL_NUMBER")
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f34c672b-e269-424d-8523-b47e4c81be91
+          stepCounter: 5e01994d-7a43-4337-bf30-938e5412c9a6
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: STCC_CODE_PARENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: SUBSTRING("NX_SUPERTRIP_PARENT"."STCC_CODE",1,2)
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

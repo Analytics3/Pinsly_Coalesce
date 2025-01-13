@@ -1,0 +1,193 @@
+fileVersion: 1
+id: 444b1c30-37c6-4f77-bd30-5f92987ef877
+name: STG_SWITCHING_BUDGET
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: MISC_PREPARED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37aef50c-daba-44e1-880a-4cf025b8799a
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CHARGE_TYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f9407704-dfa5-44bf-9c62-305e1b9e06ff
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf708b21-4cbc-43bf-8dae-a1122ed6b226
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CUSTOMER_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40a49b10-6c48-426e-930f-e043d47782a0
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f41b75c-0028-44cb-95ad-a7dcae7c1d8d
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EMPTY_LOADED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 131fbdb8-0152-4a38-ae38-86143a33416b
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ab61b08-b150-4d6d-8b51-6ff5a3835fe2
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MONTH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43859212-18b5-4d57-b7c3-40598b8b7331
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1648048-491e-44d0-a41b-c3fadd4891aa
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MONTH_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf80892c-f2d2-48ca-afe2-54d2a7c9bfe3
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 56d44ece-96cb-411f-a196-4b6a12900fc9
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: NUMBER_OF_SWITCHES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad874fad-e9a7-42cb-9a24-4b80d9ca0542
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c6427e2-3e5c-499f-9d3a-0bfedb324c07
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PATRON_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0fec21c9-2fe9-4b4a-862a-b0f7aacdcf85
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9eca0f6-61df-4794-b862-19ab50e475d8
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: RATE_PER_SWITCH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5ae8bf3c-9274-4c63-b6bc-87af5ac47ec9
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d027e68-18dd-40a8-81c2-4e04e0d25d90
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: STO_SWITCHING_REVENUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 766909c1-2f62-40bf-939b-d44350054166
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69d8e218-abab-43fb-8b4d-cacbd11ea85a
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d541e297-c7dd-4114-bb91-a21e8aa807a0
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 280819b1-40d4-47ea-8bea-ab7bd5ed2c59
+          stepCounter: 444b1c30-37c6-4f77-bd30-5f92987ef877
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: YEAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f94af22b-c840-440e-85d5-296edf0ab9d5
+                stepCounter: e1b1a0a1-9aa9-40ea-b4d5-42451ec7d7b3
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SHAREPOINT_RAW
+            nodeName: SWITCHING_BUDGET
+        join:
+          joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'SWITCHING_BUDGET') }} "SWITCHING_BUDGET"
+        name: STG_SWITCHING_BUDGET
+        noLinkRefs: []
+  name: STG_SWITCHING_BUDGET
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
