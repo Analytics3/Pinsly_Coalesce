@@ -1,12 +1,12 @@
 fileVersion: 1
-id: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-name: DAILY_ADP_HOURS_REPORT
+id: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+name: BUDGETLEGACY
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: SHAREPOINT_RAW
+  locationName: NETSUITE_RAW
   metadata:
     columns:
       - acceptedValues:
@@ -14,13 +14,32 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 325fc8a8-6282-4d50-a3e3-e43c9b949873
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+          columnCounter: 51d22924-7ba0-4698-a0f6-5096856463ea
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
-        name: HOME_DEPARTMENT_DESCRIPTION
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 525effdb-1762-4dcf-b65a-78cdb14079fb
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ACCOUNT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -33,203 +52,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 45cefef0-50a5-441a-908c-320944fed396
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: JOB_TITLE_DESCRIPTION
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 49363a8c-5b65-4726-a135-208704a430ec
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: PAYROLL_COMPANY_CODE
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: abcbfaee-5bfc-4834-a9d3-5f555663e58e
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: PAYROLL_NAME
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: f4d86be1-b3b2-454a-927d-672cc90b1ca1
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: TIME_IN
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: ec02c14b-8765-4806-86f4-394f2d8baab8
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: TIME_OUT
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 0160189d-352f-4dce-8a70-403565adf219
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: TIMECARD_PAY_CODE
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: f8215e03-6137-4158-b32f-27bbc6c7cb88
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: TIMECARD_WORK_JOB
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 1f894ebe-0bdc-4995-b4b7-169ee6893c2c
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: TIMECARD_WORKED_JOB_DESCRIPTION
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 34f74851-772f-4ff5-83d8-6db8afe5f8c0
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: PAY_CODE__TIMECARD_
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 817138a5-be6a-441d-8b84-22def71daf31
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
-        config: {}
-        dataType: VARCHAR(16777216)
-        defaultValue: ""
-        description: ""
-        name: TIMECARD_HOURS__AS_TIME_
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 59d56470-ec78-4f3c-a311-ff04e7597dee
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+          columnCounter: 315d0e5e-52a2-47e5-87cb-d3b94e53df8b
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
         config: {}
         dataType: FLOAT
         defaultValue: ""
         description: ""
-        name: HOURS
+        name: AMOUNT
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -242,13 +71,222 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: de67403c-ff15-4b66-8542-852964c57cd4
-          stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
+          columnCounter: d35983a6-a318-436b-afd1-db2c5a8caacb
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
         config: {}
-        dataType: FLOAT
+        dataType: NUMBER(38,0)
         defaultValue: ""
         description: ""
-        name: REGULAR_PAY_RATE_AMOUNT
+        name: CATEGORY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39631487-e844-4c3b-8337-294b6096cdf7
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CLASS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 818024ea-2dd2-408d-94ba-cac2423dbaa4
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CUSTOMER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9540ed1e-77ca-4d84-9e63-9ca6665f2d66
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DEPARTMENT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b368898-ddc3-46eb-bbd3-31f6aaa6328b
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ITEM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5bbec928-a4bb-4d2a-a851-3bafba3b9705
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: LASTMODIFIEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a0d96f4-a666-4ed3-a4fa-85a64d790a47
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: LOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9100f19b-44ec-4d13-bb79-dc058acd3e3e
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PERIOD
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61e59aee-9641-47f9-bbd7-12514127be76
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SUBSIDIARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aab3c5b2-decf-4622-9c5c-41a0125b3f1b
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c6c2339-b8c7-4886-8349-88f0794cb329
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9d04073-0a74-4289-8313-c181646cd6b8
+          stepCounter: a5ad3ad0-6fd7-41b9-9c14-1e9422e4c192
+        config: {}
+        dataType: TIMESTAMP_TZ(9)
+        defaultValue: ""
+        description: ""
+        name: _FIVETRAN_SYNCED
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -257,11 +295,11 @@ operation:
         transform: ""
         uniqueKey: false
     join:
-      joinCondition: FROM {{ ref('SHAREPOINT_RAW', 'DAILY_ADP_HOURS_REPORT') }}
-  name: DAILY_ADP_HOURS_REPORT
+      joinCondition: FROM {{ ref('NETSUITE_RAW', 'BUDGETLEGACY') }}
+  name: BUDGETLEGACY
   schema: ""
   sqlType: Source
-  table: DAILY_ADP_HOURS_REPORT
+  table: BUDGETLEGACY
   type: sourceInput
   version: 1
 type: Node

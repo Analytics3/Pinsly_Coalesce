@@ -42,7 +42,7 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 8ee3cdbc-5740-45bb-870d-5b2dd42b946f
+              - columnCounter: 34f74851-772f-4ff5-83d8-6db8afe5f8c0
                 stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
             transform: ""
       - appliedColumnTests: {}
@@ -154,7 +154,7 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 9e1a2742-98ce-490f-879a-4c15043073bb
+              - columnCounter: 817138a5-be6a-441d-8b84-22def71daf31
                 stepCounter: a5ed4a93-d3e4-4776-9530-17cf5c17b9ec
             transform: ""
       - appliedColumnTests: {}
